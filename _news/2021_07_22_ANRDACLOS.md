@@ -9,5 +9,5 @@ I was honored to receive the ANR Young Researcher Grant (JCJC) for the DACLOS pr
 This funding supports the development of innovative approaches in ultrasonic wave physics, passive imaging, and wave correlation in complex media.
 
 More information about the project is available here:  
-<a href="https://anr.fr/Projet-ANR-21-CE42-0002"_blank">DACLOS Project</a>
+<a href="https://anr.fr/Projet-ANR-21-CE42-0002">DACLOS Project</a>
 
