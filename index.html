@@ -1,26 +1,153 @@
----
-layout: default
-title : Homepage
-navbar_title: Home
----
-{% include widgets/profile_card.html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lynda Chehami</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-{% if site.data.display.homepage.show_experience %}
-    {% include widgets/experience_card.html %}
-{% endif %}
+<style>
 
-{% if site.data.display.homepage.show_news %}
-    {% assign count_news = site.news | size %}
-    {% if count_news > 0 %}
-        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-    {% endif %}
-{% endif %}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef1f1;
+}
 
-{% if site.data.display.homepage.show_selected_publications %}
-    {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-    {% 
-        include widgets/publication_card.html 
-        publications=pubs
-        title='<i class="fas fa-star"></i> Selected Publications'
-    %}
-{% endif %}
+.topbar {
+  height: 70px;
+  background: #3392ee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.site-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.menu a {
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 22px;
+  color: black;
+}
+
+.card {
+  margin: 40px;
+  background: #f5f5f5;
+  border-radius: 15px;
+  padding: 70px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.affiliation {
+  font-size: 22px;
+  color: #0066ff;
+  margin: 10px 0;
+}
+
+.bio-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.bio {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.profile {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+}
+
+.links {
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.links a {
+  margin-right: 20px;
+  color: #0066ff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="site-title">Lynda CHEHAMI</div>
+  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#">Publications</a>
+  </div>
+</div>
+
+<div class="card">
+
+  <div class="hero">
+    
+    <div class="hero-text">
+
+      <h1>Lynda Chehami Associate Professor (HDR)</h1>
+
+      <div class="affiliation">
+        Université Polytechnique Hauts-de-France
+      </div>
+
+      <div class="affiliation">
+        IEMN – CNRS UMR 8520
+      </div>
+
+      <div class="bio-title">
+        Welcome to my website to learn more about my research and teaching activities!
+      </div>
+
+      <p class="bio">
+        I work on ultrasonic wave propagation, passive imaging and wave correlation 
+        in complex and reverberant media for the characterization of thin films, 
+        multilayer systems and advanced materials.
+      </p>
+
+    </div>
+
+    <img src="assets/images/photos/profile.jpg" class="profile">
+
+  </div>
+
+  <div class="links">
+    <a href="mailto:lynda.chehami@uphf.fr">Email</a>
+    <a href="https://scholar.google.com/citations?user=3FhRL0gAAAAJ&hl=fr">Google Scholar</a>
+    <a href="https://orcid.org/0000-0002-5561-3395">ORCID</a>
+    <a href="https://cv.hal.science/lynda-chehami">HAL</a>
+    <a href="https://www.researchgate.net/profile/Lynda-Chehami">ResearchGate</a>
+    <a href="https://www.linkedin.com/in/lynda-chehami-aa8106122/">LinkedIn</a>
+    <a href="https://github.com/lchehami">GitHub</a>
+  </div>
+
+</div>
+
+</body>
+</html>
