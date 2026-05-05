@@ -60,6 +60,17 @@
                             <i class="fab fa-github"></i>
                         </a>
                         {% endif %}
+                        {% if site.data.profile.hal %}
+<a href="{{ site.data.profile.hal }}" target="_blank" title="HAL">
+  <i class="ai ai-hal"></i>
+</a>
+{% endif %}
+
+{% if site.data.profile.researchgate %}
+<a href="{{ site.data.profile.researchgate }}" target="_blank" title="ResearchGate">
+  <i class="ai ai-researchgate"></i>
+</a>
+{% endif %}
 
                         {% if site.data.profile.wechat_qrcode %}
                         <a class="px-1 no-break" data-toggle="modal" data-target="#modal-wechat">
