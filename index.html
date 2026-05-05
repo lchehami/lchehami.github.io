@@ -4,7 +4,10 @@ title: Homepage
 navbar_title: Home
 ---
 
-<!-- HEADER BLEU -->
+<!-- ICONES -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- HEADER -->
 <div class="topbar">
   <div class="site-title">Lynda CHEHAMI</div>
 
@@ -50,12 +53,11 @@ navbar_title: Home
 
       <p class="bio">
         Associate Professor HDR in Physical Acoustics at Université Polytechnique Hauts-de-France and INSA Hauts-de-France,
-        I work on ultrasonic wave propagation, passive imaging and wave correlation in complex and reverberant media
-        for the characterization of thin films, multilayer systems and advanced materials.
+        I work on ultrasonic wave propagation, passive imaging and wave correlation in complex and reverberant media.
       </p>
 
       <a class="cv-link" href="https://cv.hal.science/lynda-chehami" target="_blank">
-        Curriculum Vitae
+        <i class="fa-solid fa-file-lines"></i> Curriculum Vitae
       </a>
 
     </div>
@@ -66,6 +68,7 @@ navbar_title: Home
 
   </div>
 
+  <!-- LOGOS -->
   <div class="institution-logos">
     <img src="{{ site.baseurl }}/assets/images/badges/uphf.png">
     <img src="{{ site.baseurl }}/assets/images/badges/INSA.png">
@@ -73,17 +76,51 @@ navbar_title: Home
     <img src="{{ site.baseurl }}/assets/images/badges/cnrs.png">
   </div>
 
+  <!-- LIENS AVEC ICONES -->
   <div class="links">
-    <a href="mailto:lynda.chehami@uphf.fr">✉ Email</a>
-    <a href="https://scholar.google.com/citations?user=3FhRL0gAAAAJ&hl=fr">🎓 Google Scholar</a>
-    <a href="https://orcid.org/0000-0002-5561-3395">ORCID</a>
-    <a href="https://cv.hal.science/lynda-chehami">HAL</a>
-    <a href="https://www.researchgate.net/profile/Lynda-Chehami">ResearchGate</a>
-    <a href="https://www.linkedin.com/in/lynda-chehami-aa8106122/">LinkedIn</a>
-    <a href="https://github.com/lchehami">GitHub</a>
+    <a href="mailto:lynda.chehami@uphf.fr">
+      <i class="fa-solid fa-envelope"></i> Email
+    </a>
+
+    <a href="https://scholar.google.com/citations?user=3FhRL0gAAAAJ&hl=fr">
+      <i class="fa-solid fa-graduation-cap"></i> Google Scholar
+    </a>
+
+    <a href="https://orcid.org/0000-0002-5561-3395">
+      <i class="fa-brands fa-orcid"></i> ORCID
+    </a>
+
+    <a href="https://cv.hal.science/lynda-chehami">
+      <i class="fa-solid fa-file-lines"></i> HAL
+    </a>
+
+    <a href="https://www.researchgate.net/profile/Lynda-Chehami">
+      <i class="fa-brands fa-researchgate"></i> ResearchGate
+    </a>
+
+    <a href="https://www.linkedin.com/in/lynda-chehami-aa8106122/">
+      <i class="fa-brands fa-linkedin"></i> LinkedIn
+    </a>
+
+    <a href="https://github.com/lchehami">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
   </div>
 
 </div>
+
+<!-- AUTRES CARTES -->
+{% if site.data.display.homepage.show_experience %}
+  {% include widgets/experience_card.html %}
+{% endif %}
+
+{% if site.data.display.homepage.show_news %}
+  {% include widgets/news_card.html %}
+{% endif %}
+
+{% if site.data.display.homepage.show_selected_publications %}
+  {% include widgets/publication_card.html %}
+{% endif %}
 
 <style>
 :root {
@@ -97,9 +134,16 @@ navbar_title: Home
 body.dark {
   --bg: #0f1115;
   --card: #1a1d23;
-  --text: #eeeeee;
+  --text: #eee;
   --blue: #5da2ff;
-  --border: #333842;
+  --border: #333;
+}
+
+body {
+  margin:0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial;
 }
 
 /* HEADER */
@@ -107,57 +151,31 @@ body.dark {
   height: 70px;
   background: var(--blue);
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 50px;
-}
-
-.site-title {
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.menu {
-  display: flex;
   align-items: center;
+  padding: 0 50px;
 }
 
 .menu a {
   margin-left: 25px;
-  font-size: 18px;
   text-decoration: none;
   color: #111;
-}
-
-.menu #themeToggle {
-  margin-left: 25px;
-  background: none;
-  border: none;
-  font-size: 22px;
-  cursor: pointer;
-}
-
-/* BODY */
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: Arial;
 }
 
 /* HERO */
 .hero-card {
   background: var(--card);
   border-radius: 14px;
-  padding: 35px 40px;
+  padding: 35px;
   margin: 30px auto;
   max-width: 1100px;
   border: 1px solid var(--border);
 }
 
 .hero-content {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  display:flex;
+  justify-content:space-between;
+  gap:40px;
 }
 
 .hero-text h1 {
@@ -165,77 +183,49 @@ body {
 }
 
 .affiliation {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 15px;
+  display:flex;
+  gap:10px;
+  font-size:15px;
   color: var(--blue);
-}
-
-.aff-logo {
-  height: 26px;
 }
 
 .bio-title {
-  font-size: 20px;
-  margin-top: 20px;
-  font-weight: 600;
+  font-size:20px;
+  margin-top:20px;
 }
 
 .bio {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.cv-link {
-  font-size: 16px;
-  color: var(--blue);
-  margin-top: 15px;
-  display: inline-block;
+  font-size:16px;
 }
 
 .hero-photo img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-
-.institution-logos {
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-  margin-top: 15px;
-}
-
-.institution-logos img {
-  height: 45px;
+  width:200px;
+  border-radius:50%;
 }
 
 .links {
-  border-top: 1px solid var(--border);
-  margin-top: 20px;
-  padding-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+  border-top:1px solid var(--border);
+  margin-top:20px;
+  padding-top:10px;
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.links i {
+  margin-right:6px;
 }
 
 .links a {
-  font-size: 15px;
   color: var(--blue);
-  text-decoration: none;
+  text-decoration:none;
 }
 
-@media(max-width:900px){
-  .hero-content {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-  .hero-photo img {
-    width: 150px;
-    height: 150px;
-  }
+/* bouton dark */
+#themeToggle {
+  background:none;
+  border:none;
+  cursor:pointer;
 }
 </style>
 
@@ -249,13 +239,7 @@ if(localStorage.getItem("theme")==="dark"){
 
 toggle.onclick=()=>{
   document.body.classList.toggle("dark");
-
-  if(document.body.classList.contains("dark")){
-    localStorage.setItem("theme","dark");
-    toggle.textContent="☀️";
-  } else {
-    localStorage.setItem("theme","light");
-    toggle.textContent="🌙";
-  }
+  localStorage.setItem("theme",
+    document.body.classList.contains("dark") ? "dark":"light");
 };
 </script>
