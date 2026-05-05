@@ -76,6 +76,19 @@
                         </a>
                         {% endif %}
 
+                        {% if site.data.profile.hal %}
+<a href="{{ site.data.profile.hal }}" target="_blank" title="HAL">
+  <i class="ai ai-hal"></i>
+</a>
+{% endif %}
+
+{% if site.data.profile.researchgate %}
+<a href="{{ site.data.profile.researchgate }}" target="_blank" title="ResearchGate">
+  <i class="ai ai-researchgate"></i>
+</a>
+{% endif %}
+                        
+
                         {% if site.data.profile.twitter %}
                         <a class="pr-3 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
                             <i class="fab fa-twitter"></i> Twitter
