@@ -37,7 +37,7 @@ short_bio: >-
 portrait_url: /assets/images/photos/profile.png
 
 education:
-- name: Université Polytechnique Hauts-de-France
+- name: <strong>Université Polytechnique Hauts-de-France</strong><br/>
   logo: /assets/images/badges/uphf.png
   position: >-
     <strong>Habilitation to Supervise Research (HDR) in Acoustics</strong><br/>
@@ -48,18 +48,18 @@ education:
     </a>
   date: 22 Sep. 2022
 
-- name: Université Polytechnique Hauts-de-France
+- name: <strong>Université Polytechnique Hauts-de-France</strong><br/>
   logo: /assets/images/badges/uphf.png
   position: >-
     <strong>PhD in Electronics and Acoustics</strong><br/>
     <em>Title:</em> Passive imaging and Green's function retrieval from diffuse elastic waves in plates<br/>
     IEMN Laboratory & Institut Langevin<br/>
-    <a href="file:///C:/Users/lchehami/Downloads/CHEHAMI_Lynda2-1.pdf" target="_blank">
+    <a href="https://theses.hal.science/tel-01279241/file/CHEHAMI_Lynda.pdf" target="_blank">
       <i class="fa-solid fa-file-lines"></i> PhD Manuscript
     </a>
   date: 1 Dec. 2015
 
-- name: Université Montpellier 2
+- name: <strong>Université Montpellier 2</strong><br/>
   logo: /assets/images/badges/ies.png
   position: >-
     <strong>Master's Degree in Sensors and Associated Systems</strong>
