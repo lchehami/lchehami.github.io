@@ -4,8 +4,18 @@ title: Homepage
 navbar_title: Home
 ---
 
-<button id="themeToggle">🌙</button>
+<!-- HEADER BLEU -->
+<div class="topbar">
+  <div class="site-title">Lynda CHEHAMI</div>
 
+  <div class="menu">
+    <a href="/" class="active">Home</a>
+    <a href="/publications/">Publications</a>
+    <button id="themeToggle">🌙</button>
+  </div>
+</div>
+
+<!-- HERO -->
 <div class="hero-card">
 
   <div class="hero-content">
@@ -29,13 +39,13 @@ navbar_title: Home
         IEMN – site de Valenciennes, CNRS UMR 8520
       </div>
 
-   <div class="affiliation">
+      <div class="affiliation">
         <img src="{{ site.baseurl }}/assets/images/badges/cnrs.png" class="aff-logo">
-        IEMN – site de Valenciennes, CNRS UMR 8520
+        CNRS
       </div>
-      
+
       <div class="bio-title">
-        Welcome to my website to learn a bit more about my research and teaching activities!
+        Welcome to my website to learn more about my research and teaching activities!
       </div>
 
       <p class="bio">
@@ -51,7 +61,7 @@ navbar_title: Home
     </div>
 
     <div class="hero-photo">
-      <img src="{{ site.baseurl }}/assets/images/photos/profile.png" alt="Profile photo">
+      <img src="{{ site.baseurl }}/assets/images/photos/profile.png">
     </div>
 
   </div>
@@ -64,9 +74,9 @@ navbar_title: Home
   </div>
 
   <div class="links">
-    <a href="mailto:lynda.chehami@uphf.fr">✉ lynda.chehami(at)uphf.fr</a>
+    <a href="mailto:lynda.chehami@uphf.fr">✉ Email</a>
     <a href="https://scholar.google.com/citations?user=3FhRL0gAAAAJ&hl=fr">🎓 Google Scholar</a>
-    <a href="https://orcid.org/0000-0002-5561-3395">ⓘ ORCID</a>
+    <a href="https://orcid.org/0000-0002-5561-3395">ORCID</a>
     <a href="https://cv.hal.science/lynda-chehami">HAL</a>
     <a href="https://www.researchgate.net/profile/Lynda-Chehami">ResearchGate</a>
     <a href="https://www.linkedin.com/in/lynda-chehami-aa8106122/">LinkedIn</a>
@@ -75,28 +85,12 @@ navbar_title: Home
 
 </div>
 
-{% if site.data.display.homepage.show_experience %}
-  {% include widgets/experience_card.html %}
-{% endif %}
-
-{% if site.data.display.homepage.show_news %}
-  {% assign count_news = site.news | size %}
-  {% if count_news > 0 %}
-    {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-  {% endif %}
-{% endif %}
-
-{% if site.data.display.homepage.show_selected_publications %}
-  {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-  {% include widgets/publication_card.html publications=pubs title='<i class="fas fa-star"></i> Selected Publications' %}
-{% endif %}
-
 <style>
 :root {
   --bg: #f5f6f7;
   --card: #ffffff;
   --text: #111;
-  --blue: #1a73e8;
+  --blue: #3392ee;
   --border: #e5e5e5;
 }
 
@@ -108,75 +102,84 @@ body.dark {
   --border: #333842;
 }
 
+/* HEADER */
+.topbar {
+  height: 70px;
+  background: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.site-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  margin-left: 25px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #111;
+}
+
+.menu #themeToggle {
+  margin-left: 25px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* BODY */
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial;
 }
 
-/* bouton dark */
-#themeToggle {
-  position: fixed;
-  top: 18px;
-  right: 20px;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  border: none;
-  background: var(--card);
-  color: var(--text);
-  cursor: pointer;
-  font-size: 18px;
-}
-
-/* card */
+/* HERO */
 .hero-card {
   background: var(--card);
   border-radius: 14px;
-  padding: 35px 40px 20px;
+  padding: 35px 40px;
   margin: 30px auto;
   max-width: 1100px;
   border: 1px solid var(--border);
 }
 
-/* layout */
 .hero-content {
   display: flex;
   justify-content: space-between;
   gap: 40px;
 }
 
-.hero-text {
-  max-width: 750px;
-}
-
-/* TITRE */
 .hero-text h1 {
-  font-size: 36px;
-  font-weight: 500;
-  margin-bottom: 20px;
+  font-size: 34px;
 }
 
-/* affiliations */
 .affiliation {
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 15px;
   color: var(--blue);
-  margin-bottom: 8px;
 }
 
 .aff-logo {
   height: 26px;
 }
 
-/* bio */
 .bio-title {
   font-size: 20px;
-  font-weight: 600;
   margin-top: 20px;
-  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .bio {
@@ -184,26 +187,19 @@ body {
   line-height: 1.6;
 }
 
-/* CV */
 .cv-link {
-  display: inline-block;
-  margin-top: 18px;
   font-size: 16px;
   color: var(--blue);
+  margin-top: 15px;
+  display: inline-block;
 }
 
-.cv-link::before {
-  content: "📄 ";
-}
-
-/* photo */
 .hero-photo img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
 
-/* logos */
 .institution-logos {
   display: flex;
   justify-content: flex-end;
@@ -215,11 +211,10 @@ body {
   height: 45px;
 }
 
-/* links */
 .links {
   border-top: 1px solid var(--border);
   margin-top: 20px;
-  padding-top: 12px;
+  padding-top: 10px;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -231,7 +226,6 @@ body {
   text-decoration: none;
 }
 
-/* responsive */
 @media(max-width:900px){
   .hero-content {
     flex-direction: column-reverse;
@@ -239,8 +233,8 @@ body {
   }
 
   .hero-photo img {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
   }
 }
 </style>
