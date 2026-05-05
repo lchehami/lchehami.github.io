@@ -244,3 +244,6 @@ body {
 .navbar a {
   font-size: 18px;
 }
+.inline-badge {
+  height: 24px;
+}
