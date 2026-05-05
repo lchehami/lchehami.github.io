@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <title>Lynda Chehami</title>
@@ -7,89 +8,191 @@
 
 <style>
 
+/* ================= GLOBAL ================= */
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #eef1f1;
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #ffffff;
+    color: #111;
 }
 
-.topbar {
-  height: 70px;
-  background: #3392ee;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 50px;
+/* ================= NAV BAR ================= */
+.banner {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #e6e6e6;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
 
-.site-title {
-  font-size: 28px;
-  font-weight: bold;
+.banner-inner {
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+
+    padding: 14px 20px;
 }
 
-.menu a {
-  text-decoration: none;
-  margin-left: 25px;
-  font-size: 22px;
-  color: black;
+.banner-inner a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #444;
 }
 
-.card {
-  margin: 40px;
-  background: #f5f5f5;
-  border-radius: 15px;
-  padding: 70px;
+.banner-inner a:hover {
+    color: #1a73e8;
 }
 
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* ================= SIDEBAR ================= */
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+
+    width: 320px;
+    height: calc(100vh - 60px);
+
+    border-right: 1px solid #e6e6e6;
+    padding: 40px 25px;
+    box-sizing: border-box;
+
+    text-align: center;
+    overflow-y: auto;
 }
 
-.hero-text {
-  max-width: 900px;
+.sidebar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.hero h1 {
-  font-size: 50px;
-  font-weight: 400;
+.sidebar h1 {
+    font-size: 20px;
+    margin-top: 10px;
 }
 
-.affiliation {
-  font-size: 22px;
-  color: #0066ff;
-  margin: 10px 0;
+/* ================= DESCRIPTION ================= */
+.role {
+    font-size: 13px;
+    color: #444;
+    line-height: 1.6;
+    margin-top: 10px;
 }
 
-.bio-title {
-  font-size: 26px;
-  font-weight: bold;
-  margin-top: 30px;
+/* ================= LOGOS (RÉDUITS) ================= */
+.institution {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 10px;
 }
 
-.bio {
-  font-size: 20px;
-  line-height: 1.5;
+.logo {
+    height: 14px;   /* 🔥 LOGOS PETITS */
+    width: auto;
+    object-fit: contain;
 }
 
-.profile {
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
+/* ================= TEXT INSTITUTIONS ================= */
+.inst-text {
+    font-size: 12px;
+    line-height: 1.3;
+    color: #555;
+    text-align: left;
 }
 
+.lab {
+    align-items: flex-start;
+}
+
+/* ================= LINKS ================= */
 .links {
-  margin-top: 30px;
-  border-top: 1px solid #ccc;
-  padding-top: 20px;
+    margin-top: 18px;
+    text-align: center;
 }
 
 .links a {
-  margin-right: 20px;
-  color: #0066ff;
-  text-decoration: none;
-  font-size: 20px;
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* ================= MAIN ================= */
+.main {
+    margin-left: 340px;
+    padding: 60px 70px;
+    max-width: 850px;
+}
+
+/* ================= WELCOME ANIMATION ================= */
+@keyframes moveSide {
+    0%   { transform: translateX(-10px); }
+    50%  { transform: translateX(10px); }
+    100% { transform: translateX(-10px); }
+}
+
+.welcome {
+    text-align: center;
+    font-size: 18px;
+    color: #1a73e8;
+    animation: moveSide 4s ease-in-out infinite;
+}
+
+.welcome-wrapper {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.welcome-wrapper::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    margin: 12px auto 25px auto;
+}
+
+/* ================= TEXT ================= */
+h2 {
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .main {
+        margin-left: 0;
+    }
 }
 
 </style>
@@ -97,55 +200,93 @@ body {
 
 <body>
 
-<div class="topbar">
-  <div class="site-title">Lynda CHEHAMI</div>
-  <div class="menu">
-    <a href="#">Home</a>
-    <a href="#">Publications</a>
-  </div>
+<!-- ================= NAV BAR ================= -->
+<div class="banner">
+    <div class="banner-inner">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#cv">CV</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+    </div>
 </div>
 
-<div class="card">
+<!-- ================= SIDEBAR ================= -->
+<div class="sidebar">
 
-  <div class="hero">
-    
-    <div class="hero-text">
+    <img src="photo_Lynda.jpg">
 
-      <h1>Lynda Chehami Associate Professor (HDR)</h1>
+    <h1>Lynda Chehami</h1>
 
-      <div class="affiliation">
-        Université Polytechnique Hauts-de-France
-      </div>
+    <div class="role">
+        Associate Professor (HDR)<br>
+        Wave Physics • Passive Imaging • Complex Media<br>
+        Université Polytechnique Hauts-de-France<br>
+        IEMN — Valenciennes site
+    </div>
 
-      <div class="affiliation">
-        IEMN – CNRS UMR 8520
-      </div>
+    <!-- LOGOS -->
+    <div class="institution">
+        <img class="logo" src="uphf.jpeg" alt="UPHF">
+        <div class="inst-text">
+            <strong>UPHF</strong><br>
+            Université Polytechnique Hauts-de-France
+        </div>
+    </div>
 
-      <div class="bio-title">
-        Welcome to my website to learn more about my research and teaching activities!
-      </div>
+    <div class="institution lab">
+        <img class="logo" src="iemn.png" alt="IEMN">
+        <div class="inst-text">
+            <strong>IEMN</strong><br>
+            Institute of Electronics, Microelectronics and Nanotechnology<br>
+            Valenciennes site
+        </div>
+    </div>
 
-      <p class="bio">
-        I work on ultrasonic wave propagation, passive imaging and wave correlation 
-        in complex and reverberant media for the characterization of thin films, 
-        multilayer systems and advanced materials.
-      </p>
+    <!-- LINKS -->
+    <div class="links">
+
+        <a href="https://scholar.google.com/citations?user=3FhRL0gAAAAJ" target="_blank">
+            🎓 Google Scholar
+        </a>
+
+        <a href="https://orcid.org/0000-0002-5561-3395" target="_blank">
+            🟢 ORCID
+        </a>
+
+        <a href="https://www.linkedin.com/in/lynda-chehami-aa8106122/" target="_blank">
+            🔗 LinkedIn
+        </a>
 
     </div>
 
-    <img src="assets/images/photos/profile.png" class="profile">
+</div>
 
-  </div>
+<!-- ================= MAIN ================= -->
+<div class="main">
 
-  <div class="links">
-    <a href="mailto:lynda.chehami@uphf.fr">Email</a>
-    <a href="https://scholar.google.com/citations?user=3FhRL0gAAAAJ&hl=fr">Google Scholar</a>
-    <a href="https://orcid.org/0000-0002-5561-3395">ORCID</a>
-    <a href="https://cv.hal.science/lynda-chehami">HAL</a>
-    <a href="https://www.researchgate.net/profile/Lynda-Chehami">ResearchGate</a>
-    <a href="https://www.linkedin.com/in/lynda-chehami-aa8106122/">LinkedIn</a>
-    <a href="https://github.com/lchehami">GitHub</a>
-  </div>
+    <div class="welcome-wrapper">
+        <div class="welcome">Welcome to my personal website</div>
+    </div>
+
+    <p class="intro-text">
+    Here you will find information about my research, teaching, and scientific activities.
+    </p>
+
+    <h2 id="research">Research</h2>
+    <p>Wave propagation in complex media, passive imaging, inverse problems.</p>
+
+    <h2 id="publications">Publications</h2>
+    <p>Selected works in wave physics and imaging.</p>
+
+    <h2 id="cv">CV</h2>
+    <p>Associate Professor (HDR), UPHF — IEMN</p>
+
+    <h2 id="teaching">Teaching</h2>
+    <p>Physics undergraduate courses and supervision.</p>
+
+    <h2 id="contact">Contact</h2>
+    <p>lynda.chehami@uphf.fr</p>
 
 </div>
 
