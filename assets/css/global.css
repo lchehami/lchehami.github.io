@@ -196,3 +196,6 @@ img.inline-badge,
   vertical-align: middle;
   margin-right: 10px;
 }
+.card img {
+  height: 40px !important;
+}
