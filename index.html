@@ -4,64 +4,65 @@ title: Homepage
 navbar_title: Home
 ---
 
-<!-- Hero Card -->
 <div class="hero-card">
   <div class="hero-content">
-    <!-- Texte à gauche -->
+
     <div class="hero-text">
       <h1>Dr. HDR Lynda Chehami</h1>
       <div class="subtitle">Maître de conférences (HDR) - Associate Professor (HDR)</div>
 
-      <!-- Affiliations avec logos -->
       <div class="affiliations">
         <div class="affiliation">
-          <img src="{{ site.baseurl }}/assets/images/badges/uphf.png" alt="UPHF" class="aff-logo"> Université Polytechnique Hauts-de-France
+          <img src="{{ site.baseurl }}/assets/images/badges/uphf.png" alt="UPHF" class="aff-logo">
+          Université Polytechnique Hauts-de-France
         </div>
+
         <div class="affiliation">
-          <img src="{{ site.baseurl }}/assets/images/badges/INSA.png" alt="INSA" class="aff-logo"> INSA Hauts-de-France
+          <img src="{{ site.baseurl }}/assets/images/badges/INSA.png" alt="INSA" class="aff-logo">
+          INSA Hauts-de-France
         </div>
+
         <div class="affiliation">
-          <img src="{{ site.baseurl }}/assets/images/badges/iemn.png" alt="IEMN" class="aff-logo"> IEMN – site de Valenciennes
+          <img src="{{ site.baseurl }}/assets/images/badges/iemn.png" alt="IEMN" class="aff-logo">
+          IEMN – site de Valenciennes
         </div>
-          <div class="affiliation">
-          <img src="{{ site.baseurl }}/assets/images/badges/cnrs.png" alt="CNRS" class="aff-logo"> CNRS
+
+        <div class="affiliation">
+          <img src="{{ site.baseurl }}/assets/images/badges/cnrs.png" alt="CNRS" class="aff-logo">
+          CNRS
         </div>
       </div>
 
-<!-- Bio -->
-<div class="lynda-bio-title">
-  <strong>Welcome to my website to learn more about my research and teaching activities!</strong>
-</div>
+      <div class="lynda-bio-title">
+        Welcome to my website to learn more about my research and teaching activities!
+      </div>
 
-<p class="bio">
-  Lynda Chehami is an Associate Professor at Université Polytechnique Hauts-de-France and INSA Hauts-de-France. 
-  She works on ultrasonic wave propagation, passive imaging, and wave correlation in complex and reverberant media, 
-  for the characterization of thin films, multilayer systems, and advanced materials. 
-  Member of CNU 63, Chair of the ULTRASOUNDS technical committee (EEA), and responsible for the Physics-Chemistry curriculum for the licence degree.
-</p>
-
-      <p style="margin-bottom:10px; font-style:italic;">
-  For more details about my profile, see:
-</p>
-<a class="cv-button" href="https://cv.hal.science/lynda-chehami" target="_blank">CV</a>
-     
-
-      <!-- Contact -->
       <p class="bio">
+        Lynda Chehami is an Associate Professor at Université Polytechnique Hauts-de-France and INSA Hauts-de-France.
+        She works on ultrasonic wave propagation, passive imaging, and wave correlation in complex and reverberant media,
+        for the characterization of thin films, multilayer systems, and advanced materials.
+        Member of CNU 63, Chair of the ULTRASOUNDS technical committee (EEA), and responsible for the Physics-Chemistry curriculum for the licence degree.
+      </p>
+
+      <a class="cv-button" href="https://cv.hal.science/lynda-chehami" target="_blank">
+        Curriculum Vitae
+      </a>
+
+      <p class="contact">
         Adresse: Campus Mont Houy - Bâtiment Lottman, 59313 Valenciennes Cedex 9, France<br>
         Tél : +33 3 27 51 11 87<br>
-        Email: <a href="mailto:lynda.chehami@insa-hdf.fr">lynda.chehami@insa-hdf.fr</a> /
+        Email:
+        <a href="mailto:lynda.chehami@insa-hdf.fr">lynda.chehami@insa-hdf.fr</a> /
         <a href="mailto:lynda.chehami@uphf.fr">lynda.chehami@uphf.fr</a>
       </p>
     </div>
 
-    <!-- Photo à droite -->
     <div class="hero-photo">
       <img src="{{ site.baseurl }}/assets/images/photos/profile.png" alt="Profile photo">
     </div>
+
   </div>
 
-  <!-- Liens académiques -->
   <div class="links">
     <a href="mailto:lynda.chehami@uphf.fr"><i class="fas fa-envelope"></i> Email</a>
     <a href="https://scholar.google.com/citations?user=3FhRL0gAAAAJ&hl=fr"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
@@ -73,12 +74,10 @@ navbar_title: Home
   </div>
 </div>
 
-<!-- Experience -->
 {% if site.data.display.homepage.show_experience %}
   {% include widgets/experience_card.html %}
 {% endif %}
 
-<!-- News -->
 {% if site.data.display.homepage.show_news %}
   {% assign count_news = site.news | size %}
   {% if count_news > 0 %}
@@ -86,117 +85,169 @@ navbar_title: Home
   {% endif %}
 {% endif %}
 
-<!-- Selected Publications -->
 {% if site.data.display.homepage.show_selected_publications %}
   {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
   {% include widgets/publication_card.html publications=pubs title='<i class="fas fa-star"></i> Selected Publications' %}
 {% endif %}
 
-<!-- CSS -->
 <style>
+body {
+  background: #eef1f1;
+}
+
 .hero-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 30px;
-  margin: 40px auto;
-  max-width: 1000px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  background: #f7f7f7;
+  border-radius: 18px;
+  padding: 70px 72px 28px;
+  margin: 36px auto;
+  max-width: 1600px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
 .hero-content {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  flex-wrap: wrap;
+  gap: 60px;
 }
 
 .hero-text {
   flex: 1;
   min-width: 300px;
-  margin-right: 20px;
 }
 
 .hero-text h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: 56px;
+  font-weight: 400;
+  margin: 0 0 10px;
+  color: #111;
 }
 
 .subtitle {
-  font-weight: normal;
-  color: #555;
-  margin-bottom: 15px;
+  font-size: 30px;
+  color: #111;
+  margin-bottom: 42px;
 }
 
 .affiliations {
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 }
 
 .affiliation {
   display: flex;
   align-items: center;
-  margin-top: 5px;
+  gap: 14px;
+  color: #0066ff;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .aff-logo {
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
+  width: auto;
+  height: 42px;
+  object-fit: contain;
+}
+
+.lynda-bio-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 38px;
+  margin-bottom: 12px;
+  color: #111;
 }
 
 .bio {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 15px;
+  font-size: 25px;
+  line-height: 1.45;
+  color: #111;
+  max-width: 1150px;
 }
 
 .cv-button {
   display: inline-block;
-  margin-bottom: 15px;
-  padding: 8px 15px;
-  background: #e0e0e0;
-  border-radius: 5px;
+  font-size: 24px;
+  margin: 35px 0 20px;
+  color: #0066ff;
+  background: transparent;
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
+  font-weight: 400;
 }
 
-.cv-button:hover {
-  background: #d0d0d0;
+.cv-button::before {
+  content: "📄 ";
 }
 
-.links a {
-  margin-right: 15px;
-  text-decoration: none;
-  color: #4285f4;
-  font-weight: 500;
-}
-
-.links a i {
-  margin-right: 5px;
+.contact {
+  font-size: 21px;
+  line-height: 1.5;
+  margin-top: 15px;
 }
 
 .hero-photo {
   flex-shrink: 0;
-  margin-top: 10px;
+  margin-top: 0;
 }
 
 .hero-photo img {
-  width: 160px;
-  height: 160px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
-@media(max-width:800px){
+.links {
+  border-top: 1px solid #ccc;
+  margin-top: 38px;
+  padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.links a {
+  color: #0066ff;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.links a i {
+  margin-right: 6px;
+}
+
+@media(max-width:900px) {
+  .hero-card {
+    padding: 35px 25px;
+    margin: 20px;
+  }
+
   .hero-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
+    gap: 30px;
   }
+
   .hero-text {
-    margin-right: 0;
-    text-align: center;
+    text-align: left;
   }
-  .hero-photo {
-    margin-top: 20px;
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .bio,
+  .affiliation,
+  .links a {
+    font-size: 20px;
+  }
+
+  .hero-photo img {
+    width: 230px;
+    height: 230px;
   }
 }
 </style>
