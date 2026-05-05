@@ -185,12 +185,14 @@ h2 {
     color: #f0f0f0;
   }
 }
-/* FORCE LOGOS EDUCATION PLUS GRANDS */
-img.inline-badge {
-  height: 42px !important;
+/* ===== FIX LOGOS EDUCATION (BOOTSTRAP) ===== */
+.education img,
+img.inline-badge,
+.img-fluid.inline-badge {
+  height: 40px !important;
   width: auto !important;
-  max-width: 150px !important;
-  object-fit: contain !important;
-  vertical-align: middle !important;
-  margin-right: 12px !important;
+  max-width: none !important;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 10px;
 }
