@@ -273,5 +273,81 @@ section {
   }
 }
 
-logo INSA
+/* ===== NEWS TIMELINE ===== */
+
+.news-timeline {
+  padding: 25px;
+}
+
+.news-year-block {
+  margin-bottom: 35px;
+}
+
+.news-year {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 15px;
+}
+
+.news-toggle {
+  margin-left: 12px;
+  padding: 8px 14px;
+  border: 1px solid #9ca3af;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-soft);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.news-entry {
+  position: relative;
+  display: flex;
+  gap: 18px;
+  margin-left: 30px;
+  padding-bottom: 28px;
+  border-left: 3px solid var(--blue);
+}
+
+.news-dot {
+  width: 18px;
+  height: 18px;
+  background: var(--blue);
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 4px;
+}
+
+.news-text {
+  padding-left: 28px;
+}
+
+.news-date {
+  font-size: 14px;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 4px;
+}
+
+.news-text h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.news-content p {
+  margin-bottom: 8px;
+}
+
+/* DARK MODE */
+
+body.dark .news-toggle {
+  color: #f0f0f0;
+  border-color: #666;
+}
+
+body.dark .news-date {
+  color: #aaa;
+}
 
