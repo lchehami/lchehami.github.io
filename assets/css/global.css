@@ -1,18 +1,62 @@
 @charset "utf-8";
 
-/* ===== GLOBAL ===== */
-body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.8;
-  color: #222;
-  background: #f5f7f9;
-  padding-top: 5rem;
-  margin: 0;
-  text-rendering: optimizeLegibility;
+/* =======================================================
+   GLOBAL
+======================================================= */
+
+:root {
+  --bg: #f5f7f9;
+  --card: #ffffff;
+  --text: #111111;
+  --text-soft: #444444;
+  --border: #e5e7eb;
+  --blue: #2563eb;
+  --shadow:
+    0 2px 10px rgba(0,0,0,0.03),
+    0 8px 30px rgba(0,0,0,0.04);
 }
 
-/* ===== CONTAINER GLOBAL ===== */
+/* ===== DARK VARIABLES ===== */
+
+body.dark {
+  --bg: #121212;
+  --card: #1f1f1f;
+  --text: #f3f3f3;
+  --text-soft: #d0d0d0;
+  --border: #333333;
+  --blue: #82b1ff;
+  --shadow:
+    0 2px 10px rgba(0,0,0,0.25),
+    0 8px 30px rgba(0,0,0,0.35);
+}
+
+/* =======================================================
+   BODY
+======================================================= */
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Arial, sans-serif;
+
+  background: var(--bg);
+  color: var(--text);
+
+  font-size: 16px;
+  line-height: 1.85;
+
+  margin: 0;
+  padding-top: 5rem;
+
+  text-rendering: optimizeLegibility;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+/* =======================================================
+   GLOBAL CONTAINER
+======================================================= */
+
 main,
 .container,
 .wrapper {
@@ -21,62 +65,99 @@ main,
   margin-right: auto;
 }
 
-/* ===== TITRES ===== */
+/* =======================================================
+   TYPOGRAPHY
+======================================================= */
+
 h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
   font-weight: 700;
-  color: #111;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 46px;
+  line-height: 1.05;
+  letter-spacing: -1px;
 }
 
 h2 {
-  font-size: 22px;
-  margin-top: 40px;
+  font-size: 24px;
   margin-bottom: 18px;
 }
 
-/* ===== NAVBAR ===== */
+p {
+  color: var(--text-soft);
+}
+
+/* =======================================================
+   HEADER / NAVBAR
+======================================================= */
+
+.site-header,
 .navbar {
-  background-color: #2563eb !important;
+  background: #2563eb !important;
+  border-bottom: none !important;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
-.navbar a,
-.navbar-brand,
-.nav-link {
-  font-size: 16px;
+.site-title,
+.site-title:visited,
+.site-nav a,
+.site-nav a:visited,
+.navbar a {
+  color: white !important;
   font-weight: 500;
-  letter-spacing: 0.2px;
+  text-decoration: none;
 }
 
-/* ===== CARDS ===== */
-.card,
-.card-img-overlay,
-.rounded-xl {
-  border-radius: 14px !important;
+.site-title {
+  font-size: 22px;
+  font-weight: 700;
 }
 
-.card {
+/* =======================================================
+   DARK MODE BUTTON
+======================================================= */
+
+#themeToggle {
+  margin-left: 15px;
   border: none;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
 }
 
-/* ===== HERO ===== */
+/* =======================================================
+   HERO CARD
+======================================================= */
+
 .hero-card {
-  background-color: #fff;
-  border-radius: 14px;
+  background: var(--card);
+
+  border-radius: 16px;
+
   padding: 50px;
+
   margin: 50px auto;
+
   max-width: 1080px;
-  box-shadow:
-    0 2px 10px rgba(0,0,0,0.03),
-    0 8px 30px rgba(0,0,0,0.04);
+
+  box-shadow: var(--shadow);
+
+  border: 1px solid var(--border);
+
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .hero-content {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
   justify-content: space-between;
-  gap: 35px;
+  align-items: flex-start;
+  gap: 40px;
 }
 
 .hero-text {
@@ -84,136 +165,252 @@ h2 {
   min-width: 300px;
 }
 
-.hero-text h1 {
-  font-size: 46px;
-  font-weight: 700;
-  letter-spacing: -1px;
-  line-height: 1.05;
-  margin-bottom: 12px;
+/* =======================================================
+   POSITION
+======================================================= */
+
+.position {
+  font-size: 18px;
+  color: var(--text-soft);
+  margin-top: -5px;
+  margin-bottom: 24px;
 }
 
-/* ===== BIO ===== */
+/* =======================================================
+   BIO
+======================================================= */
+
 .bio-title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
-  margin-top: 24px;
+  margin-top: 28px;
   margin-bottom: 14px;
-  color: #111;
+  color: var(--text);
 }
 
 .bio {
   font-size: 16px;
   line-height: 1.9;
-  max-width: 780px;
-  color: #444;
+  color: var(--text-soft);
+  max-width: 760px;
 }
 
-/* ===== AFFILIATIONS ===== */
+/* =======================================================
+   AFFILIATIONS
+======================================================= */
+
 .affiliation {
   display: flex;
   align-items: center;
-  margin-top: 8px;
-  color: #444;
+  gap: 10px;
+
+  margin-bottom: 10px;
+
+  color: var(--blue);
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.affiliation:hover {
+  text-decoration: underline;
 }
 
 .aff-logo {
   height: 28px;
   width: auto;
   object-fit: contain;
-  margin-right: 8px;
 }
 
-/* ===== PHOTO ===== */
-.hero-photo img {
+/* =======================================================
+   PROFILE PHOTO
+======================================================= */
+
+.hero-photo {
   width: 190px;
   height: 190px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
-/* ===== LIENS ===== */
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  box-shadow:
+    0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* =======================================================
+   INSTITUTION LOGOS
+======================================================= */
+
+.institution-logos {
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+
+  margin-top: 20px;
+}
+
+.institution-logos img {
+  max-height: 42px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* =======================================================
+   LINKS
+======================================================= */
+
 .links {
-  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  border-top: 1px solid var(--border);
+
+  margin-top: 24px;
+  padding-top: 18px;
 }
 
 .links a {
-  font-size: 16px;
-  font-weight: 500;
-  color: #2563eb;
+  color: var(--blue);
   text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .links a:hover {
   text-decoration: underline;
 }
 
-.links a i {
-  font-size: 14px;
+.links i {
+  width: 18px;
   margin-right: 5px;
 }
 
-/* ===== SECTIONS ===== */
-section {
-  margin-top: 70px;
-  margin-bottom: 70px;
-}
+/* =======================================================
+   BUTTONS
+======================================================= */
 
-/* ===== EDUCATION LOGOS ===== */
-.inline-badge,
-.education img,
-.education-logo,
-.edu-logo {
-  height: 42px !important;
-  width: auto !important;
-  max-width: 140px !important;
-  object-fit: contain !important;
-  vertical-align: middle !important;
-  margin-right: 12px !important;
-  display: inline-block !important;
-}
-
-/* ===== ALIGNEMENT EDUCATION ===== */
-.education-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 14px;
-}
-
-/* ===== DATES ===== */
-.award-date,
-.date {
-  font-size: 14px;
-  color: #666;
-  font-style: italic;
-}
-
-/* ===== BOUTONS ===== */
 .cv-button {
   display: inline-block;
-  margin-bottom: 15px;
-  padding: 8px 16px;
+
+  margin-top: 12px;
+
+  padding: 10px 18px;
+
   background: #e5e7eb;
-  border-radius: 8px;
+
+  color: #222;
+
+  border-radius: 10px;
+
   text-decoration: none;
-  color: #333;
+
   font-weight: 500;
+
+  transition: 0.2s ease;
 }
 
 .cv-button:hover {
   background: #d1d5db;
 }
 
-/* ===== RESPONSIVE ===== */
-@media(max-width:800px) {
+/* ===== DARK BUTTON ===== */
+
+body.dark .cv-button {
+  background: #333;
+  color: #f0f0f0;
+}
+
+body.dark .cv-button:hover {
+  background: #444;
+}
+
+/* =======================================================
+   GENERIC CARDS
+======================================================= */
+
+.card,
+.rounded-xl {
+  border-radius: 14px !important;
+
+  border: 1px solid var(--border);
+
+  background: var(--card);
+
+  box-shadow:
+    0 2px 10px rgba(0,0,0,0.03);
+}
+
+/* =======================================================
+   EDUCATION LOGOS
+======================================================= */
+
+.inline-badge,
+.education img,
+.education-logo,
+.edu-logo {
+  height: 42px !important;
+
+  width: auto !important;
+
+  max-width: 140px !important;
+
+  object-fit: contain !important;
+
+  vertical-align: middle !important;
+
+  margin-right: 12px !important;
+
+  display: inline-block !important;
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* =======================================================
+   DATES
+======================================================= */
+
+.award-date,
+.date {
+  font-size: 14px;
+  color: #777;
+  font-style: italic;
+}
+
+/* =======================================================
+   SECTIONS
+======================================================= */
+
+section {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+/* =======================================================
+   RESPONSIVE
+======================================================= */
+
+@media (max-width: 900px) {
+
   body {
     padding-top: 4rem;
   }
 
   .hero-card {
     padding: 32px;
-    margin: 30px 16px;
+    margin: 24px 16px;
   }
 
   .hero-content {
@@ -222,53 +419,29 @@ section {
     text-align: center;
   }
 
-  .hero-text h1 {
+  h1 {
     font-size: 36px;
+  }
+
+  .position {
+    font-size: 17px;
   }
 
   .bio {
     font-size: 15.5px;
-    line-height: 1.8;
   }
 
-  .hero-photo img {
+  .hero-photo {
     width: 160px;
     height: 160px;
   }
-}
 
-/* ===== DARK MODE ===== */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
-    color: #f0f0f0;
+  .institution-logos {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  h1, h2, h3, h4, h5, h6,
-  .bio-title {
-    color: #ffffff;
-  }
-
-  .hero-card,
-  .card {
-    background-color: #1f1f1f;
-  }
-
-  .bio,
-  .affiliation {
-    color: #d0d0d0;
-  }
-
-  .links a {
-    color: #82b1ff;
-  }
-
-  .cv-button {
-    background: #333;
-    color: #f0f0f0;
-  }
-
-  .cv-button:hover {
-    background: #444;
+  .links {
+    justify-content: center;
   }
 }
