@@ -198,3 +198,6 @@ img.lazy, div.lazy {
     background: #444;
   }
 }
+.bio-title {
+  margin-bottom: 12px;
+}
