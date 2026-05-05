@@ -1,141 +1,78 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lynda Chehami - Academic Homepage</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<style>
-  /* Base reset & font */
-  body, h1, h2, h3, p, a { margin:0; padding:0; }
-  body { font-family: Arial, sans-serif; background: #f0f2f5; color: #333; line-height:1.6; }
+---
+layout: default
+title : Homepage
+navbar_title: Home
+---
 
-  /* Header */
-  header { background: #4285f4; color:white; padding:15px 30px; display:flex; justify-content:space-between; align-items:center; }
-  header nav a { color:white; text-decoration:none; margin-left:20px; font-weight:bold; }
-  header nav a:hover { text-decoration:underline; }
+<div class="lynda-card">
 
-  /* Cards verticales */
-  .card { background:white; max-width:900px; margin:30px auto; border-radius:12px; padding:30px; box-shadow:0 6px 20px rgba(0,0,0,0.08); }
+  <!-- Hero -->
+  <div class="lynda-hero">
+    <div class="lynda-hero-text">
+      <h1>Dr. HDR Lynda Chehami</h1>
+      <div class="subtitle">Maître de conférences (HDR) - Associate Professor (HDR)</div>
 
-  /* Hero */
-  .hero { text-align:center; }
-  .hero img { width:140px; height:140px; border-radius:50%; margin:20px 0; }
-  .hero h1 { font-size:2rem; }
-  .hero .subtitle { font-weight:normal; font-size:1rem; color:#555; }
-  .hero .affiliation { font-size:0.95rem; color:#4285f4; margin-top:5px; }
-  .hero .bio { margin-top:15px; font-size:1rem; line-height:1.6; }
-  .hero .cv-button { display:inline-block; margin-top:15px; padding:8px 15px; background:#e0e0e0; border-radius:5px; text-decoration:none; color:#333; font-weight:500; }
-  .hero .cv-button:hover { background:#d0d0d0; }
+      <!-- Affiliations -->
+      <div class="lynda-affiliation">Université Polytechnique Hauts-de-France</div>
+      <div class="lynda-affiliation">INSA Hauts-de-France</div>
+      <div class="lynda-affiliation">IEMN – site de Valenciennes</div>
 
-  /* Links */
-  .links { margin-top:20px; text-align:center; }
-  .links a { margin:5px 10px; text-decoration:none; color:#4285f4; font-weight:500; }
-  .links a i { margin-right:5px; }
+      <!-- Bio -->
+      <div class="lynda-bio-title">
+        Welcome to my website to learn more about my research and teaching activities!
+      </div>
+      <p class="lynda-bio">
+        I work on ultrasonic wave propagation, passive imaging and wave correlation
+        in complex and reverberant media for the characterization of thin films,
+        multilayer systems and advanced materials.  
+        I am a member of CNU 63, President of the ULTRASOUNDS technical committee of the European Acoustics Association (EEA), responsible for L2/L3 Physics-Chemistry curriculum (SPA track since Sept 2025), and internship supervisor for L3 PC SPA track.
+      </p>
 
-  /* Sections */
-  section h2 { border-bottom:2px solid #4285f4; display:inline-block; padding-bottom:5px; margin-bottom:15px; }
-  .section-item { margin-bottom:15px; display:flex; align-items:flex-start; }
-  .section-item i { font-size:1.2rem; margin-right:10px; color:#4285f4; flex-shrink:0; }
-  .section-item div { flex:1; }
+      <!-- Contact / CV -->
+      <div class="lynda-bio-title">Contact & Links</div>
+      <a class="cv-button" href="https://www.uphf.fr/iemn/membres/chehami_lynda" target="_blank">Website</a>
+      <a class="cv-button" href="https://cv.hal.science/lynda-chehami" target="_blank">Publications</a>
+      <a class="cv-button" href="https://www.linkedin.com/in/lynda-chehami-aa8106122/" target="_blank">LinkedIn</a>
 
-  /* Responsive */
-  @media(max-width:700px) { .hero img { margin:15px 0; } .section-item { flex-direction:column; } .section-item i { margin-bottom:5px; } }
-</style>
-</head>
-<body>
+      <p class="lynda-bio">
+        Adresse: Campus Mont Houy - Bâtiment Lottman, 59313 Valenciennes Cedex 9, France<br>
+        Tél : +33 3 27 51 11 87<br>
+        Email: <a href="mailto:lynda.chehami@insa-hdf.fr">lynda.chehami@insa-hdf.fr</a> / <a href="mailto:lynda.chehami@uphf.fr">lynda.chehami@uphf.fr</a>
+      </p>
 
-<header>
-  <div>Lynda Chehami</div>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#education">Education</a>
-    <a href="#experience">Experience</a>
-    <a href="#news">News</a>
-    <a href="#publications">Publications</a>
-  </nav>
-</header>
-
-<main id="home">
-
-  <!-- Hero card -->
-  <div class="card hero">
-    <img src="assets/images/photos/profile.png" alt="Profile photo">
-    <h1>Lynda Chehami <span class="subtitle">Associate Professor (HDR)</span></h1>
-    <div class="affiliation">Université Polytechnique Hauts-de-France</div>
-    <div class="affiliation">INSA Hauts-de-France</div>
-    <div class="affiliation">IEMN – CNRS UMR 8520</div>
-    <p class="bio">
-      Welcome to my website to learn more about my research and teaching activities!
-      I work on ultrasonic wave propagation, passive imaging and wave correlation
-      in complex and reverberant media for the characterization of thin films,
-      multilayer systems and advanced materials.
-    </p>
-    <a class="cv-button" href="assets/files/CV_Lynda_Chehami.pdf" target="_blank">Curriculum Vitae</a>
-
-    <div class="links">
-      <a href="mailto:lynda.chehami@uphf.fr"><i class="fas fa-envelope"></i> Email</a>
-      <a href="https://scholar.google.com/citations?user=3FhRL0gAAAAJ&hl=fr"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-      <a href="https://orcid.org/0000-0002-5561-3395"><i class="fas fa-id-badge"></i> ORCID</a>
-      <a href="https://cv.hal.science/lynda-chehami"><i class="fas fa-file-alt"></i> HAL</a>
-      <a href="https://www.researchgate.net/profile/Lynda-Chehami"><i class="fas fa-flask"></i> ResearchGate</a>
-      <a href="https://www.linkedin.com/in/lynda-chehami-aa8106122/"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      <a href="https://github.com/lchehami"><i class="fab fa-github"></i> GitHub</a>
+      <!-- Logo INSA -->
+      <img src="{{ site.baseurl }}/assets/images/logos/insa.png" alt="Logo INSA" style="width:120px; margin-top:15px;">
     </div>
+
+    <!-- Photo -->
+    <img src="{{ site.baseurl }}/assets/images/photos/profile.png" class="lynda-profile" alt="Profile photo">
   </div>
 
-  <!-- Education -->
-  <section id="education" class="card">
-    <h2>Education</h2>
-    <div class="section-item">
-      <i class="fas fa-graduation-cap"></i>
-      <div><strong>PhD in Physics</strong>, Université Polytechnique Hauts-de-France, 2010</div>
-    </div>
-    <div class="section-item">
-      <i class="fas fa-graduation-cap"></i>
-      <div><strong>MSc in Applied Physics</strong>, INSA Hauts-de-France, 2006</div>
-    </div>
-  </section>
+  <!-- Academic Links -->
+  <div class="lynda-links">
+    <a href="mailto:lynda.chehami@uphf.fr"><i class="fas fa-envelope"></i> Email</a>
+    <a href="https://scholar.google.com/citations?user=3FhRL0gAAAAJ&hl=fr"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+    <a href="https://orcid.org/0000-0002-5561-3395"><i class="fas fa-id-badge"></i> ORCID</a>
+    <a href="https://cv.hal.science/lynda-chehami"><i class="fas fa-file-alt"></i> HAL</a>
+    <a href="https://www.researchgate.net/profile/Lynda-Chehami"><i class="fas fa-flask"></i> ResearchGate</a>
+    <a href="https://www.linkedin.com/in/lynda-chehami-aa8106122/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="https://github.com/lchehami"><i class="fab fa-github"></i> GitHub</a>
+  </div>
+</div>
 
-  <!-- Experience -->
-  <section id="experience" class="card">
-    <h2>Experience</h2>
-    <div class="section-item">
-      <i class="fas fa-briefcase"></i>
-      <div>Associate Professor, Université Polytechnique Hauts-de-France, 2018–Present</div>
-    </div>
-    <div class="section-item">
-      <i class="fas fa-briefcase"></i>
-      <div>Postdoctoral Researcher, IEMN – CNRS, 2011–2018</div>
-    </div>
-  </section>
+<!-- Experience, News, Publications via widgets -->
+{% if site.data.display.homepage.show_experience %}
+  {% include widgets/experience_card.html %}
+{% endif %}
 
-  <!-- News -->
-  <section id="news" class="card">
-    <h2>News</h2>
-    <div class="section-item">
-      <i class="fas fa-newspaper"></i>
-      <div>April 2026: Publication accepted in Journal of Ultrasonics.</div>
-    </div>
-    <div class="section-item">
-      <i class="fas fa-newspaper"></i>
-      <div>March 2026: Invited talk at IEEE Ultrasonics Conference.</div>
-    </div>
-  </section>
+{% if site.data.display.homepage.show_news %}
+  {% assign count_news = site.news | size %}
+  {% if count_news > 0 %}
+    {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+  {% endif %}
+{% endif %}
 
-  <!-- Selected Publications -->
-  <section id="publications" class="card">
-    <h2>Selected Publications</h2>
-    <div class="section-item">
-      <i class="fas fa-file-alt"></i>
-      <div>Chehami, L. et al. (2026). <em>Ultrasonic wave imaging in complex media.</em> Journal of Applied Physics.</div>
-    </div>
-    <div class="section-item">
-      <i class="fas fa-file-alt"></i>
-      <div>Chehami, L. et al. (2025). <em>Wave correlation methods for thin film analysis.</em> Ultrasonics.</div>
-    </div>
-  </section>
-
-</main>
-</body>
-</html>
+{% if site.data.display.homepage.show_selected_publications %}
+  {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+  {% include widgets/publication_card.html publications=pubs title='<i class="fas fa-star"></i> Selected Publications' %}
+{% endif %}
