@@ -185,3 +185,12 @@ h2 {
     color: #f0f0f0;
   }
 }
+/* FORCE LOGOS EDUCATION PLUS GRANDS */
+img.inline-badge {
+  height: 42px !important;
+  width: auto !important;
+  max-width: 150px !important;
+  object-fit: contain !important;
+  vertical-align: middle !important;
+  margin-right: 12px !important;
+}
