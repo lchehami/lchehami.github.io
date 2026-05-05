@@ -4,21 +4,21 @@ title: Homepage
 navbar_title: Home
 ---
 
-<!-- ICONES -->
+<!-- Font Awesome (icônes) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- HEADER -->
+<!-- HEADER BLEU -->
 <div class="topbar">
   <div class="site-title">Lynda CHEHAMI</div>
 
   <div class="menu">
     <a href="/" class="active">Home</a>
     <a href="/publications/">Publications</a>
-    <button id="themeToggle">🌙</button>
+    <button id="themeToggle" aria-label="Toggle theme">🌙</button>
   </div>
 </div>
 
-<!-- HERO -->
+<!-- HERO / BIO -->
 <div class="hero-card">
 
   <div class="hero-content">
@@ -28,22 +28,22 @@ navbar_title: Home
       <h1>Dr. HDR Lynda Chehami Associate Professor</h1>
 
       <div class="affiliation">
-        <img src="{{ site.baseurl }}/assets/images/badges/uphf.png" class="aff-logo">
+        <img src="{{ site.baseurl }}/assets/images/badges/uphf.png" class="aff-logo" alt="UPHF">
         Université Polytechnique Hauts-de-France
       </div>
 
       <div class="affiliation">
-        <img src="{{ site.baseurl }}/assets/images/badges/INSA.png" class="aff-logo">
+        <img src="{{ site.baseurl }}/assets/images/badges/INSA.png" class="aff-logo" alt="INSA">
         INSA Hauts-de-France
       </div>
 
       <div class="affiliation">
-        <img src="{{ site.baseurl }}/assets/images/badges/iemn.png" class="aff-logo">
+        <img src="{{ site.baseurl }}/assets/images/badges/iemn.png" class="aff-logo" alt="IEMN">
         IEMN – site de Valenciennes, CNRS UMR 8520
       </div>
 
       <div class="affiliation">
-        <img src="{{ site.baseurl }}/assets/images/badges/cnrs.png" class="aff-logo">
+        <img src="{{ site.baseurl }}/assets/images/badges/cnrs.png" class="aff-logo" alt="CNRS">
         CNRS
       </div>
 
@@ -53,7 +53,8 @@ navbar_title: Home
 
       <p class="bio">
         Associate Professor HDR in Physical Acoustics at Université Polytechnique Hauts-de-France and INSA Hauts-de-France,
-        I work on ultrasonic wave propagation, passive imaging and wave correlation in complex and reverberant media.
+        I work on ultrasonic wave propagation, passive imaging and wave correlation in complex and reverberant media
+        for the characterization of thin films, multilayer systems and advanced materials.
       </p>
 
       <a class="cv-link" href="https://cv.hal.science/lynda-chehami" target="_blank">
@@ -63,20 +64,20 @@ navbar_title: Home
     </div>
 
     <div class="hero-photo">
-      <img src="{{ site.baseurl }}/assets/images/photos/profile.png">
+      <img src="{{ site.baseurl }}/assets/images/photos/profile.png" alt="Profile photo">
     </div>
 
   </div>
 
-  <!-- LOGOS -->
+  <!-- LOGOS INSTITUTIONS -->
   <div class="institution-logos">
-    <img src="{{ site.baseurl }}/assets/images/badges/uphf.png">
-    <img src="{{ site.baseurl }}/assets/images/badges/INSA.png">
-    <img src="{{ site.baseurl }}/assets/images/badges/iemn.png">
-    <img src="{{ site.baseurl }}/assets/images/badges/cnrs.png">
+    <img src="{{ site.baseurl }}/assets/images/badges/uphf.png" alt="UPHF">
+    <img src="{{ site.baseurl }}/assets/images/badges/INSA.png" alt="INSA">
+    <img src="{{ site.baseurl }}/assets/images/badges/iemn.png" alt="IEMN">
+    <img src="{{ site.baseurl }}/assets/images/badges/cnrs.png" alt="CNRS">
   </div>
 
-  <!-- LIENS AVEC ICONES -->
+  <!-- LIENS -->
   <div class="links">
     <a href="mailto:lynda.chehami@uphf.fr">
       <i class="fa-solid fa-envelope"></i> Email
@@ -109,24 +110,30 @@ navbar_title: Home
 
 </div>
 
-<!-- AUTRES CARTES -->
+<!-- ===== TES AUTRES CARTES ===== -->
 {% if site.data.display.homepage.show_experience %}
   {% include widgets/experience_card.html %}
 {% endif %}
 
 {% if site.data.display.homepage.show_news %}
-  {% include widgets/news_card.html %}
+  {% assign count_news = site.news | size %}
+  {% if count_news > 0 %}
+    {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+  {% endif %}
 {% endif %}
 
 {% if site.data.display.homepage.show_selected_publications %}
-  {% include widgets/publication_card.html %}
+  {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+  {% include widgets/publication_card.html publications=pubs title='<i class="fas fa-star"></i> Selected Publications' %}
 {% endif %}
 
 <style>
+/* ===== THEME ===== */
 :root {
   --bg: #f5f6f7;
   --card: #ffffff;
   --text: #111;
+  --muted: #555;
   --blue: #3392ee;
   --border: #e5e5e5;
 }
@@ -134,98 +141,184 @@ navbar_title: Home
 body.dark {
   --bg: #0f1115;
   --card: #1a1d23;
-  --text: #eee;
+  --text: #eeeeee;
+  --muted: #bbbbbb;
   --blue: #5da2ff;
-  --border: #333;
+  --border: #333842;
 }
 
+/* ===== GLOBAL ===== */
 body {
-  margin:0;
+  margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 .topbar {
   height: 70px;
   background: var(--blue);
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.site-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
 }
 
 .menu a {
-  margin-left: 25px;
+  margin-left: 20px;
+  font-size: 17px;
   text-decoration: none;
   color: #111;
 }
 
-/* HERO */
+.menu a.active {
+  font-weight: 600;
+}
+
+#themeToggle {
+  margin-left: 20px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* ===== HERO ===== */
 .hero-card {
   background: var(--card);
   border-radius: 14px;
-  padding: 35px;
+  padding: 30px 35px 18px;
   margin: 30px auto;
   max-width: 1100px;
   border: 1px solid var(--border);
 }
 
 .hero-content {
-  display:flex;
-  justify-content:space-between;
-  gap:40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.hero-text {
+  max-width: 720px;
 }
 
 .hero-text h1 {
-  font-size: 34px;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 18px;
 }
 
+/* affiliations */
 .affiliation {
-  display:flex;
-  gap:10px;
-  font-size:15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
   color: var(--blue);
+  margin-bottom: 6px;
 }
 
+.aff-logo {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* bio */
 .bio-title {
-  font-size:20px;
-  margin-top:20px;
+  font-size: 19px;
+  font-weight: 600;
+  margin-top: 18px;
+  margin-bottom: 6px;
 }
 
 .bio {
-  font-size:16px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text);
 }
 
+/* CV */
+.cv-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 14px;
+  font-size: 15px;
+  color: var(--blue);
+  text-decoration: none;
+}
+.cv-link i { margin-right: 6px; font-size: 14px; }
+
+/* photo */
 .hero-photo img {
-  width:200px;
-  border-radius:50%;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
+/* logos */
+.institution-logos {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 10px;
+}
+.institution-logos img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* links */
 .links {
-  border-top:1px solid var(--border);
-  margin-top:20px;
-  padding-top:10px;
-  display:flex;
-  gap:15px;
-  flex-wrap:wrap;
-}
-
-.links i {
-  margin-right:6px;
+  border-top: 1px solid var(--border);
+  margin-top: 16px;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 18px;
 }
 
 .links a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
   color: var(--blue);
-  text-decoration:none;
+  text-decoration: none;
+}
+.links i {
+  font-size: 14px;   /* icônes petites */
+  width: 18px;       /* alignement */
+  text-align: center;
+  margin-right: 6px;
 }
 
-/* bouton dark */
-#themeToggle {
-  background:none;
-  border:none;
-  cursor:pointer;
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+  .topbar { padding: 0 20px; }
+  .hero-card { margin: 20px; padding: 25px 20px 15px; }
+  .hero-content { flex-direction: column-reverse; align-items: center; }
+  .hero-text { max-width: 100%; }
+  .hero-text h1 { font-size: 28px; }
+  .hero-photo img { width: 150px; height: 150px; }
+  .institution-logos { justify-content: center; flex-wrap: wrap; }
 }
 </style>
 
@@ -239,7 +332,12 @@ if(localStorage.getItem("theme")==="dark"){
 
 toggle.onclick=()=>{
   document.body.classList.toggle("dark");
-  localStorage.setItem("theme",
-    document.body.classList.contains("dark") ? "dark":"light");
+  if(document.body.classList.contains("dark")){
+    localStorage.setItem("theme","dark");
+    toggle.textContent="☀️";
+  } else {
+    localStorage.setItem("theme","light");
+    toggle.textContent="🌙";
+  }
 };
 </script>
