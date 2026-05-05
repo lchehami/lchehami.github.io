@@ -273,3 +273,18 @@ p, li {
   color: #666;
   font-style: italic;
 }
+.inline-badge,
+.education img {
+  max-height: 24px;
+  width: auto;
+  object-fit: contain;
+}
+
+.education a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.education a:hover {
+  text-decoration: underline;
+}
