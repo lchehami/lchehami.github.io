@@ -40,20 +40,29 @@ education:
 - name: Université Polytechnique Hauts-de-France
   logo: /assets/images/badges/uphf.png
   position: >-
-    Habilitation to Supervise Research (HDR) in Acoustics<br/>
-    IEMN Laboratory
+    <strong>Habilitation to Supervise Research (HDR) in Acoustics</strong><br/>
+    <em>Title:</em> Passive imaging and wave correlation in complex and reverberant media<br/>
+    IEMN Laboratory<br/>
+    <a href="https://cv.hal.science/lynda-chehami" target="_blank">
+      <i class="fa-solid fa-file-lines"></i> HDR Manuscript
+    </a>
   date: 22 Sep. 2022
 
 - name: Université Polytechnique Hauts-de-France
   logo: /assets/images/badges/uphf.png
   position: >-
-    PhD in Electronics and Acoustics<br/>
-    IEMN Laboratory & Institut Langevin
+    <strong>PhD in Electronics and Acoustics</strong><br/>
+    <em>Title:</em> Passive imaging and Green's function retrieval from diffuse elastic waves in plates<br/>
+    IEMN Laboratory & Institut Langevin<br/>
+    <a href="file:///C:/Users/lchehami/Downloads/CHEHAMI_Lynda2-1.pdf" target="_blank">
+      <i class="fa-solid fa-file-lines"></i> PhD Manuscript
+    </a>
   date: 1 Dec. 2015
 
 - name: Université Montpellier 2
   logo: /assets/images/badges/ies.png
-  position: Master's Degree in Sensors and Associated Systems
+  position: >-
+    <strong>Master's Degree in Sensors and Associated Systems</strong>
   date: 2012
 
 awards:
