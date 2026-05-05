@@ -2,10 +2,13 @@
 layout: default
 title: Homepage
 navbar_title: Home
+---
 
+<!-- bouton dark mode -->
 <button id="themeToggle" style="position:fixed; top:20px; right:20px; z-index:1000;">
   🌙
 </button>
+
 <div class="hero-card">
   <div class="hero-content">
 
@@ -43,7 +46,6 @@ navbar_title: Home
         Lynda Chehami is an Associate Professor at Université Polytechnique Hauts-de-France and INSA Hauts-de-France.
         She works on ultrasonic wave propagation, passive imaging, and wave correlation in complex and reverberant media,
         for the characterization of thin films, multilayer systems, and advanced materials.
-        Member of CNU 63, Chair of the ULTRASOUNDS technical committee (EEA), and responsible for the Physics-Chemistry curriculum for the licence degree.
       </p>
 
       <a class="cv-button" href="https://cv.hal.science/lynda-chehami" target="_blank">
@@ -51,161 +53,86 @@ navbar_title: Home
       </a>
 
       <p class="contact">
-        Adresse: Campus Mont Houy - Bâtiment Lottman, 59313 Valenciennes Cedex 9, France<br>
-        Tél : +33 3 27 51 11 87<br>
+        Adresse: Valenciennes, France<br>
         Email:
-        <a href="mailto:lynda.chehami@insa-hdf.fr">lynda.chehami@insa-hdf.fr</a> /
         <a href="mailto:lynda.chehami@uphf.fr">lynda.chehami@uphf.fr</a>
       </p>
     </div>
 
     <div class="hero-photo">
-      <img src="{{ site.baseurl }}/assets/images/photos/profile.png" alt="Profile photo">
+      <img src="{{ site.baseurl }}/assets/images/photos/profile.png">
     </div>
 
   </div>
 
   <div class="links">
-    <a href="mailto:lynda.chehami@uphf.fr"><i class="fas fa-envelope"></i> Email</a>
-    <a href="https://scholar.google.com/citations?user=3FhRL0gAAAAJ&hl=fr"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-    <a href="https://orcid.org/0000-0002-5561-3395"><i class="fas fa-id-badge"></i> ORCID</a>
-    <a href="https://cv.hal.science/lynda-chehami"><i class="fas fa-file-alt"></i> HAL</a>
-    <a href="https://www.researchgate.net/profile/Lynda-Chehami"><i class="fas fa-flask"></i> ResearchGate</a>
-    <a href="https://www.linkedin.com/in/lynda-chehami-aa8106122/"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    <a href="https://github.com/lchehami"><i class="fab fa-github"></i> GitHub</a>
+    <a href="https://scholar.google.com/citations?user=3FhRL0gAAAAJ&hl=fr">Google Scholar</a>
+    <a href="https://orcid.org/0000-0002-5561-3395">ORCID</a>
+    <a href="https://github.com/lchehami">GitHub</a>
   </div>
 </div>
 
-{% if site.data.display.homepage.show_experience %}
-  {% include widgets/experience_card.html %}
-{% endif %}
-
-{% if site.data.display.homepage.show_news %}
-  {% assign count_news = site.news | size %}
-  {% if count_news > 0 %}
-    {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-  {% endif %}
-{% endif %}
-
-{% if site.data.display.homepage.show_selected_publications %}
-  {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-  {% include widgets/publication_card.html publications=pubs title='<i class="fas fa-star"></i> Selected Publications' %}
-{% endif %}
-
 <style>
+:root {
+  --bg: #ffffff;
+  --card: #ffffff;
+  --text: #111;
+  --subtext: #555;
+  --blue: #1a73e8;
+  --border: #e5e5e5;
+}
+
+body.dark {
+  --bg: #0f1115;
+  --card: #1a1d23;
+  --text: #eaeaea;
+  --subtext: #bbbbbb;
+  --blue: #4da3ff;
+  --border: #2a2f36;
+}
+
 body {
-  background: #eef1f1;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial;
 }
 
 .hero-card {
-  background: #f7f7f7;
-  border-radius: 18px;
-  padding: 45px 50px 20px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 1100px;
   margin: 30px auto;
-  max-width: 1200px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
-.hero-content {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.hero-text {
-  flex: 1;
-  min-width: 300px;
-}
-
-.hero-text h1 {
-  font-size: 34px;
-  font-weight: 500;
-  margin: 0 0 8px;
-  color: #111;
-}
-
-.subtitle {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 25px;
-}
-
-.affiliation {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #1a73e8;
-  font-size: 16px;
-  margin-bottom: 8px;
-}
-
-.aff-logo {
-  height: 26px;
-}
-
-.lynda-bio-title {
-  font-size: 20px;
-  font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 8px;
-}
-
-.bio {
-  font-size: 16px;
-  line-height: 1.6;
-  max-width: 700px;
-}
-
-.cv-button {
-  display: inline-block;
-  font-size: 16px;
-  margin: 20px 0 15px;
-  color: #1a73e8;
-  text-decoration: none;
-}
-
-.cv-button::before {
-  content: "📄 ";
-}
-
-.contact {
-  font-size: 14px;
-  color: #333;
-}
-
-.hero-photo img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-}
+.affiliation { color: var(--blue); }
 
 .links {
-  border-top: 1px solid #ddd;
-  margin-top: 25px;
-  padding-top: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+  border-top: 1px solid var(--border);
+  margin-top: 20px;
+  padding-top: 10px;
 }
 
-.links a {
-  color: #1a73e8;
-  font-size: 15px;
-  text-decoration: none;
-}
-
-@media(max-width:900px) {
-  .hero-content {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-  .hero-photo img {
-    width: 150px;
-    height: 150px;
-  }
-}
+.links a { color: var(--blue); }
 </style>
+
+<script>
+const toggle = document.getElementById("themeToggle");
+
+if(localStorage.getItem("theme") === "dark"){
+  document.body.classList.add("dark");
+}
+
+toggle.onclick = () => {
+  document.body.classList.toggle("dark");
+
+  if(document.body.classList.contains("dark")){
+    localStorage.setItem("theme", "dark");
+    toggle.textContent = "☀️";
+  } else {
+    localStorage.setItem("theme", "light");
+    toggle.textContent = "🌙";
+  }
+};
+</script>
