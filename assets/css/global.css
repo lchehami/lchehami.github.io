@@ -199,5 +199,13 @@ img.lazy, div.lazy {
   }
 }
 .bio-title {
-  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 22px;
+  margin-bottom: 14px;
+}
+
+.bio {
+  font-size: 15px;
+  line-height: 1.6;
 }
