@@ -91,3 +91,129 @@ div.lazy {
 .email-text {
     font-family: Source Code Pro, monospace;
 }
+
+
+/* === Hero Card Samuel Raetz style === */
+.hero-card {
+  background-color: #fff;
+  border-radius: 0.8rem; /* cohérent avec tes autres cartes */
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 1000px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.affiliations {
+  margin-bottom: 15px;
+}
+
+.affiliation {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.aff-logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.bio {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.cv-button {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 8px 15px;
+  background: #e0e0e0;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.cv-button:hover {
+  background: #d0d0d0;
+}
+
+.links a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #4285f4;
+  font-weight: 500;
+}
+
+.links a i {
+  margin-right: 5px;
+}
+
+.hero-photo {
+  flex-shrink: 0;
+  margin-top: 10px;
+}
+
+.hero-photo img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+/* Responsive pour mobile */
+@media(max-width:800px){
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-text {
+    margin-right: 0;
+    text-align: center;
+  }
+  .hero-photo {
+    margin-top: 20px;
+  }
+}
+
+/* Mode sombre automatique */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  .hero-card {
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  }
+  .links a {
+    color: #82b1ff;
+  }
+}
