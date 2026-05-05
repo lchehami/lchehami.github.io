@@ -13,22 +13,22 @@ navbar_title: Home
 
       <div class="affiliations">
         <div class="affiliation">
-          <img src="{{ site.baseurl }}/assets/images/badges/uphf.png" alt="UPHF" class="aff-logo">
+          <img src="{{ site.baseurl }}/assets/images/badges/uphf.png" class="aff-logo">
           Université Polytechnique Hauts-de-France
         </div>
 
         <div class="affiliation">
-          <img src="{{ site.baseurl }}/assets/images/badges/INSA.png" alt="INSA" class="aff-logo">
+          <img src="{{ site.baseurl }}/assets/images/badges/INSA.png" class="aff-logo">
           INSA Hauts-de-France
         </div>
 
         <div class="affiliation">
-          <img src="{{ site.baseurl }}/assets/images/badges/iemn.png" alt="IEMN" class="aff-logo">
+          <img src="{{ site.baseurl }}/assets/images/badges/iemn.png" class="aff-logo">
           IEMN – site de Valenciennes
         </div>
 
         <div class="affiliation">
-          <img src="{{ site.baseurl }}/assets/images/badges/cnrs.png" alt="CNRS" class="aff-logo">
+          <img src="{{ site.baseurl }}/assets/images/badges/cnrs.png" class="aff-logo">
           CNRS
         </div>
       </div>
@@ -93,14 +93,15 @@ navbar_title: Home
 <style>
 body {
   background: #eef1f1;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .hero-card {
   background: #f7f7f7;
   border-radius: 18px;
-  padding: 70px 72px 28px;
-  margin: 36px auto;
-  max-width: 1600px;
+  padding: 45px 50px 20px;
+  margin: 30px auto;
+  max-width: 1200px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
@@ -108,7 +109,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 60px;
+  gap: 40px;
 }
 
 .hero-text {
@@ -117,60 +118,50 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 56px;
-  font-weight: 400;
-  margin: 0 0 10px;
+  font-size: 34px;
+  font-weight: 500;
+  margin: 0 0 8px;
   color: #111;
 }
 
 .subtitle {
-  font-size: 30px;
-  color: #111;
-  margin-bottom: 42px;
-}
-
-.affiliations {
-  margin-bottom: 35px;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 25px;
 }
 
 .affiliation {
   display: flex;
   align-items: center;
-  gap: 14px;
-  color: #0066ff;
-  font-size: 24px;
-  margin-bottom: 20px;
+  gap: 10px;
+  color: #1a73e8;
+  font-size: 16px;
+  margin-bottom: 8px;
 }
 
 .aff-logo {
-  width: auto;
-  height: 42px;
-  object-fit: contain;
+  height: 26px;
 }
 
 .lynda-bio-title {
-  font-size: 30px;
-  font-weight: 700;
-  margin-top: 38px;
-  margin-bottom: 12px;
-  color: #111;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 8px;
 }
 
 .bio {
-  font-size: 25px;
-  line-height: 1.45;
-  color: #111;
-  max-width: 1150px;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 700px;
 }
 
 .cv-button {
   display: inline-block;
-  font-size: 24px;
-  margin: 35px 0 20px;
-  color: #0066ff;
-  background: transparent;
+  font-size: 16px;
+  margin: 20px 0 15px;
+  color: #1a73e8;
   text-decoration: none;
-  font-weight: 400;
 }
 
 .cv-button::before {
@@ -178,76 +169,41 @@ body {
 }
 
 .contact {
-  font-size: 21px;
-  line-height: 1.5;
-  margin-top: 15px;
-}
-
-.hero-photo {
-  flex-shrink: 0;
-  margin-top: 0;
+  font-size: 14px;
+  color: #333;
 }
 
 .hero-photo img {
-  width: 300px;
-  height: 300px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .links {
-  border-top: 1px solid #ccc;
-  margin-top: 38px;
-  padding-top: 25px;
+  border-top: 1px solid #ddd;
+  margin-top: 25px;
+  padding-top: 15px;
   display: flex;
   flex-wrap: wrap;
-  gap: 28px;
+  gap: 15px;
 }
 
 .links a {
-  color: #0066ff;
-  font-size: 24px;
+  color: #1a73e8;
+  font-size: 15px;
   text-decoration: none;
-  font-weight: 400;
-}
-
-.links a i {
-  margin-right: 6px;
 }
 
 @media(max-width:900px) {
-  .hero-card {
-    padding: 35px 25px;
-    margin: 20px;
-  }
-
   .hero-content {
     flex-direction: column-reverse;
     align-items: center;
-    gap: 30px;
-  }
-
-  .hero-text {
-    text-align: left;
-  }
-
-  .hero-text h1 {
-    font-size: 40px;
-  }
-
-  .subtitle {
-    font-size: 24px;
-  }
-
-  .bio,
-  .affiliation,
-  .links a {
-    font-size: 20px;
   }
 
   .hero-photo img {
-    width: 230px;
-    height: 230px;
+    width: 150px;
+    height: 150px;
   }
 }
 </style>
