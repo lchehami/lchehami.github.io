@@ -4,81 +4,80 @@ title: Homepage
 navbar_title: Home
 ---
 
-<!-- Hero Card -->
+<!-- HERO CARD -->
 <div class="hero-card">
-  <div class="hero-content">
-    <!-- Texte à gauche -->
-    <div class="hero-text">
-      <h1>Dr. HDR Lynda Chehami</h1>
-      <div class="subtitle">Maître de conférences (HDR) - Associate Professor (HDR)</div>
 
-      <!-- Affiliations avec logos -->
-      <div class="affiliations">
-        <div class="affiliation">
-          <img src="{{ site.baseurl }}/assets/images/badges/uphf.png" alt="UPHF" class="aff-logo"> Université Polytechnique Hauts-de-France
-        </div>
-        <div class="affiliation">
-          <img src="{{ site.baseurl }}/assets/images/badges/INSA.png" alt="INSA" class="aff-logo"> INSA Hauts-de-France
-        </div>
-        <div class="affiliation">
-          <img src="{{ site.baseurl }}/assets/images/badges/iemn.png" alt="IEMN" class="aff-logo"> IEMN – site de Valenciennes
-        </div>
-          <div class="affiliation">
-          <img src="{{ site.baseurl }}/assets/images/badges/cnrs.png" alt="CNRS" class="aff-logo"> CNRS
-        </div>
+  <div class="hero-content">
+
+    <!-- TEXTE -->
+    <div class="hero-text">
+
+      <h1>Dr. HDR Lynda Chehami Associate Professor</h1>
+
+      <div class="affiliation">
+        <img src="{{ site.baseurl }}/assets/images/badges/uphf.png" class="aff-logo">
+        Université Polytechnique Hauts-de-France
       </div>
 
-<!-- Bio -->
-<div class="lynda-bio-title">
-  <strong>Welcome to my website to learn more about my research and teaching activities!</strong>
-</div>
+      <div class="affiliation">
+        <img src="{{ site.baseurl }}/assets/images/badges/INSA.png" class="aff-logo">
+        INSA Hauts-de-France
+      </div>
 
-<p class="bio">
-  Lynda Chehami is an Associate Professor at Université Polytechnique Hauts-de-France and INSA Hauts-de-France. 
-  She works on ultrasonic wave propagation, passive imaging, and wave correlation in complex and reverberant media, 
-  for the characterization of thin films, multilayer systems, and advanced materials. 
-  Member of CNU 63, Chair of the ULTRASOUNDS technical committee (EEA), and responsible for the Physics-Chemistry curriculum for the licence degree.
-</p>
+      <div class="affiliation">
+        <img src="{{ site.baseurl }}/assets/images/badges/iemn.png" class="aff-logo">
+        IEMN – site de Valenciennes, CNRS UMR 8520
+      </div>
 
-      <p style="margin-bottom:10px; font-style:italic;">
-  For more details about my profile, see:
-</p>
-<a class="cv-button" href="https://cv.hal.science/lynda-chehami" target="_blank">CV</a>
-     
+      <div class="bio-title">
+        Welcome to my website to learn a bit more about my research and teaching activities!
+      </div>
 
-      <!-- Contact -->
       <p class="bio">
-        Adresse: Campus Mont Houy - Bâtiment Lottman, 59313 Valenciennes Cedex 9, France<br>
-        Tél : +33 3 27 51 11 87<br>
-        Email: <a href="mailto:lynda.chehami@insa-hdf.fr">lynda.chehami@insa-hdf.fr</a> /
-        <a href="mailto:lynda.chehami@uphf.fr">lynda.chehami@uphf.fr</a>
+        Associate Professor HDR in Physical Acoustics at Université Polytechnique Hauts-de-France and INSA Hauts-de-France,
+        I work on ultrasonic wave propagation, passive imaging and wave correlation in complex and reverberant media
+        for the characterization of thin films, multilayer systems and advanced materials.
       </p>
+
+      <a class="cv-link" href="https://cv.hal.science/lynda-chehami" target="_blank">
+        Curriculum Vitae
+      </a>
+
     </div>
 
-    <!-- Photo à droite -->
+    <!-- PHOTO -->
     <div class="hero-photo">
       <img src="{{ site.baseurl }}/assets/images/photos/profile.png" alt="Profile photo">
     </div>
+
   </div>
 
-  <!-- Liens académiques -->
-  <div class="links">
-    <a href="mailto:lynda.chehami@uphf.fr"><i class="fas fa-envelope"></i> Email</a>
-    <a href="https://scholar.google.com/citations?user=3FhRL0gAAAAJ&hl=fr"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-    <a href="https://orcid.org/0000-0002-5561-3395"><i class="fas fa-id-badge"></i> ORCID</a>
-    <a href="https://cv.hal.science/lynda-chehami"><i class="fas fa-file-alt"></i> HAL</a>
-    <a href="https://www.researchgate.net/profile/Lynda-Chehami"><i class="fas fa-flask"></i> ResearchGate</a>
-    <a href="https://www.linkedin.com/in/lynda-chehami-aa8106122/"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    <a href="https://github.com/lchehami"><i class="fab fa-github"></i> GitHub</a>
+  <!-- LOGOS -->
+  <div class="institution-logos">
+    <img src="{{ site.baseurl }}/assets/images/badges/iemn.png">
+    <img src="{{ site.baseurl }}/assets/images/badges/INSA.png">
+    <img src="{{ site.baseurl }}/assets/images/badges/cnrs.png">
   </div>
+
+  <!-- LIENS -->
+  <div class="links">
+    <a href="mailto:lynda.chehami@uphf.fr">✉ lynda.chehami(at)uphf.fr</a>
+    <a href="https://scholar.google.com/citations?user=3FhRL0gAAAAJ&hl=fr">🎓 Google Scholar</a>
+    <a href="https://orcid.org/0000-0002-5561-3395">ⓘ ORCID</a>
+    <a href="https://cv.hal.science/lynda-chehami">HAL</a>
+    <a href="https://www.researchgate.net/profile/Lynda-Chehami">ResearchGate</a>
+    <a href="https://www.linkedin.com/in/lynda-chehami-aa8106122/">LinkedIn</a>
+    <a href="https://github.com/lchehami">GitHub</a>
+  </div>
+
 </div>
 
-<!-- Experience -->
+<!-- EXPERIENCE -->
 {% if site.data.display.homepage.show_experience %}
   {% include widgets/experience_card.html %}
 {% endif %}
 
-<!-- News -->
+<!-- NEWS -->
 {% if site.data.display.homepage.show_news %}
   {% assign count_news = site.news | size %}
   {% if count_news > 0 %}
@@ -86,7 +85,7 @@ navbar_title: Home
   {% endif %}
 {% endif %}
 
-<!-- Selected Publications -->
+<!-- PUBLICATIONS -->
 {% if site.data.display.homepage.show_selected_publications %}
   {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
   {% include widgets/publication_card.html publications=pubs title='<i class="fas fa-star"></i> Selected Publications' %}
@@ -94,109 +93,131 @@ navbar_title: Home
 
 <!-- CSS -->
 <style>
+body {
+  background: #e9ecec;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .hero-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 30px;
-  margin: 40px auto;
-  max-width: 1000px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  background: #f7f7f7;
+  border-radius: 18px;
+  padding: 70px 72px 28px;
+  margin: 36px auto;
+  max-width: 1500px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
 .hero-content {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 70px;
 }
 
 .hero-text {
   flex: 1;
-  min-width: 300px;
-  margin-right: 20px;
 }
 
 .hero-text h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  font-weight: normal;
-  color: #555;
-  margin-bottom: 15px;
-}
-
-.affiliations {
-  margin-bottom: 15px;
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 40px;
 }
 
 .affiliation {
   display: flex;
   align-items: center;
-  margin-top: 5px;
+  gap: 16px;
+  color: #0066ff;
+  font-size: 23px;
+  margin-bottom: 18px;
 }
 
 .aff-logo {
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
+  height: 40px;
+}
+
+.bio-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 35px;
+  margin-bottom: 10px;
 }
 
 .bio {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 15px;
+  font-size: 23px;
+  line-height: 1.5;
+  max-width: 1000px;
 }
 
-.cv-button {
+.cv-link {
   display: inline-block;
-  margin-bottom: 15px;
-  padding: 8px 15px;
-  background: #e0e0e0;
-  border-radius: 5px;
+  margin-top: 30px;
+  font-size: 22px;
+  color: #0066ff;
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
 }
 
-.cv-button:hover {
-  background: #d0d0d0;
-}
-
-.links a {
-  margin-right: 15px;
-  text-decoration: none;
-  color: #4285f4;
-  font-weight: 500;
-}
-
-.links a i {
-  margin-right: 5px;
-}
-
-.hero-photo {
-  flex-shrink: 0;
-  margin-top: 10px;
+.cv-link::before {
+  content: "📄 ";
 }
 
 .hero-photo img {
-  width: 160px;
-  height: 160px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
-@media(max-width:800px){
+.institution-logos {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.institution-logos img {
+  height: 55px;
+}
+
+.links {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.links a {
+  font-size: 22px;
+  color: #0066ff;
+  text-decoration: none;
+}
+
+@media(max-width:900px) {
   .hero-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
-  .hero-text {
-    margin-right: 0;
-    text-align: center;
+
+  .hero-text h1 {
+    font-size: 34px;
   }
-  .hero-photo {
-    margin-top: 20px;
+
+  .affiliation,
+  .bio,
+  .links a {
+    font-size: 18px;
+  }
+
+  .hero-photo img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .institution-logos {
+    justify-content: center;
   }
 }
 </style>
