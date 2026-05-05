@@ -6,7 +6,7 @@
 <title>Lynda Chehami - Academic Homepage</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
-  /* Reset & font */
+  /* Base reset & font */
   body, h1, h2, h3, p, a { margin:0; padding:0; }
   body { font-family: Arial, sans-serif; background: #f0f2f5; color: #333; line-height:1.6; }
 
@@ -15,10 +15,10 @@
   header nav a { color:white; text-decoration:none; margin-left:20px; font-weight:bold; }
   header nav a:hover { text-decoration:underline; }
 
-  /* Card container */
+  /* Cards verticales */
   .card { background:white; max-width:900px; margin:30px auto; border-radius:12px; padding:30px; box-shadow:0 6px 20px rgba(0,0,0,0.08); }
 
-  /* Hero section */
+  /* Hero */
   .hero { text-align:center; }
   .hero img { width:140px; height:140px; border-radius:50%; margin:20px 0; }
   .hero h1 { font-size:2rem; }
@@ -35,10 +35,12 @@
 
   /* Sections */
   section h2 { border-bottom:2px solid #4285f4; display:inline-block; padding-bottom:5px; margin-bottom:15px; }
-  .section-item { margin-bottom:15px; }
+  .section-item { margin-bottom:15px; display:flex; align-items:flex-start; }
+  .section-item i { font-size:1.2rem; margin-right:10px; color:#4285f4; flex-shrink:0; }
+  .section-item div { flex:1; }
 
   /* Responsive */
-  @media(max-width:700px) { .hero img { margin:15px 0; } }
+  @media(max-width:700px) { .hero img { margin:15px 0; } .section-item { flex-direction:column; } .section-item i { margin-bottom:5px; } }
 </style>
 </head>
 <body>
@@ -55,6 +57,7 @@
 </header>
 
 <main id="home">
+
   <!-- Hero card -->
   <div class="card hero">
     <img src="assets/images/photos/profile.png" alt="Profile photo">
@@ -84,31 +87,55 @@
   <!-- Education -->
   <section id="education" class="card">
     <h2>Education</h2>
-    <div class="section-item"><strong>PhD in Physics</strong>, Université Polytechnique Hauts-de-France, 2010</div>
-    <div class="section-item"><strong>MSc in Applied Physics</strong>, INSA Hauts-de-France, 2006</div>
+    <div class="section-item">
+      <i class="fas fa-graduation-cap"></i>
+      <div><strong>PhD in Physics</strong>, Université Polytechnique Hauts-de-France, 2010</div>
+    </div>
+    <div class="section-item">
+      <i class="fas fa-graduation-cap"></i>
+      <div><strong>MSc in Applied Physics</strong>, INSA Hauts-de-France, 2006</div>
+    </div>
   </section>
 
   <!-- Experience -->
   <section id="experience" class="card">
     <h2>Experience</h2>
-    <div class="section-item">Associate Professor, Université Polytechnique Hauts-de-France, 2018–Present</div>
-    <div class="section-item">Postdoctoral Researcher, IEMN – CNRS, 2011–2018</div>
+    <div class="section-item">
+      <i class="fas fa-briefcase"></i>
+      <div>Associate Professor, Université Polytechnique Hauts-de-France, 2018–Present</div>
+    </div>
+    <div class="section-item">
+      <i class="fas fa-briefcase"></i>
+      <div>Postdoctoral Researcher, IEMN – CNRS, 2011–2018</div>
+    </div>
   </section>
 
   <!-- News -->
   <section id="news" class="card">
     <h2>News</h2>
-    <div class="section-item">April 2026: Publication accepted in Journal of Ultrasonics.</div>
-    <div class="section-item">March 2026: Invited talk at IEEE Ultrasonics Conference.</div>
+    <div class="section-item">
+      <i class="fas fa-newspaper"></i>
+      <div>April 2026: Publication accepted in Journal of Ultrasonics.</div>
+    </div>
+    <div class="section-item">
+      <i class="fas fa-newspaper"></i>
+      <div>March 2026: Invited talk at IEEE Ultrasonics Conference.</div>
+    </div>
   </section>
 
   <!-- Selected Publications -->
   <section id="publications" class="card">
     <h2>Selected Publications</h2>
-    <div class="section-item">Chehami, L. et al. (2026). <em>Ultrasonic wave imaging in complex media.</em> Journal of Applied Physics.</div>
-    <div class="section-item">Chehami, L. et al. (2025). <em>Wave correlation methods for thin film analysis.</em> Ultrasonics.</div>
+    <div class="section-item">
+      <i class="fas fa-file-alt"></i>
+      <div>Chehami, L. et al. (2026). <em>Ultrasonic wave imaging in complex media.</em> Journal of Applied Physics.</div>
+    </div>
+    <div class="section-item">
+      <i class="fas fa-file-alt"></i>
+      <div>Chehami, L. et al. (2025). <em>Wave correlation methods for thin film analysis.</em> Ultrasonics.</div>
+    </div>
   </section>
-</main>
 
+</main>
 </body>
 </html>
