@@ -185,17 +185,18 @@ h2 {
     color: #f0f0f0;
   }
 }
-/* ===== FIX LOGOS EDUCATION (BOOTSTRAP) ===== */
-.education img,
+/* ===== FIX LOGOS EDUCATION ONLY ===== */
+.card .inline-badge,
 img.inline-badge,
 .img-fluid.inline-badge {
-  height: 40px !important;
+  height: 42px !important;
   width: auto !important;
-  max-width: none !important;
-  object-fit: contain;
-  vertical-align: middle;
-  margin-right: 10px;
+  max-width: 140px !important;
+  object-fit: contain !important;
+  vertical-align: middle !important;
+  margin-right: 12px !important;
+  display: inline-block !important;
 }
-.card img {
-  height: 40px !important;
-}
+
+/* Ne pas forcer toutes les images des cartes */
+/* SUPPRIMER : .card img { height: 40px !important; } */
