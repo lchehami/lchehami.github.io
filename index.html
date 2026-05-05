@@ -264,3 +264,27 @@ toggle.onclick=()=>{
   }
 };
 </script>
+
+<div class="awards-section">
+  <h2>Honors & Awards</h2>
+
+  <ul class="awards-list">
+    {% for award in site.data.profile.awards %}
+      <li>
+
+        <div class="award-line">
+          <span>{{ award.name }}</span>
+          <span class="award-date">{{ award.date }}</span>
+        </div>
+
+        {% if award.description %}
+          <div class="award-desc">
+            {{ award.description }}
+          </div>
+        {% endif %}
+
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
