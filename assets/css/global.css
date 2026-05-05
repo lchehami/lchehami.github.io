@@ -276,10 +276,13 @@ p, li {
   font-style: italic;
 }
 .inline-badge,
+/* ===== LOGOS EDUCATION ===== */
 .education img {
-  max-height: 24px;
+  height: 40px;      /* ← taille idéale */
   width: auto;
   object-fit: contain;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 .education a {
