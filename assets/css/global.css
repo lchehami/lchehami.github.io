@@ -209,3 +209,38 @@ img.lazy, div.lazy {
   font-size: 15px;
   line-height: 1.6;
 }
+/* ===== TYPOGRAPHIE GLOBALE ===== */
+body {
+  font-size: 17px;   /* ↑ taille globale */
+}
+
+/* TITRE PRINCIPAL */
+.hero-text h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+/* WELCOME */
+.bio-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 14px;
+}
+
+/* TEXTE BIO */
+.bio {
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 750px;
+}
+
+/* LIENS */
+.links a {
+  font-size: 16px;
+}
+
+/* MENU */
+.navbar a {
+  font-size: 18px;
+}
