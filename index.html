@@ -53,9 +53,9 @@ navbar_title: Home
   </div>
 
   <div class="institution-logos">
-    <img src="{{ site.baseurl }}/assets/images/badges/iemn.png">
-    <img src="{{ site.baseurl }}/assets/images/badges/INSA.png">
-    <img src="{{ site.baseurl }}/assets/images/badges/cnrs.png">
+    <img src="{{ site.baseurl }}/assets/images/badges/iemn.png" alt="IEMN">
+    <img src="{{ site.baseurl }}/assets/images/badges/INSA.png" alt="INSA">
+    <img src="{{ site.baseurl }}/assets/images/badges/cnrs.png" alt="CNRS">
   </div>
 
   <div class="links">
@@ -70,10 +70,12 @@ navbar_title: Home
 
 </div>
 
+<!-- EXPERIENCE -->
 {% if site.data.display.homepage.show_experience %}
   {% include widgets/experience_card.html %}
 {% endif %}
 
+<!-- NEWS -->
 {% if site.data.display.homepage.show_news %}
   {% assign count_news = site.news | size %}
   {% if count_news > 0 %}
@@ -81,6 +83,7 @@ navbar_title: Home
   {% endif %}
 {% endif %}
 
+<!-- SELECTED PUBLICATIONS -->
 {% if site.data.display.homepage.show_selected_publications %}
   {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
   {% include widgets/publication_card.html publications=pubs title='<i class="fas fa-star"></i> Selected Publications' %}
@@ -129,9 +132,9 @@ body {
   background: var(--card);
   color: var(--text);
   border-radius: 18px;
-  padding: 70px 72px 28px;
+  padding: 50px 60px 28px;
   margin: 36px auto;
-  max-width: 1500px;
+  max-width: 1400px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
@@ -139,52 +142,55 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 70px;
+  gap: 60px;
 }
 
 .hero-text {
   flex: 1;
+  max-width: 850px;
 }
 
 .hero-text h1 {
-  font-size: 50px;
+  font-size: 44px;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin: 0 0 30px;
   color: var(--text);
 }
 
 .affiliation {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   color: var(--blue);
-  font-size: 23px;
-  margin-bottom: 18px;
+  font-size: 18px;
+  margin-bottom: 14px;
 }
 
 .aff-logo {
-  height: 40px;
+  height: 34px;
+  width: auto;
+  object-fit: contain;
 }
 
 .bio-title {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
-  margin-top: 35px;
+  margin-top: 28px;
   margin-bottom: 10px;
   color: var(--text);
 }
 
 .bio {
-  font-size: 23px;
-  line-height: 1.5;
-  max-width: 1000px;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 850px;
   color: var(--text);
 }
 
 .cv-link {
   display: inline-block;
-  margin-top: 30px;
-  font-size: 22px;
+  margin-top: 24px;
+  font-size: 18px;
   color: var(--blue);
   text-decoration: none;
 }
@@ -194,8 +200,8 @@ body {
 }
 
 .hero-photo img {
-  width: 280px;
-  height: 280px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -203,13 +209,16 @@ body {
 .institution-logos {
   display: flex;
   justify-content: flex-end;
-  gap: 25px;
-  margin-top: 10px;
-  margin-bottom: 25px;
+  align-items: center;
+  gap: 24px;
+  margin-top: 8px;
+  margin-bottom: 24px;
 }
 
 .institution-logos img {
-  height: 55px;
+  height: 48px;
+  width: auto;
+  object-fit: contain;
 }
 
 .links {
@@ -217,19 +226,29 @@ body {
   padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 24px;
 }
 
 .links a {
-  font-size: 22px;
+  font-size: 17px;
   color: var(--blue);
   text-decoration: none;
 }
 
 @media(max-width:900px) {
+  .hero-card {
+    padding: 35px 25px 22px;
+    margin: 20px;
+  }
+
   .hero-content {
     flex-direction: column-reverse;
     align-items: center;
+    gap: 30px;
+  }
+
+  .hero-text {
+    max-width: 100%;
   }
 
   .hero-text h1 {
@@ -238,8 +257,13 @@ body {
 
   .affiliation,
   .bio,
+  .cv-link,
   .links a {
-    font-size: 18px;
+    font-size: 17px;
+  }
+
+  .bio-title {
+    font-size: 21px;
   }
 
   .hero-photo img {
