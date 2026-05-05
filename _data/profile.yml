@@ -1,115 +1,84 @@
 primary_name: "Lynda Chehami"
 secondary_name: ""
-navbar_name: "Your Name"
+navbar_name: "Lynda Chehami"
 
 positions:
-- name: Associate Professor HDR in Physical Acoustics
+- name: Associate Professor (HDR) in Physical Acoustics
 - name: Université Polytechnique Hauts-de-France
-  logo: /assets/images/badges/uphf.png  # Logo is optional
-  - name: INSA Hauts-de-France
-  logo: /assets/images/badges/INSA.png  # Logo is optional
- - name: IEMN
-logo: /assets/images/badges/iemn.png  # Logo is optional
+  logo: /assets/images/badges/uphf.png
+- name: INSA Hauts-de-France
+  logo: /assets/images/badges/INSA.png
+- name: IEMN
+  logo: /assets/images/badges/iemn.png
 - name: CNRS
-logo: /assets/images/badges/CNRS.png  # Logo is optional
-
-
+  logo: /assets/images/badges/CNRS.png
 
 email: "lynda.chehami@uphf.fr"
-# cv_link: C:\Users\lchehami\Desktop\Enseignements recherche MCF\Concours Prof_22Mai_24\Dossier Recherche-mise à jour\Rapport_scientifique\CV_en
-gscholar: https://scholar.google.com/citations?user=3FhRL0gAAAAJ&hl=fr  # This is an example, replace it with your own Google Scholar ID
-github: https://lchehami.github.io/
+
+gscholar: https://scholar.google.com/citations?user=3FhRL0gAAAAJ&hl=fr
+github: https://github.com/lchehami
 linkedin: https://www.linkedin.com/in/lynda-chehami-aa8106122/
 orcid: https://orcid.org/0000-0002-5561-3395
-Hal: https://cv.hal.science/lynda-chehami
-# wechat_qrcode: /assets/images/etc/wechat.jpg
-# wechat_prompt: >-
-#   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
-#
+hal: https://cv.hal.science/lynda-chehami
 
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    A <a href="https://www.uphf.fr/iemn/membres/chehami_lynda" target="_blank">Lynda Chehami</a>
-   Lynda Chehami is an Associate Professor (HDR) in Physical Acoustics at Université Polytechnique des Hauts-de-France. Her research lies at the intersection of wave physics, ultrasonics, and complex media, with a strong focus on developing next-generation passive imaging approaches.
-
-She obtained her PhD in Electronics in 2015 from the IEMN, in collaboration with the Institut Langevin, where she pioneered work on wave correlation and ultrasonic imaging in reverberant environments. She later held a postdoctoral position at Georgia Tech Lorraine, further strengthening her expertise in wave propagation in complex and engineered media.
-She obtained her Habilitation (HDR) in 2022 and is currently developing ambitious research directions at the frontier of physics, materials science, and sensing, with potential applications ranging from micro/nano-systems to health and advanced materials.
+    Lynda Chehami is an Associate Professor (HDR) in Physical Acoustics at Université Polytechnique Hauts-de-France and IEMN, CNRS UMR 8520. Her research lies at the intersection of wave physics, ultrasonics, and complex media, with a strong focus on next-generation passive imaging approaches.
   </p>
   <p>
-     
-Her current research aims to turn ambient and uncontrolled wave fields into sources of information, enabling non-invasive characterization of thin films and multilayer systems. By engineering correlation-compatible environments, her work challenges conventional paradigms based on controlled excitation, opening new routes toward passive, high-resolution, and scalable imaging technologies.
-My research focuses on ultrasonic waves, passive imaging and wave correlation in complex and reverberant media. I develop innovative approaches for thin films, guided waves, metamaterials and structural health monitoring. .
+    She obtained her PhD in Electronics in 2015 from IEMN, in collaboration with Institut Langevin, where she developed work on wave correlation and ultrasonic imaging in reverberant environments. She later held a postdoctoral position at Georgia Tech Lorraine.
+  </p>
+  <p>
+    Her current research aims to turn ambient and uncontrolled wave fields into sources of information, enabling non-invasive characterization of thin films and multilayer systems. By engineering correlation-compatible environments, her work opens new routes toward passive, high-resolution, and scalable imaging technologies.
   </p>
 
 portrait_url: /assets/images/photos/profile.jpg
-#portrait_caption: >-
-  #Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
-Le Mans Université
-29 Jan. 2025
-Habilitation in Acoustics
-Imaging, non-destructive evaluation and characterization of complex materials and structures by laser ultrasound
-
-
-- name: Université polytechnique des Hauts de France
+- name: Université Polytechnique Hauts-de-France
   logo: /assets/images/badges/uphf.png
   position: >-
-    IEMN Laboratory <br/>
-    Habilitation in Acoustics
+    Habilitation to Supervise Research (HDR) in Acoustics<br/>
+    IEMN Laboratory
   date: 22 Sep. 2022
-  Manuscript EN: https://cv.hal.science/lynda-chehami
- 
-- name: Université polytechnique des Hauts de France
+
+- name: Université Polytechnique Hauts-de-France
   logo: /assets/images/badges/uphf.png
-  position:  IEMN Laboratory <br/>
-    PhD in Electronics and Acoustics
-  date: 1st Dec. 2015
-  Manuscript FR: file:///C:/Users/lchehami/Downloads/CHEHAMI_Lynda2.pdf
+  position: >-
+    PhD in Electronics and Acoustics<br/>
+    IEMN Laboratory & Institut Langevin
+  date: 1 Dec. 2015
 
- 
+- name: Université Montpellier 2
+  position: Master’s Degree in Sensors and Associated Systems
+  date: 2012
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+awards:
+- name: RIPEC – Research and Teaching Excellence Bonus
+  date: 2024-2027
+  description: National competitive recognition of research excellence, academic leadership, and teaching.
 
- selected Awards and Honours:
-- name: Early Researcher Career Award – Université de Valenciennes
+- name: Honorary Distinction “Jeune chercheure de la ville d’Hérin”
+  date: 2024
+  description: Local distinction awarded for scientific achievements and research visibility.
+
+- name: Best POMMADE Award – CETSIS Conference
+  date: 2023
+  description: Prize for innovative experimental and interdisciplinary research demonstration.
+
+- name: PEDR – Excellence in Research Supervision
+  date: 2020-2024
+  description: Competitive national award recognizing high-level research output and PhD supervision.
+
+- name: Young Researcher Award – Université de Valenciennes
   date: 2015
   description: Award for outstanding doctoral research contributions in acoustics and wave physics.
 
-- name: Best Poster Award – Mardi des Chercheurs (Valenciennes)
-  date: 2016
-  description: Prize recognizing excellence in scientific communication and outreach.
-
-- name: Best Presentation Award – Franco-Lebanese Days (JFL2)
+- name: Best Presentation Award – Franco-Lebanese Days
   date: 2013
   description: Award for best oral presentation in an international scientific conference.
 
-- name: First Rank Graduation Award in Electronics (Major of Promotion)
+- name: First Rank Graduation Award in Electronics
   date: 2009
   description: Ranked 1st in class during undergraduate studies in Electronics.
-
--- 
-
-Dr. HDR, Lynda Chehami
-Maître de conférences (HDR)-Associate Professor (HDR)
-Lien vers mes publications: lien
-Lien vers LinkedIn: Lien
-Membre CNU 63
-Présidente du comité technique ULTRASOUNDS de l'Association Européenne d'Acoustique (EEA)
-https://euracoustics.org/technical-committees/ultrasounds/
-Responsable pédagogique de la Licence 3 et 2 Physique Chimie (depuis sept 2025: parcours SPA)
-Responsable des stages en L3 PC (depuis sept 2025: parcours SPA)
-IEMN- site de Valenciennes
-Université Polytechnique Hauts-de-France
-Campus Mont Houy - Bâtiment Lottman
-59313 Valenciennes Cedex 9, France
-Tél : +33 3 27 51 11 87
-Email: lynda.chehami@insa-hdf.fr /lynda.chehami@uphf.fr
-site-web: https://www.uphf.fr/iemn/membres/chehami_lynda
-logo INSA
-
