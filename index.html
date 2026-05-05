@@ -4,12 +4,13 @@ title: Homepage
 navbar_title: Home
 ---
 
+<button id="themeToggle">🌙</button>
+
 <!-- HERO CARD -->
 <div class="hero-card">
 
   <div class="hero-content">
 
-    <!-- TEXTE -->
     <div class="hero-text">
 
       <h1>Dr. HDR Lynda Chehami Associate Professor</h1>
@@ -45,21 +46,18 @@ navbar_title: Home
 
     </div>
 
-    <!-- PHOTO -->
     <div class="hero-photo">
       <img src="{{ site.baseurl }}/assets/images/photos/profile.png" alt="Profile photo">
     </div>
 
   </div>
 
-  <!-- LOGOS -->
   <div class="institution-logos">
     <img src="{{ site.baseurl }}/assets/images/badges/iemn.png">
     <img src="{{ site.baseurl }}/assets/images/badges/INSA.png">
     <img src="{{ site.baseurl }}/assets/images/badges/cnrs.png">
   </div>
 
-  <!-- LIENS -->
   <div class="links">
     <a href="mailto:lynda.chehami@uphf.fr">✉ lynda.chehami(at)uphf.fr</a>
     <a href="https://scholar.google.com/citations?user=3FhRL0gAAAAJ&hl=fr">🎓 Google Scholar</a>
@@ -72,12 +70,10 @@ navbar_title: Home
 
 </div>
 
-<!-- EXPERIENCE -->
 {% if site.data.display.homepage.show_experience %}
   {% include widgets/experience_card.html %}
 {% endif %}
 
-<!-- NEWS -->
 {% if site.data.display.homepage.show_news %}
   {% assign count_news = site.news | size %}
   {% if count_news > 0 %}
@@ -85,21 +81,53 @@ navbar_title: Home
   {% endif %}
 {% endif %}
 
-<!-- PUBLICATIONS -->
 {% if site.data.display.homepage.show_selected_publications %}
   {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
   {% include widgets/publication_card.html publications=pubs title='<i class="fas fa-star"></i> Selected Publications' %}
 {% endif %}
 
-<!-- CSS -->
 <style>
+:root {
+  --bg: #e9ecec;
+  --card: #f7f7f7;
+  --text: #111111;
+  --blue: #0066ff;
+  --border: #cccccc;
+}
+
+body.dark {
+  --bg: #0f1115;
+  --card: #181b22;
+  --text: #eeeeee;
+  --blue: #5da2ff;
+  --border: #333842;
+}
+
 body {
-  background: #e9ecec;
+  background: var(--bg);
+  color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#themeToggle {
+  position: fixed;
+  top: 22px;
+  right: 24px;
+  z-index: 9999;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: var(--card);
+  color: var(--text);
+  font-size: 21px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+}
+
 .hero-card {
-  background: #f7f7f7;
+  background: var(--card);
+  color: var(--text);
   border-radius: 18px;
   padding: 70px 72px 28px;
   margin: 36px auto;
@@ -122,13 +150,14 @@ body {
   font-size: 50px;
   font-weight: 400;
   margin-bottom: 40px;
+  color: var(--text);
 }
 
 .affiliation {
   display: flex;
   align-items: center;
   gap: 16px;
-  color: #0066ff;
+  color: var(--blue);
   font-size: 23px;
   margin-bottom: 18px;
 }
@@ -142,19 +171,21 @@ body {
   font-weight: 700;
   margin-top: 35px;
   margin-bottom: 10px;
+  color: var(--text);
 }
 
 .bio {
   font-size: 23px;
   line-height: 1.5;
   max-width: 1000px;
+  color: var(--text);
 }
 
 .cv-link {
   display: inline-block;
   margin-top: 30px;
   font-size: 22px;
-  color: #0066ff;
+  color: var(--blue);
   text-decoration: none;
 }
 
@@ -182,7 +213,7 @@ body {
 }
 
 .links {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--border);
   padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -191,7 +222,7 @@ body {
 
 .links a {
   font-size: 22px;
-  color: #0066ff;
+  color: var(--blue);
   text-decoration: none;
 }
 
@@ -221,3 +252,24 @@ body {
   }
 }
 </style>
+
+<script>
+const toggle = document.getElementById("themeToggle");
+
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark");
+  toggle.textContent = "☀️";
+}
+
+toggle.onclick = function () {
+  document.body.classList.toggle("dark");
+
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+    toggle.textContent = "☀️";
+  } else {
+    localStorage.setItem("theme", "light");
+    toggle.textContent = "🌙";
+  }
+};
+</script>
