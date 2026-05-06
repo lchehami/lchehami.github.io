@@ -1,8 +1,7 @@
 ---
 title: "Quantification and mitigation of the effect of resynchronization errors in ultrasound sensor network for passive imaging in elastic plates"
 date: 2024-05-01 00:00:00 +0200
-selected: true
-
+selected: false
 pub: "The Journal of the Acoustical Society of America (JASA)"
 volume: "155"
 issue: "5"
