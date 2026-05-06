@@ -7,10 +7,20 @@ pub: "Ultrasonics"
 volume: "124"
 pages: "106753"
 pub_date: "2022"
-semantic_scholar_id: 1c2b91c2b2c7a91d9d9b6d5f8c6e3d7b4f9e2c1a
+
+semantic_scholar_id: "1c2b91c2b2c7a91d9d9b6d5f8c6e3d7b4f9e2c1a"
+
+qrank: "Q1"
+
+abstract: >-
+  This work investigates the monitoring of saltwater corrosion in steel
+  structures using ultrasonic coda wave interferometry combined with
+  temperature compensation strategies for improved robustness under
+  realistic environmental conditions.
+
+cover: /assets/images/covers/corrosion_monitoring.png
+
 doi: "10.1016/j.ultras.2022.106753"
-
-
 
 authors:
   - Maxime Farin
