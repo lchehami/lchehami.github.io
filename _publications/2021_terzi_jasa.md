@@ -1,7 +1,7 @@
 ---
 title: "Pump-probe localization technique of varying solid contacts"
 date: 2021-05-01 00:00:00 +0200
-selected: true
+selected: false
 
 pub: "The Journal of the Acoustical Society of America (JASA)"
 volume: "149"
