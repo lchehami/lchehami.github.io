@@ -189,6 +189,29 @@ section {
   font-style: italic;
 }
 
+/* ===== AWARDS DESCRIPTION ===== */
+
+.award-item{
+  margin-bottom: 22px;
+}
+
+.award-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:20px;
+}
+
+.award-name{
+  font-weight:600;
+}
+
+.award-description{
+  margin-top:6px;
+  color:#666;
+  font-size:14px;
+  line-height:1.5;
+}
 /* ===== BOUTONS ===== */
 .cv-button {
   display: inline-block;
