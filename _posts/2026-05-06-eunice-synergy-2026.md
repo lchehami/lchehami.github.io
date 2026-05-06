@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: "EUNICE Synergy 2026 International Congress"
+title: "EUNICE Synergy Congress"
 date: 2026-05-06
 ---
 
