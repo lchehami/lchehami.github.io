@@ -1,7 +1,7 @@
 ---
 title: "A micro-transducer matrix design for the detection of flexural guided waves"
 date: 2021-01-01 00:00:00 +0200
-selected: true
+selected: false
 
 pub: "Ultrasonics"
 volume: "114"
@@ -22,10 +22,15 @@ cover: /assets/images/covers/micro_transducer.png
 doi: "10.1016/j.ultras.2021.106355"
 
 authors:
-  - Lynda Chehami
-  - Farouk Benmeddour
-  - Emmanuel Moulin
-  - Marc Duquennoy
+ Hala El Rammouz
+ Farouk Benmeddour
+ Jamal Assaad
+ Emmanuel Moulin
+ Nikolay Smagin
+ Lucie Dupont
+ Lynda Chehami
+ Youssef Zaatar
+ Ziad Herro
 
 links:
   DOI: https://doi.org/10.1016/j.ultras.2021.106355
