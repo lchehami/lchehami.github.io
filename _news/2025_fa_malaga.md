@@ -8,4 +8,4 @@ I am pleased to announce that I served as an international external jury member 
 
 It was a great honor to contribute to the evaluation of outstanding scientific contributions in acoustics alongside the international community.
 
-<a href="https://forumacusticum2025.org/" target="_blank">Forum Acusticum 2025 – Málaga</a>
+<a href="https://www.fa-euronoise2025.org/" target="_blank">Forum Acusticum 2025 – Málaga</a>
