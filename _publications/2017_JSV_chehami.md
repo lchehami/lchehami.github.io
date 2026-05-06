@@ -1,7 +1,7 @@
 ---
 title: "Nonlinear secondary noise sources for passive defect detection using ultrasound sensors"
 date: 2017-01-01 00:00:00 +0200
-selected: true
+selected: false
 
 pub: "Journal of Sound and Vibration (JSV)"
 volume: "386"
