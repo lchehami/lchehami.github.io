@@ -282,6 +282,58 @@ section {
     color: #d0d0d0;
   }
 
+  .find-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.pub-links {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.pub-links a {
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #0969ff;
+}
+
+.pub-links a:hover {
+    opacity: 0.75;
+    text-decoration: none;
+}
+
+.publication-search {
+    display: flex;
+    justify-content: center;
+}
+
+.publication-search input {
+    width: 80%;
+    height: 55px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 0 18px;
+    font-size: 22px;
+    background: white;
+}
+
+.pub-year {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#navbar-year .nav-link {
+    font-size: 24px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    padding: 14px 24px;
+}
   .links a {
     color: #82b1ff;
   }
