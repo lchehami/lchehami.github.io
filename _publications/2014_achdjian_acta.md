@@ -1,7 +1,7 @@
 ---
 title: "Source localisation in a reverberant plate using average coda properties and early signal strength"
 date: 2014-09-01 00:00:00 +0200
-selected: false
+selected: true
 
 pub: "Acta Acustica united with Acustica"
 volume: "100"
