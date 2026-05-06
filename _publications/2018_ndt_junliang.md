@@ -4,9 +4,10 @@ date: 2018-07-01 00:00:00 +0200
 selected: true
 
 pub: "NDT & E International"
-volume: "97"
-pages: "150-157"
+volume: "99"
+pages: "72-79"
 pub_date: "2018"
+semantic_scholar_id:
 
 qrank: "Q1"
 
@@ -15,6 +16,8 @@ abstract: >-
   subsurface damage in woven carbon fiber-reinforced composite laminates.
   Terahertz subsurface spectral imaging combined with terahertz deconvolution
   is used to detect and visualize damage mechanisms in composite structures.
+
+cover: /assets/images/covers/terahertz_composites.png
 
 authors:
   - Junliang Dong
@@ -26,5 +29,5 @@ authors:
   - D. S. Citrin
 
 links:
-  DOI: https://doi.org/10.1016/j.ndteint.2018.04.005
+  DOI: https://doi.org/10.1016/j.ndteint.2018.07.001
 ---
