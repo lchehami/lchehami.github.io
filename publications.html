@@ -8,25 +8,81 @@ body_attr: >-
 
 {% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
 
+<div class="research-links mb-5">
+
+    <h2 class="find-title">
+        You can also find my research activities on:
+    </h2>
+
+    <div class="pub-links">
+        <a href="https://scholar.google.com/citations?user=3FhRL0gAAAAJ&hl=fr" target="_blank">
+            🎓 Google Scholar
+        </a>
+
+        <a href="https://orcid.org/0000-0002-5561-3395" target="_blank">
+            ORCID
+        </a>
+
+        <a href="https://www.researchgate.net/profile/Lynda-Chehami" target="_blank">
+            ResearchGate
+        </a>
+    </div>
+
+</div>
+
+<div class="publication-search mb-5">
+    <input type="text"
+           id="pubSearch"
+           placeholder="Search by keywords in publications...">
+</div>
+
 <div class="row">
     <div class="col-12 col-lg-10">
+
         {% for year in pubs_by_year %}
         {% assign num_papers = year.items | size %}
-        <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
-        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+
+        <h2 class="pt-4 pub-year" id="year-{{ year.name }}">
+            {{ year.name }}
+        </h2>
+
+        <div class="my-0 p-0 bg-white shadow-sm rounded-xl publication-year-block">
             {% for item in year.items %}
+            <div class="publication-entry">
                 {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+            </div>
             {% endfor %}
         </div>
+
         {% endfor %}
+
     </div>
 
     <div class="col-2 d-none d-lg-block">
         <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
             {% for year in pubs_by_year %}
-            <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
+            <a class="nav-link d-block" href="#year-{{ year.name }}">
+                {{ year.name }}
+            </a>
             {% endfor %}
         </div>
     </div>
 
 </div>
+
+<script>
+document.getElementById("pubSearch").addEventListener("keyup", function() {
+    let filter = this.value.toLowerCase();
+    let entries = document.querySelectorAll(".publication-entry");
+
+    entries.forEach(function(entry) {
+        let text = entry.innerText.toLowerCase();
+
+        if (text.includes(filter)) {
+            entry.style.display = "";
+        } else {
+            entry.style.display = "none";
+        }
+    });
+});
+</script>
