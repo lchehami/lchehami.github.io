@@ -1,7 +1,11 @@
 ---
 layout: blog_post
-title: "EUNICE Synergy 2026 International Congress at UPHF"
+title: 'EUNICE Synergy 2026 International Congress at UPHF'
 date: 2026-11-18
+tags:
+  - Blog
+  - Post
+  - Tag
 ---
 
 I am pleased to announce the organization of the **EUNICE Synergy 2026 International Congress**, which will take place on **18–19 November 2026** at the **Université Polytechnique Hauts-de-France (UPHF)** in Valenciennes, France.
@@ -11,7 +15,9 @@ The congress will bring together researchers, institutional partners, industry r
 - Sustainable mobility  
 - Energy transition  
 - Climate and environmental resilience  
-- Innovative engineering and digital technologies  
+- Innovative engineering and digital technologies.  
+
+# Headers---
 
 Hosted at the **BTMD / MOBILIUM building** on the Mont Houy campus, the event will include:
 
