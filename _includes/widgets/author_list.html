@@ -31,8 +31,8 @@
         {%- assign name = key -%}
     {%- endif -%}
 
-   {%- if name contains "Lynda Chehami" or name contains "Lynda CHEHAMI" -%}
-    {%- assign display_name = name | append: mark | prepend: '<strong style="color:#1565c0; font-weight:700;">' | append: "</strong>" -%}
+  {%- if name contains "Lynda Chehami" or name contains "Lynda CHEHAMI" -%}
+    {%- assign display_name = name | append: mark | prepend: '<strong style="color:#1565c0; font-weight:700; text-decoration:underline;">' | append: "</strong>" -%}
 {%- elsif info['bold'] == true -%}
     {%- assign display_name = name | append: mark | prepend: "<strong>" | append: "</strong>" -%}
 {%- else -%}
