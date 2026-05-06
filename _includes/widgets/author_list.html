@@ -31,11 +31,13 @@
         {%- assign name = key -%}
     {%- endif -%}
 
-    {%- if info['bold'] == true -%}
-        {%- assign display_name = name | append: mark | prepend: "<strong>" | append: "</strong>" -%}
-    {%- else -%}
-        {%- assign display_name = name | append: mark -%}
-    {%- endif -%}
+   {%- if name contains "Lynda Chehami" or name contains "Lynda CHEHAMI" -%}
+    {%- assign display_name = name | append: mark | prepend: '<strong style="color:#1565c0; font-weight:700;">' | append: "</strong>" -%}
+{%- elsif info['bold'] == true -%}
+    {%- assign display_name = name | append: mark | prepend: "<strong>" | append: "</strong>" -%}
+{%- else -%}
+    {%- assign display_name = name | append: mark -%}
+{%- endif -%}
     
     {%- if info['url'] -%}
         <a class="text-body" target="_blank" href="{{ info['url'] }}">{{ display_name }}</a>{%- if forloop.index < authors.size -%}, {% endif -%}
