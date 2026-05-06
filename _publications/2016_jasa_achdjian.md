@@ -1,7 +1,7 @@
 ---
 title: "Reverberation of flexural waves scattered by a local heterogeneity in a plate"
 date: 2016-07-01 00:00:00 +0200
-selected: true
+selected: false
 
 pub: "The Journal of the Acoustical Society of America (JASA)"
 volume: "140"
