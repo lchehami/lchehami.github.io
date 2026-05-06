@@ -8,13 +8,17 @@ volume: "149"
 issue: "5"
 pages: "2943-2949"
 pub_date: "2021"
+
 semantic_scholar_id:
+
 qrank: "Q1"
 
 abstract: >-
   This paper presents a pump-probe localization technique for the characterization
   of varying solid contacts in thin plates using nonlinear acoustic interactions
   and reverberant wavefields for structural health monitoring applications.
+
+cover: /assets/images/covers/pump_probe.png
 
 authors:
   - Marina Terzi
