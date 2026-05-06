@@ -96,42 +96,6 @@ navbar_title: Home
 
 </div>
 
-<!-- AWARDS -->
-
-{% if site.data.profile.awards %}
-
-<div class="hero-card">
-
-<h2 class="section-title">
-  Honors & Awards
-</h2>
-
-<ul class="awards-list">
-
-{% for award in site.data.profile.awards %}
-
-<li class="award-item">
-
-  <div class="award-header">
-    <span class="award-name">{{ award.name }}</span>
-    <span class="award-date">{{ award.date }}</span>
-  </div>
-
-  {% if award.description %}
-  <div class="award-description">
-    {{ award.description }}
-  </div>
-  {% endif %}
-
-</li>
-
-{% endfor %}
-
-</ul>
-
-</div>
-
-{% endif %}
 
 
 <!-- AUTRES CARTES -->
