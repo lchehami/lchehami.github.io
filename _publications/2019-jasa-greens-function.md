@@ -5,13 +5,14 @@ selected:       true
 
 pub:            "The Journal of the Acoustical Society of America (JASA)"
 pub_date:       "2019"
+semantic_scholar_id: bb4bd46885ebe3934a9a8e93a962ddbee27d1bb3
 
 abstract: >-
   This work investigates the accuracy of Green's function reconstruction from the correlation
   of diffuse elastic waves in thin plates, with emphasis on reverberation, modal density,
   and passive imaging performance in complex media.
 
-cover:          /assets/images/covers/cover3.jpg
+cover:          /assets/images/covers/rnl.jpg
 
 authors:
   - Lynda Chehami
@@ -21,6 +22,4 @@ authors:
 
 links:
   DOI: https://doi.org/10.1121/1.5134066
-  Publisher: https://pubs.aip.org/asa/jasa/article/146/5/3505/994201
-  PubMed: https://pubmed.ncbi.nlm.nih.gov/31795643/
 ---
