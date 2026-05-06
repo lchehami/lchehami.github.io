@@ -25,14 +25,15 @@ researchgate: https://www.researchgate.net/profile/Lynda-Chehami
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    Lynda Chehami is an Associate Professor (HDR) in Physical Acoustics at Université Polytechnique Hauts-de-France and IEMN, CNRS UMR 8520. Her research lies at the intersection of wave physics, ultrasonics, and complex media, with a strong focus on next-generation passive imaging approaches.
+    Lynda Chehami is an Associate Professor (HDR) in Physical Acoustics at 
+    Université Polytechnique Hauts-de-France and IEMN, CNRS UMR 8520. Her research 
+    lies at the intersection of wave physics, ultrasonics, and complex media, with a 
+    strong focus on next-generation passive imaging approaches. Her current research aims to turn ambient and uncontrolled wave fields into sources of information, 
+    enabling non-invasive characterization of thin films. By engineering correlation-compatible 
+    environments, her work opens new routes toward passive, high-resolution, and scalable imaging technologies.
   </p>
-  <p>
-    She obtained her PhD in Electronics in 2015 from IEMN, in collaboration with Institut Langevin, where she developed work on wave correlation and ultrasonic imaging in reverberant environments. She later held a postdoctoral position at Georgia Tech Lorraine.
-  </p>
-  <p>
-    Her current research aims to turn ambient and uncontrolled wave fields into sources of information, enabling non-invasive characterization of thin films and multilayer systems. By engineering correlation-compatible environments, her work opens new routes toward passive, high-resolution, and scalable imaging technologies.
-  </p>
+
+
 
 portrait_url: /assets/images/photos/profile.png
 
