@@ -34,9 +34,18 @@ h2 {
 }
 
 /* ===== NAVBAR ===== */
+
 .navbar {
-  background-color: #2563eb !important;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  background-image:
+    linear-gradient(rgba(10, 35, 80, 0.45), rgba(10, 35, 80, 0.45)),
+    url("/assets/images/banner-imaging.png") !important;
+
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+
+  min-height: 72px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
 }
 
 .navbar a,
