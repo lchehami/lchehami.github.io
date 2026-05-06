@@ -7,6 +7,7 @@ pub: "Journal of Sound and Vibration (JSV)"
 volume: "386"
 pages: "283-294"
 pub_date: "2017"
+semantic_scholar_id:
 
 qrank: "Q1"
 
