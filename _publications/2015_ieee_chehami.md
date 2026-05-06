@@ -1,7 +1,7 @@
 ---
 title: "Experimental study of passive defect localization in plates using ambient noise"
 date: 2015-08-01 00:00:00 +0200
-selected: true
+selected: false
 
 pub: "IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control"
 volume: "62"
