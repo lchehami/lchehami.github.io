@@ -1,5 +1,5 @@
 ---
-layout: news
+layout: blog_post
 title: "EUNICE Synergy 2026 International Congress at UPHF"
 date: 2026-11-18
 ---
