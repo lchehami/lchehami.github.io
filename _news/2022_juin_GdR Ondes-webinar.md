@@ -11,4 +11,4 @@ Many thanks for the invitation and for the stimulating scientific discussions ar
 
 : "Innovative Approaches for Structural Health Monitoring Applications Using Sensor Networks"
 More information about the congress is available here:  
-<a href="https://www.youtube.com/watch?v=yKo0FDfZABg" target="_blank">EUNICE Synergy Congress – ScienceConf</a>
+<a href="https://www.youtube.com/watch?v=yKo0FDfZABg" target="_blank">GdR Ondes-webinar on unconventional imaging modalities</a>
