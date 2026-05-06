@@ -6,11 +6,10 @@ selected:       true
 pub:            "The Journal of the Acoustical Society of America (JASA)"
 volume: "146"
 issue: "5"
-pages: "EL586–EL592"
+pages: ":3505"
 pub_date:       "2019"
-qrank:          "Q1"
 semantic_scholar_id: bb4bd46885ebe3934a9a8e93a962ddbee27d1bb3
-
+qrank:          "Q1"
 abstract: >-
   This work investigates the accuracy of Green's function reconstruction from the correlation
   of diffuse elastic waves in thin plates, with emphasis on reverberation, modal density,
