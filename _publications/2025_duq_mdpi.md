@@ -1,5 +1,5 @@
 ---
-title: "A Comparative Study of Divergent Surface Acoustic Wave Beams’ Generation on an Y128° Lithium Niobate Using Various Types of Interdigital Transducers"
+title: "A Comparative Study of Divergent Surface Acoustic Wave Beam's Generation on an Y128° Lithium Niobate Using Various Types of Interdigital Transducers"
 date: 2025-02-01 00:00:00 +0200
 selected: true
 
@@ -8,7 +8,20 @@ volume: "25"
 issue: "4"
 pages: "1067"
 pub_date: "2025"
+
 semantic_scholar_id:
+
+qrank: "Q2"
+
+abstract: >-
+  This work presents a comparative study of divergent surface acoustic
+  wave beam generation on Y128° lithium niobate using several types of
+  interdigital transducers. The study investigates wave propagation,
+  beam divergence, and transducer design for high-frequency ultrasonic
+  applications and acoustic sensing.
+
+cover: /assets/images/covers/divergent_saw.png
+
 doi: "10.3390/s25041067"
 
 authors:
