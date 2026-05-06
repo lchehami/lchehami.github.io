@@ -1,7 +1,7 @@
 ---
 title: "A Comparative Study of Divergent Surface Acoustic Wave Beam's Generation on an Y128° Lithium Niobate Using Various Types of Interdigital Transducers"
 date: 2025-02-01 00:00:00 +0200
-selected: true
+selected: false
 
 pub: "Sensors"
 volume: "25"
