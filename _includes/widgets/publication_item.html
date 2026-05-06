@@ -47,6 +47,15 @@ margin-left:6px;">
 
 <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span>
 
+{% if item.qrank %}
+<span style="
+margin-left:8px;
+font-weight:600;
+color:#1565c0;">
+{{ item.qrank }}
+</span>
+{% endif %}
+
 </p>
             
             <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
