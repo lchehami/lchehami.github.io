@@ -7,6 +7,7 @@ pub: "Acta Acustica"
 volume: "6"
 pages: "26"
 pub_date: "2022"
+semantic_scholar_id:
 
 qrank: "Q1"
 
