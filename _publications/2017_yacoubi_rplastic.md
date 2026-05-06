@@ -1,7 +1,7 @@
 ---
 title: "Ultrasonic guided waves for reinforced plastics safety"
 date: 2017-01-01 00:00:00 +0200
-selected: true
+selected: false
 
 pub: "Reinforced Plastics"
 volume: "61"
@@ -13,9 +13,11 @@ semantic_scholar_id:
 qrank: "Q2"
 
 abstract: >-
-  This paper reviews the application of ultrasonic guided waves
-  for preventive maintenance and safety assessment of reinforced
-  composite structures used in transport and industrial applications.
+  This paper reviews the use of ultrasonic guided waves for preventive
+  maintenance, damage detection, and safety assessment in reinforced
+  composite structures for transport and industrial applications.
+
+cover: /assets/images/covers/guided_wave.jpeg
 
 authors:
   - Slah Yaacoubi
