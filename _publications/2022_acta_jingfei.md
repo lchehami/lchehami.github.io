@@ -7,9 +7,17 @@ pub: "Acta Acustica"
 volume: "6"
 pages: "26"
 pub_date: "2022"
+
 semantic_scholar_id:
 
-qrank: "Q1"
+qrank: "Q2"
+
+abstract: >-
+  This work investigates the influence of compressive strains on wave
+  propagation in three-dimensional periodic bi-material structures using
+  ultrasonic characterization techniques and periodic media analysis.
+
+cover: /assets/images/covers/periodic_structures.jpeg
 
 doi: "10.1051/aacus/2022023"
 
