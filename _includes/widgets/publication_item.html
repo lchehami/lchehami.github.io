@@ -33,7 +33,16 @@ margin-left:6px;">
 {% endif %}
 
 {{ item.pub_post }}
-{{ item.pub_date }}
+
+{{ item.volume }}
+{% if item.issue %}({{ item.issue }}){% endif %}
+
+{% if item.pages %}
+: {{ item.pages }}
+{% endif %}
+
+({{ item.pub_date }})
+
 {{ item.pub_last }}
 
 <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span>
