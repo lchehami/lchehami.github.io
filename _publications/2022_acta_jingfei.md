@@ -17,7 +17,7 @@ abstract: >-
   propagation in three-dimensional periodic bi-material structures using
   ultrasonic characterization techniques and periodic media analysis.
 
-cover: /assets/images/covers/periodic_structures.jpeg
+cover: /assets/images/covers/periodic_structures.jpg
 
 doi: "10.1051/aacus/2022023"
 
