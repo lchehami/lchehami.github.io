@@ -7,6 +7,7 @@ pub: "Ultrasonics"
 volume: "114"
 pages: "106355"
 pub_date: "2021"
+semantic_scholar_id:
 
 qrank: "Q1"
 
