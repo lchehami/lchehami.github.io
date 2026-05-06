@@ -6,7 +6,7 @@ selected:       true
 pub:            "The Journal of the Acoustical Society of America (JASA)"
 volume: "146"
 issue: "5"
-pages: ":3505"
+pages: "3505"
 pub_date:       "2019"
 semantic_scholar_id: bb4bd46885ebe3934a9a8e93a962ddbee27d1bb3
 qrank:          "Q1"
