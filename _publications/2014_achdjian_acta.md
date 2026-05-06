@@ -15,6 +15,8 @@ abstract: >-
   This work proposes source localization approaches in reverberant plates
   based on average coda properties and early signal strength analysis.
 
+cover:          /assets/images/covers/source_loc.png
+
 authors:
   - Hossep Achdjian
   - Emmanuel Moulin
