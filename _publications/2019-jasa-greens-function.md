@@ -12,7 +12,7 @@ abstract: >-
   of diffuse elastic waves in thin plates, with emphasis on reverberation, modal density,
   and passive imaging performance in complex media.
 
-cover:          /assets/images/covers/rnl.jpg
+cover:          /assets/images/covers/rnl.png
 
 authors:
   - Lynda Chehami
