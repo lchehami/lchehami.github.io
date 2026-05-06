@@ -17,7 +17,7 @@ abstract: >-
   maintenance, damage detection, and safety assessment in reinforced
   composite structures for transport and industrial applications.
 
-cover: /assets/images/covers/guided_wave.jpeg
+cover: /assets/images/covers/guided_wave.jpg
 
 authors:
   - Slah Yaacoubi
