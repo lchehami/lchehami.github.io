@@ -5,6 +5,7 @@ selected:       true
 
 pub:            "The Journal of the Acoustical Society of America (JASA)"
 pub_date:       "2019"
+qrank:          "Q1"
 semantic_scholar_id: bb4bd46885ebe3934a9a8e93a962ddbee27d1bb3
 
 abstract: >-
