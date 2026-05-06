@@ -1,7 +1,7 @@
 ---
 title: "The transmission spectrum of sound through a phononic crystal subjected to liquid flow"
 date: 2018-01-01 00:00:00 +0200
-selected: true
+selected: false
 
 pub: "Applied Physics Letters (APL)"
 volume: "112"
