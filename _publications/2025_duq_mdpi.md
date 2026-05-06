@@ -8,6 +8,7 @@ volume: "25"
 issue: "4"
 pages: "1067"
 pub_date: "2025"
+semantic_scholar_id:
 doi: "10.3390/s25041067"
 
 authors:
