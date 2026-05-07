@@ -205,7 +205,7 @@ h2 {
   flex-wrap: wrap;
   align-items: center;
 
-  column-gap: 24px;
+  column-gap: 28px;
   row-gap: 10px;
 
   border-top: 1px solid rgba(0,0,0,0.08);
