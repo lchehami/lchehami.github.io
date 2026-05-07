@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 #baseurl: "/academic-homepage" # the subpath of your site, e.g. /blog
-baseurl: "/test-site"
+baseurl: ""
 url: "https://lchehami.github.io"
 future: true
 
