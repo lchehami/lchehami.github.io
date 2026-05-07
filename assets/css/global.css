@@ -34,34 +34,17 @@ h2 {
 }
 
 /* ===== NAVBAR ===== */
-
-/* ===== NAVBAR IMAGE BANNER ===== */
-
 .navbar {
   background-color: #2563eb !important;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url("https://github.com/lchehami/test-site/blob/main/assets/images/banner_imaging.png") !important;
-
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-
-  min-height: 120px !important;
-  padding-top: 28px !important;
-  padding-bottom: 28px !important;
-
-  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
 .navbar a,
 .navbar-brand,
 .nav-link {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.2px;
-  color: #ffffff !important;
-  text-shadow: 0 1px 5px rgba(0,0,0,0.75);
 }
 
 /* ===== CARDS ===== */
