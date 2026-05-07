@@ -14,8 +14,7 @@ GUWEM 2026 will bring together the European community working on **guided ultras
 
 The workshop aims to foster scientific exchange between researchers developing emerging theoretical, numerical, and experimental approaches for elastic guided waves in complex structures and materials.
 
-The workshop is organized by the **Institut Langevin (CNRS, ESPCI Paris, PSL)** and the **Bundesanstalt für Materialforschung und -prüfung (BAM, Germany)**, 
-with support from the **European Acoustics Association (EAA)** and endorsements from the **Société Française d’Acoustique (SFA)** and **DEGA**. :contentReference[oaicite:0]{index=0}
+The workshop is organized by the **Institut Langevin (CNRS, ESPCI Paris, PSL)** and the **Bundesanstalt für Materialforschung und -prüfung (BAM, Germany)**, with support from the **European Acoustics Association (EAA)** and endorsements from the **Société Française d’Acoustique (SFA)** and **DEGA**.
 
 I am pleased to contribute as a member of the organizing committee alongside:
 
@@ -29,17 +28,28 @@ Confirmed invited speakers include:
 - Tomáš Grabec  
 - Hauke Gravenkamp  
 - Vincent Laude  
-- Koen Van Den Abeele  :contentReference[oaicite:1]{index=1}
+- Koen Van Den Abeele  
 
-The previous GUWEM edition gathered a vibrant international community around recent advances in guided elastic waves, modeling methods, dispersion analysis, laser ultrasonics, and wave-based material characterization. :contentReference[oaicite:2]{index=2}
+The previous GUWEM edition gathered a vibrant international community around recent advances in guided elastic waves, modeling methods, dispersion analysis, laser ultrasonics, and wave-based material characterization.
+
+## Main Scientific Topics
+
+- Guided waves in plates, pipes, and complex waveguides  
+- Nondestructive testing and evaluation (NDT/NDE)  
+- Structural health monitoring (SHM)  
+- Ultrasonic imaging and inverse methods  
+- Laser ultrasonics and advanced sensing  
+- Dispersion engineering and wave physics  
+- Metamaterials and anisotropic structures  
+- Microelectronics and thin-film acoustics  
 
 ## Venue
 
-The workshop will be hosted at the historic **Mont Sainte-Odile** conference center near Strasbourg, providing an inspiring scientific environment for discussions and collaborations. :contentReference[oaicite:3]{index=3}
+The workshop will be hosted at the historic **Mont Sainte-Odile** conference center near Strasbourg, providing an inspiring scientific environment for discussions and collaborations.
 
 ## Registration & Abstract Submission
 
-The abstract submission and registration deadline has been extended to **4 May 2026**. :contentReference[oaicite:4]{index=4}
+The abstract submission and registration deadline has been extended to **4 May 2026**.
 
 ## Official Website
 
