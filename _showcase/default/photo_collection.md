@@ -6,7 +6,7 @@ height: 295px
 
 images:
 
-  - src: /assets/images/daclos.png
+  - src: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBxzoZ2c4UbBU03oEyxvKp_0hymLDJJV7lbw&s
     title: DACLOS
     desc: Diffuse wave generation and passive imaging in reverberant media.
     link: https://anr.fr/Projet-ANR-21-CE42-0002
@@ -15,9 +15,9 @@ images:
     title: Silicon wafer
     desc: Thin-film and silicon wafer characterization using guided ultrasonic waves.
 
-  - src: /assets/images/lambwaves.png
-    title: Guided Waves
-    desc: Lamb wave propagation and structural health monitoring.
+  - src: https://www.mdpi.com/sensors/sensors-25-01067/article_deploy/html/images/sensors-25-01067-g012-550.jpg
+    title: Surface Waves
+    desc: SAW generation using interdigital transducers.
 
 ---
 
