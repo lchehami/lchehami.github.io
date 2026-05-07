@@ -2,8 +2,10 @@
 show: true
 width: 1
 date: 2017-01-13 00:01:00 +0800
-class: ""  # Override the default card style
+class: ""
 ---
+
 <div>
-<img src="{{ 'assets/images/badges/ANR.png' | relative_url }}" class="img-fluid rounded-xl" >
+    <img src="https://www.logotheque-vectorielle.fr/wp-content/uploads/2022/10/logo-vectoriel-anr.jpg"
+         class="img-fluid rounded-xl">
 </div>
