@@ -13,14 +13,14 @@ date: 2020-01-12 00:01:00 +0800
     alt="Diffuse wave correlation">
 
   <div class="card-img-overlay"
-       style="overflow:auto; background:rgba(255,255,255,0.82); border-radius:14px;">
+       style="overflow:auto; background:rgba(255,255,255,0.82); border-radius:15px;">
 
     <h5 class="card-title">Diffuse Wave Correlation</h5>
 
     <p class="card-text">
       Passive imaging approach based on the cross-correlation of reverberated
       wavefields recorded at different receiver positions. In diffuse media,
-      the correlation function converges toward the Green’s function of the
+      the correlation function converges toward the Green's function of the
       structure, enabling passive characterization and imaging.
     </p>
 
