@@ -16,6 +16,7 @@
 #baseurl: "/academic-homepage" # the subpath of your site, e.g. /blog
 baseurl: "/test-site"
 url: "https://lchehami.github.io"
+future: true
 
 # Build settings
 markdown: kramdown
