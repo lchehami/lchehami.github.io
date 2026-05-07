@@ -205,17 +205,18 @@ h2 {
   flex-wrap: wrap;
   align-items: center;
 
-  gap: 18px;
+  column-gap: 24px;
+  row-gap: 10px;
 
   border-top: 1px solid rgba(0,0,0,0.08);
 }
 
 .links a {
 
-  display: inline-flex;
+  display: flex;
   align-items: center;
 
-  gap: 6px;
+  gap: 7px;
 
   font-size: 16px;
   font-weight: 500;
