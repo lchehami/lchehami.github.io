@@ -30,7 +30,7 @@ date: 2023-01-12 00:01:00 +0800
         <img src="https://www.interreg2seas.eu/images/logo.png"
              alt="SOCORRO project"
              class="img-fluid rounded-xl"
-             style="max-width: 700px;">
+             style="max-width: 500px;">
     </div>
 
     <hr />
