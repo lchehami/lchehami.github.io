@@ -29,7 +29,13 @@
 
                     <div class="d-flex">
                         <div>
-                            <strong>{{ item.name }}</strong>
+                            {% if item.link %}
+<a href="{{ item.link }}" target="_blank" class="award-link">
+    <strong>{{ item.name }}</strong>
+</a>
+{% else %}
+<strong>{{ item.name }}</strong>
+{% endif %}
                         </div>
 
                         {% if item.date %}
