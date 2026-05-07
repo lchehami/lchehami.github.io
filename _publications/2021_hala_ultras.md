@@ -22,16 +22,16 @@ cover: /assets/images/covers/micro_transducer.png
 doi: "10.1016/j.ultras.2021.106355"
 
 authors:
- Hala El Rammouz
- Farouk Benmeddour
- Jamal Assaad
- Emmanuel Moulin
- Nikolay Smagin
- Lucie Dupont
- Lynda Chehami
- Youssef Zaatar
- Ziad Herro
+ - Hala El Rammouz
+ - Farouk Benmeddour
+ - Jamal Assaad
+ - Emmanuel Moulin
+ - Nikolay Smagin
+ - Lucie Dupont
+ - Lynda Chehami
+ - Youssef Zaatar
+ - Ziad Herro
 
 links:
-  DOI: https://doi.org/10.1016/j.ultras.2021.106355
+  DOI: 10.1016/j.ultras.2021.106430  
 ---
