@@ -1,115 +1,108 @@
-
 <div class="row mt-3">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body p-4">
                 <div class="row" data-masonry='{"percentPosition": true }'>
 
-                   <!-- EDUCATION À GAUCHE -->
-{% if site.data.profile.education %}
-<div class="col-lg-6">
-    <div class="mx-2 my-1">
+                    <!-- EDUCATION À GAUCHE -->
+                    {% if site.data.profile.education %}
+                    <div class="col-lg-6">
+                        <div class="mx-2 my-1">
 
-        <h6>Education</h6>
+                            <h6>Education</h6>
 
-        <ul class="list-unstyled mb-1">
+                            <ul class="list-unstyled mb-1">
 
-            {% for item in site.data.profile.education %}
+                                {% for item in site.data.profile.education %}
 
-            <li class="media mb-3">
+                                <li class="media mb-3">
 
-                {% if item.logo %}
-                <img src="{{ item.logo | relative_url }}"
-                     alt="{{ item.name }}"
-                     style="width: 18px;"
-                     class="mr-1 mt-1">
-                {% endif %}
+                                    {% if item.logo %}
+                                    <img src="{{ item.logo | relative_url }}"
+                                         alt="{{ item.name }}"
+                                         style="width: 18px;"
+                                         class="mr-1 mt-1">
+                                    {% endif %}
 
-                <div class="media-body">
+                                    <div class="media-body">
 
-                    <div class="d-flex">
-                        <div>
-                            {% if item.link %}
-<a href="{{ item.link }}" target="_blank" class="award-link">
-    <strong>{{ item.name }}</strong>
-</a>
-{% else %}
-<strong>{{ item.name }}</strong>
-{% endif %}
+                                        <div class="d-flex">
+                                            <div>
+                                                <strong>{{ item.name }}</strong>
+                                            </div>
+
+                                            {% if item.date %}
+                                            <div class="ml-auto no-break">
+                                                <em>{{ item.date }}</em>
+                                            </div>
+                                            {% endif %}
+                                        </div>
+
+                                        {% if item.dept %}
+                                        <div class="small">{{ item.dept }}</div>
+                                        {% endif %}
+
+                                        {% if item.position %}
+                                        <div class="small">{{ item.position }}</div>
+                                        {% endif %}
+
+                                        {% if item.degree %}
+                                        <div class="small">{{ item.degree }}</div>
+                                        {% endif %}
+
+                                        {% if item.description %}
+                                        <div class="small text-muted mt-1">
+                                            {{ item.description }}
+                                        </div>
+                                        {% endif %}
+
+                                        {% if item.desc %}
+                                        <div class="small text-muted mt-1">
+                                            {{ item.desc }}
+                                        </div>
+                                        {% endif %}
+
+                                        {% if item.thesis %}
+                                        <div class="small text-muted mt-1">
+                                            {{ item.thesis }}
+                                        </div>
+                                        {% endif %}
+
+                                        {% if item.link %}
+                                        <div class="small mt-1">
+                                            <a href="{{ item.link | relative_url }}" target="_blank">
+                                                Download thesis
+                                            </a>
+                                        </div>
+                                        {% endif %}
+
+                                        {% if item.url %}
+                                        <div class="small mt-1">
+                                            <a href="{{ item.url | relative_url }}" target="_blank">
+                                                Download thesis
+                                            </a>
+                                        </div>
+                                        {% endif %}
+
+                                        {% if item.pdf %}
+                                        <div class="small mt-1">
+                                            <a href="{{ item.pdf | relative_url }}" target="_blank">
+                                                Download thesis
+                                            </a>
+                                        </div>
+                                        {% endif %}
+
+                                    </div>
+
+                                </li>
+
+                                {% endfor %}
+
+                            </ul>
+
                         </div>
-
-                        {% if item.date %}
-                        <div class="ml-auto no-break">
-                            <em>{{ item.date }}</em>
-                        </div>
-                        {% endif %}
-                    </div>
-
-                    {% if item.dept %}
-                    <div class="small">{{ item.dept }}</div>
-                    {% endif %}
-
-                    {% if item.position %}
-                    <div class="small">{{ item.position }}</div>
-                    {% endif %}
-
-                    {% if item.degree %}
-                    <div class="small">{{ item.degree }}</div>
-                    {% endif %}
-
-                    {% if item.description %}
-                    <div class="small text-muted mt-1">
-                        {{ item.description }}
                     </div>
                     {% endif %}
-
-                    {% if item.desc %}
-                    <div class="small text-muted mt-1">
-                        {{ item.desc }}
-                    </div>
-                    {% endif %}
-
-                    {% if item.thesis %}
-                    <div class="small text-muted mt-1">
-                        {{ item.thesis }}
-                    </div>
-                    {% endif %}
-
-                    {% if item.link %}
-                    <div class="small mt-1">
-                        <a href="{{ item.link | relative_url }}" target="_blank">
-                            Download thesis
-                        </a>
-                    </div>
-                    {% endif %}
-
-                    {% if item.url %}
-                    <div class="small mt-1">
-                        <a href="{{ item.url | relative_url }}" target="_blank">
-                            Download thesis
-                        </a>
-                    </div>
-                    {% endif %}
-
-                    {% if item.pdf %}
-                    <div class="small mt-1">
-                        <a href="{{ item.pdf | relative_url }}" target="_blank">
-                            Download thesis
-                        </a>
-                    </div>
-                    {% endif %}
-
-                </div>
-
-            </li>
-
-            {% endfor %}
-
-        </ul>
-
-    </div>
-</div>
-{% endif %}
 
                     <!-- HONORS À DROITE -->
                     {% if site.data.profile.awards %}
@@ -126,7 +119,15 @@
 
                                     <div class="d-flex">
                                         <div>
+
+                                            {% if item.link %}
+                                            <a href="{{ item.link }}" target="_blank" class="award-link">
+                                                <strong>{{ item.name }}</strong>
+                                            </a>
+                                            {% else %}
                                             <strong>{{ item.name }}</strong>
+                                            {% endif %}
+
                                         </div>
 
                                         {% if item.date %}
@@ -157,5 +158,3 @@
         </div>
     </div>
 </div>
-
-
