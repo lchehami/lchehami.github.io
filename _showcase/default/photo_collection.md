@@ -10,11 +10,11 @@ images:
     title: Surface Waves
     desc: SAW generation using interdigital transducers.
 
-  - src: https://ultrananotec.com/wp-content/uploads/2022/10/SKU-108-a-9.jpg
+ - src: https://ultrananotec.com/wp-content/uploads/2022/10/SKU-108-a-9.jpg
     title: Silicon wafer
     desc: Thin-film and silicon wafer characterization using guided ultrasonic waves.
 
-      - src: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBxzoZ2c4UbBU03oEyxvKp_0hymLDJJV7lbw&s
+- src: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBxzoZ2c4UbBU03oEyxvKp_0hymLDJJV7lbw&s
     title: 
     desc: 
     link: https://anr.fr/Projet-ANR-21-CE42-0002
