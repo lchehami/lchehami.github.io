@@ -74,13 +74,6 @@ date: 2023-01-12 00:01:00 +0800
         <li>Environmental sensing and data analysis</li>
     </ul>
 
-    <p>
-        Official consortium and partners:
-        <a href="https://www.socorro.eu/partners.html" target="_blank">
-            SOCORRO Consortium
-        </a>
-    </p>
-
     <hr />
 
     <h5>Scientific Contribution</h5>
@@ -146,6 +139,7 @@ date: 2023-01-12 00:01:00 +0800
     <h5>Project Links</h5>
 
     <ul>
+
         <li>
             <a href="https://www.socorro.eu/" target="_blank">
                 Official SOCORRO Website
@@ -153,22 +147,29 @@ date: 2023-01-12 00:01:00 +0800
         </li>
 
         <li>
-            <a href="https://www.socorro.eu/partners.html" target="_blank">
-                Consortium and Partners
-            </a>
-        </li>
-
-        <li>
             <a href="https://www.socorro.eu/results" target="_blank">
-                Project Results
+                SOCORRO Results
             </a>
         </li>
 
         <li>
-            <a href="https://hal.science/hal-04137857" target="_blank">
-                Ultrasonic Coda-Wave Monitoring Publication
+            <a href="https://amacademy.be/en/project/socorro" target="_blank">
+                SOCORRO project page – Antwerp Maritime Academy
             </a>
         </li>
+
+        <li>
+            <a href="https://www.ugent.be/en/research/eu-trackrecord/interreg/socorro.htm" target="_blank">
+                SOCORRO project page – Ghent University
+            </a>
+        </li>
+
+        <li>
+            <a href="https://keep.eu/projects/24084/Seeking-out-corrosion-befor-EN/" target="_blank">
+                SOCORRO project record – KEEP EU
+            </a>
+        </li>
+
     </ul>
 
 </div>
