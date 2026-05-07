@@ -27,7 +27,7 @@ date: 2023-01-12 00:01:00 +0800
     </p>
 
     <div class="text-center my-4">
-        <img src="https://www.socorro.eu/uploads/1/3/1/4/131403650/fef3df5c-45f4-4f3b-92fb-a68e730726cd-edited_orig.jpg"
+        <img src="https://www.interreg2seas.eu/images/logo.png"
              alt="SOCORRO project"
              class="img-fluid rounded-xl"
              style="max-width: 700px;">
@@ -39,9 +39,8 @@ date: 2023-01-12 00:01:00 +0800
 
     <p>
         <strong>Programme:</strong> Interreg 2 Seas 2014–2020<br>
-        <strong>Funding instrument:</strong> European Regional Development Fund — ERDF / FEDER<br>
         <strong>Project:</strong> SOCORRO – Seeking Out Corrosion, before it is too late<br>
-        <strong>Consortium:</strong> 15 partners and 32 observing partners
+
     </p>
 
     <hr />
@@ -56,14 +55,14 @@ date: 2023-01-12 00:01:00 +0800
 
     <p>
         The <strong>Université Polytechnique Hauts-de-France / IEMN</strong>
-        was one of the project partners. The TPIA group at IEMN/UPHF contributed
-        to ultrasound-based approaches for biofilm activity monitoring and
-        corrosion detection on steel coupons.
+        was one of the project partners. I contributed
+        to ultrasound-based approaches for corrosion monitoring and
+        detection on steel coupons.
     </p>
 
     <p>
         A dedicated ultrasonic instrumentation was designed and calibrated before
-        testing on industrial full-scale sites.
+        testing on industrial full-scale sites (Many Thanks Maxime Farin for that !).
     </p>
 
     <hr />
@@ -87,7 +86,7 @@ date: 2023-01-12 00:01:00 +0800
     </ul>
 
     <div class="text-center my-4">
-        <img src="https://www.socorro.eu/uploads/1/3/1/4/131403650/sheetpile1_orig.jpg"
+        <img src="https://amacademy.be/sites/default/files/styles/article_large/public/2022-02/AMA_onboard%20%28195%29.jpg?itok=zQLCgfWr"
              alt="SOCORRO industrial demonstrator"
              class="img-fluid rounded-xl"
              style="max-width: 700px;">
@@ -99,17 +98,9 @@ date: 2023-01-12 00:01:00 +0800
 
     <p>
         SOCORRO delivered several outputs, including a digital application for
-        on-site monitoring and analysis, industrial demonstrations, corrosion
+        on-site monitoring and analysis, corrosion
         monitoring campaigns, and feasibility studies.
     </p>
-
-    <ul>
-        <li>11 industrial demonstration cases</li>
-        <li>Monitoring of corrosion risks using water-quality parameters</li>
-        <li>Online reporting and decision-support tools</li>
-        <li>Demonstrations in ports, offshore energy, ships, and water-treatment sites</li>
-        <li>Scientific outputs on coda-wave interferometry for corrosion monitoring</li>
-    </ul>
 
     <hr />
 
@@ -134,14 +125,10 @@ date: 2023-01-12 00:01:00 +0800
             </a>
         </li>
 
-        <li>
-            <a href="https://keep.eu/projects/24084/Seeking-out-corrosion-befor-EN/" target="_blank">
-                SOCORRO project record on KEEP.eu
-            </a>
-        </li>
+      
 
         <li>
-            <a href="https://www.socorro.eu/results/coda-wave-interferometry-for-corrosion-monitoring" target="_blank">
+            <a href="https://hal.science/hal-04137857" target="_blank">
                 Coda wave interferometry for corrosion monitoring
             </a>
         </li>
