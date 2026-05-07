@@ -477,3 +477,37 @@ section {
 .carousel-item p {
     color: #000 !important;
 }
+
+body {
+  background: #ffffff;
+  color: #111111;
+}
+
+body.dark {
+  background: #0f172a;
+  color: #f1f5f9;
+}
+
+body.dark .card,
+body.dark .bio-card,
+body.dark .pub-card,
+body.dark .container,
+body.dark main {
+  background: #1e293b;
+  color: #f1f5f9;
+}
+
+body.dark a {
+  color: #93c5fd;
+}
+
+#themeToggle {
+  margin-left: 15px;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  font-size: 18px;
+  background: #ffffff;
+}
