@@ -7,8 +7,8 @@ height: 295px
 images:
 
   - src: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBxzoZ2c4UbBU03oEyxvKp_0hymLDJJV7lbw&s
-    title: DACLOS
-    desc: Diffuse wave generation and passive imaging in reverberant media.
+    title: 
+    desc: 
     link: https://anr.fr/Projet-ANR-21-CE42-0002
 
   - src: https://ultrananotec.com/wp-content/uploads/2022/10/SKU-108-a-9.jpg
