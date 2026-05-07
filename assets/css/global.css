@@ -149,6 +149,43 @@ h2 {
   margin-right: 8px;
 }
 
+/* ===== INSTITUTION LOGOS ===== */
+.institution-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 14px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.institution-logos a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.institution-logos img {
+  height: 34px !important;
+  width: auto !important;
+  max-width: 120px !important;
+
+  object-fit: contain !important;
+
+  background: #ffffff;
+  padding: 5px 8px;
+  border-radius: 9px;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* CNRS est visuellement rond, on peut le laisser un peu plus grand */
+.institution-logos img[alt="CNRS"] {
+  height: 42px !important;
+}
+
 /* ===== PHOTO ===== */
 .hero-photo img {
   width: 190px;
@@ -236,6 +273,17 @@ section {
   color: #666;
   font-size: 14px;
   line-height: 1.5;
+}
+
+.award-link {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.award-link:hover {
+  color: #2563eb;
+  text-decoration: underline;
 }
 
 /* ===== BOUTONS ===== */
@@ -508,6 +556,9 @@ body.dark #themeToggle {
 
 body.dark .synergy-banner img {
   box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+}
+body.dark .institution-logos img {
+  background: #ffffff !important;
 }
 
 /* ===== RESPONSIVE ===== */
