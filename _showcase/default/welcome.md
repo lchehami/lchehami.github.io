@@ -1,3 +1,9 @@
+---
+show: true
+width: 8
+date: 2024-01-12 00:01:00 +0800
+---
+
 <div class="p-4">
 
     <h2>ANR JCJC DACLOS</h2>
@@ -57,12 +63,21 @@
 
     <ul>
         <li>Diffuse wave correlation</li>
-        <li>Passive Green's function retrieval</li>
+        <li>Passive Green’s function retrieval</li>
         <li>Guided ultrasonic waves</li>
         <li>High-frequency Rayleigh waves</li>
         <li>Thin-film and wafer characterization</li>
+        <li>Structural health monitoring</li>
         <li>Nondestructive evaluation (NDT/NDE)</li>
     </ul>
+
+    <hr />
+
+    <div class="text-center mt-4">
+        $$
+        C_{AB}(\tau)=\int_{0}^{T}u_A(t)\,u_B(t+\tau)\,dt
+        $$
+    </div>
 
     <hr />
 
