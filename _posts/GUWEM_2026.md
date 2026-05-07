@@ -1,7 +1,7 @@
 ---
 layout: blog_post
 title: "GUWEM 2026 – Guided Ultrasonic Waves: Emerging Methods"
-date: 2026-05-07
+date: 2026-06-29
 ---
 
 The second edition of the **GUWEM Workshop – Guided Ultrasonic Waves: Emerging Methods** will take place from **29 June to 2 July 2026** at the exceptional venue of **Mont Sainte-Odile (France)**.
