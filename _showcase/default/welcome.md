@@ -5,19 +5,27 @@ date: 2024-01-12 00:01:00 +0800
 ---
 
 <div class="p-4">
-    <h2>Welcome to Showcase!</h2>
+    <h2>ANR JCJC DACLOS</h2>
+
+    <h5>Diffuse Acoustic Correlations for Passive Imaging in Complex Media</h5>
+
     <hr />
+
     <p>
-        <code>Showcase</code> is a page where you can show off almost anything you want. It can be the photo of your pets, your favorite books, your favorite projects, or anything else you want to show to the world.
+        The ANR JCJC <strong>DACLOS</strong> project focuses on diffuse acoustic correlations
+        and passive imaging in complex and reverberant media. It investigates how ambient
+        and diffuse wavefields can be used to retrieve Green’s functions, analyze guided
+        wave propagation, and develop robust imaging methods for structural diagnostics.
     </p>
+
     <p>
-        You can create a new showcase item by creating a new file in the <code>_showcase</code> folder. It gives you the highest flexibility to customize the item using any HTML code.
+        The project explores innovative approaches combining wave physics, reverberation
+        analysis, guided ultrasonic waves, and signal processing for nondestructive testing,
+        structural health monitoring, and corrosion detection.
     </p>
+
     <p>
-        Cards are ordered by the <code>date</code> field in the front matter in descending order. The <code>width</code> field is used to determine the width of the card, ranging from 1 to 12.
-        Layout is done by the <a href="https://masonry.desandro.com/" target="_blank">Masonry</a> library.
-    </p>
-    <p>
-        For a tidy layout, it is recommended to set the width of the cards to be either multiple of 3 or multiple of 4 for all cards, except for small badges that do not take up much space (width=1).
+        DACLOS also supports broader research developments connected to thin-film acoustics,
+        Lamb wave imaging, microelectronics, and wave-based sensing in complex materials.
     </p>
 </div>
