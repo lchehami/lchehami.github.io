@@ -1,7 +1,7 @@
 ---
 layout: blog_post
 title: "Forum Acusticum 2026 – Graz, Austria"
-date: 2026-05-06
+date: 2026-09-11
 ---
 
 I am pleased to announce that the **EAA Technical Committee on Ultrasounds**, which I currently chair, will actively contribute to the scientific program of **Forum Acusticum 2026**, taking place in Graz, Austria.
