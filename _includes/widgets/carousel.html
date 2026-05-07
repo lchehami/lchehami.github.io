@@ -1,31 +1,107 @@
 <div>
-    <div id="{{ include.id | slugify }}" class="carousel slide" data-ride="carousel">
+    <div id="{{ include.id | slugify }}"
+         class="carousel slide"
+         data-ride="carousel">
+
+        <!-- Indicators -->
         <ol class="carousel-indicators">
             {% for item in include.images %}
-            <li data-target="#{{ include.id | slugify }}" data-slide-to="{{ forloop.index0 }}" {% if forloop.index == 1 %}class="active"{% endif %}></li>
+            <li data-target="#{{ include.id | slugify }}"
+                data-slide-to="{{ forloop.index0 }}"
+                {% if forloop.index == 1 %}class="active"{% endif %}>
+            </li>
             {% endfor %}
         </ol>
-        <div class="carousel-inner" style="height: {{ include.height }};">
+
+        <!-- Carousel items -->
+        <div class="carousel-inner"
+             style="height: {{ include.height }};">
+
             {% for item in include.images %}
+
             <div class="carousel-item {% if forloop.index == 1 %}active{% endif %}">
-                {% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}
-                <div class="lazy always-load d-block rounded-xl" data-src="{{ item.src | relative_url }}" style="height: {{ include.height }};">
+
+                {% if item.link %}
+                <a href="{{ item.link }}" target="_blank">
+                {% endif %}
+
+                <!-- Image -->
+                <div class="lazy always-load d-block rounded-xl"
+                     data-src="{{ item.src }}"
+                     style="
+                        height: {{ include.height }};
+                        background-size: cover;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                     ">
                 </div>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>{{ item.title }}</h5>
-                    <p>{{ item.desc }}</p>
+
+                <!-- Caption -->
+                <div class="carousel-caption d-none d-md-block"
+                     style="
+                        background: rgba(255,255,255,0.82);
+                        border-radius: 14px;
+                        padding: 14px;
+                        bottom: 20px;
+                     ">
+
+                    <h5 style="
+                        color: black;
+                        font-weight: 700;
+                    ">
+                        {{ item.title }}
+                    </h5>
+
+                    <p style="
+                        color: black;
+                        margin-bottom: 0;
+                    ">
+                        {{ item.desc }}
+                    </p>
+
                 </div>
-                {% if item.link %}</a>{% endif %}
+
+                {% if item.link %}
+                </a>
+                {% endif %}
+
             </div>
+
             {% endfor %}
+
         </div>
-        <div class="carousel-control-prev" type="button" data-target="#{{ include.id | slugify }}" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+
+        <!-- Previous -->
+        <div class="carousel-control-prev"
+             type="button"
+             data-target="#{{ include.id | slugify }}"
+             data-slide="prev">
+
+            <span class="carousel-control-prev-icon"
+                  aria-hidden="true">
+            </span>
+
+            <span class="sr-only">
+                Previous
+            </span>
+
         </div>
-        <div class="carousel-control-next" type="button" data-target="#{{ include.id | slugify }}" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+
+        <!-- Next -->
+        <div class="carousel-control-next"
+             type="button"
+             data-target="#{{ include.id | slugify }}"
+             data-slide="next">
+
+            <span class="carousel-control-next-icon"
+                  aria-hidden="true">
+            </span>
+
+            <span class="sr-only">
+                Next
+            </span>
+
         </div>
+
     </div>
 </div>
