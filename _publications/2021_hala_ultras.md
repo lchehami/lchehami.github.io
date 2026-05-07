@@ -33,5 +33,5 @@ authors:
  - Ziad Herro
 
 links:
-  DOI: 10.1016/j.ultras.2021.106430  
+  DOI: https://doi.org/10.1016/j.ultras.2021.106430
 ---
