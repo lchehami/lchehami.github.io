@@ -511,3 +511,43 @@ body.dark a {
   font-size: 18px;
   background: #ffffff;
 }
+/* ================= DARK MODE ================= */
+
+body.dark {
+    background: #0f172a !important;
+    color: #f8fafc !important;
+}
+
+body.dark .bg-light {
+    background: #0f172a !important;
+}
+
+body.dark .navbar {
+    background: #111827 !important;
+}
+
+body.dark .card,
+body.dark .container-lg,
+body.dark .container,
+body.dark .pub-card,
+body.dark .bio-card {
+    background: #1e293b !important;
+    color: #f8fafc !important;
+}
+
+body.dark a,
+body.dark .nav-link,
+body.dark .navbar-brand {
+    color: #93c5fd !important;
+}
+
+#themeToggle {
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    background: white;
+}
