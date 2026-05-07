@@ -73,11 +73,6 @@ date: 2024-01-12 00:01:00 +0800
 
     <hr />
 
-    <div class="text-center mt-4">
-        $$
-        C_{AB}(\tau)=\int_{0}^{T}u_A(t)\,u_B(t+\tau)\,dt
-        $$
-    </div>
 
     <hr />
 
