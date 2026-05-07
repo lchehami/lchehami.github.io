@@ -470,3 +470,10 @@ section {
     0 4px 20px rgba(0,0,0,0.08),
     0 10px 40px rgba(0,0,0,0.05);
 }
+.carousel-caption,
+.carousel-caption p,
+.carousel-caption .small,
+.card-text,
+.carousel-item p {
+    color: #000 !important;
+}
