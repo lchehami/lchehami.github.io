@@ -61,7 +61,6 @@
         <li>Guided ultrasonic waves</li>
         <li>High-frequency Rayleigh waves</li>
         <li>Thin-film and wafer characterization</li>
-        <li>Structural health monitoring</li>
         <li>Nondestructive evaluation (NDT/NDE)</li>
     </ul>
 
