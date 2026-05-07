@@ -30,7 +30,7 @@ date: 2022-01-12 00:01:00 +0800
 
     <!-- IMAGE -->
     <div class="text-center my-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Ultrasound_Scan.jpg"
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHLWNlpzl0PYeshRT7dSJRzHwbBi8YqAnQCw&s"
              alt="Ultrasonic imaging"
              class="img-fluid rounded-xl"
              style="max-width: 720px;">
@@ -95,7 +95,7 @@ date: 2022-01-12 00:01:00 +0800
 
     <!-- IMAGE -->
     <div class="text-center my-4">
-        <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1400&auto=format&fit=crop"
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTPoGcyfyX9V3F9PydT3Asw-7bxwe5ZDBnAw&s"
              alt="Wave-based imaging"
              class="img-fluid rounded-xl"
              style="max-width: 720px;">
