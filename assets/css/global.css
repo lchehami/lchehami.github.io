@@ -156,7 +156,7 @@ h2 {
   align-items: center;
   flex-wrap: wrap;
 
-  gap: 16px;
+  gap: 24px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -168,9 +168,9 @@ h2 {
 }
 
 .institution-logos img {
-  height: 26px !important;
+  height: 28px !important;
   width: auto !important;
-  max-width: 100px !important;
+  max-width: 120px !important;
 
   object-fit: contain !important;
 
@@ -205,7 +205,7 @@ h2 {
   flex-wrap: wrap;
   align-items: center;
 
-  column-gap: 28px;
+  column-gap: 32px;
   row-gap: 10px;
 
   border-top: 1px solid rgba(0,0,0,0.08);
