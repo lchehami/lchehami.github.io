@@ -13,7 +13,7 @@ date: 2020-01-12 00:01:00 +0800
     alt="Diffuse wave correlation">
 
   <div class="card-img-overlay"
-       style="overflow:auto; background:rgba(255,255,255,0.82); border-radius:15px;">
+       style="overflow:auto; background:rgba(255,255,255,0.82); border-radius:14px;">
 
     <h5 class="card-title">Diffuse Wave Correlation</h5>
 
