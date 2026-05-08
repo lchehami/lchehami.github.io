@@ -107,6 +107,13 @@ images:
             ANR-21-CE42-0002 – DACLOS
         </a>
     </p>
+---
+
+<div class="p-4 text-center">
+$$
+\frac{\partial}{\partial t} C_{AB}(t) \propto G_{AB}(t) - G_{AB}(-t)
+$$
+</div>
 
     <hr />
 
