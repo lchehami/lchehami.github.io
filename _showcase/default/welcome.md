@@ -2,6 +2,21 @@
 show: true
 width: 12
 date: 2024-01-12 00:01:00 +0800
+
+images:
+
+  - src: https://www.mdpi.com/sensors/sensors-25-01067/article_deploy/html/images/sensors-25-01067-g012-550.jpg
+    title: Surface Waves
+    desc: SAW generation using interdigital transducers.
+
+  - src: https://ultrananotec.com/wp-content/uploads/2022/10/SKU-108-a-9.jpg
+    title: Silicon Wafer
+    desc: Thin-film and wafer characterization using guided ultrasonic waves.
+
+  - src: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBxzoZ2c4UbBU03oEyxvKp_0hymLDJJV7lbw&s
+    title: DACLOS
+    desc: Diffuse wave generation and passive imaging in reverberant media.
+
 ---
 
 <div class="p-4">
@@ -73,14 +88,20 @@ date: 2024-01-12 00:01:00 +0800
 
     <hr />
 
-
-    <hr />
-
     <p class="small">
         Official ANR project:
         <a href="https://anr.fr/Projet-ANR-21-CE42-0002" target="_blank">
             ANR-21-CE42-0002 – DACLOS
         </a>
     </p>
+
+    <hr />
+
+    <h5>Project Gallery</h5>
+
+    {% include widgets/carousel.html
+       id="daclos-gallery"
+       images=page.images
+       height="420px" %}
 
 </div>
