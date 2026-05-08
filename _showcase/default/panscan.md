@@ -33,7 +33,7 @@ date: 2022-01-12 00:01:00 +0800
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHLWNlpzl0PYeshRT7dSJRzHwbBi8YqAnQCw&s"
              alt="Ultrasonic imaging"
              class="img-fluid rounded-xl"
-             style="max-width: 720px;">
+             style="max-width: 800px;">
     </div>
 
     <hr />
@@ -98,7 +98,7 @@ date: 2022-01-12 00:01:00 +0800
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTPoGcyfyX9V3F9PydT3Asw-7bxwe5ZDBnAw&s"
              alt="Wave-based imaging"
              class="img-fluid rounded-xl"
-             style="max-width: 720px;">
+             style="max-width: 800px;">
     </div>
 
     <hr />
