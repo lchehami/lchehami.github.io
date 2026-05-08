@@ -722,3 +722,46 @@ body.dark .publication-card a {
 body.dark .publication-card .border-bottom {
   border-color: #334155 !important;
 }
+/* ===== DARK MODE — EVENTS / NEWS CARD ===== */
+
+body.dark .event-card,
+body.dark .event-card-item,
+body.dark .news-card,
+body.dark .news-card *,
+body.dark .event-card *,
+body.dark .event-card-item * {
+  background-color: #1e293b !important;
+  color: #f8fafc !important;
+}
+
+body.dark .event-card,
+body.dark .news-card {
+  border: 1px solid #334155 !important;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.35) !important;
+}
+
+body.dark .event-title,
+body.dark .event-card a,
+body.dark .news-card a {
+  color: #93c5fd !important;
+}
+
+body.dark .event-meta,
+body.dark .event-excerpt,
+body.dark .event-card .text-muted,
+body.dark .news-card .text-muted {
+  color: #cbd5e1 !important;
+}
+
+body.dark .event-badge,
+body.dark .badge-light {
+  background: #334155 !important;
+  color: #f8fafc !important;
+  border: 1px solid #475569 !important;
+}
+
+body.dark .event-card .border-bottom,
+body.dark .event-card-item,
+body.dark .news-card .border-bottom {
+  border-color: #334155 !important;
+}
