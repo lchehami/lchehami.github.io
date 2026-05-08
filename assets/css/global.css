@@ -636,3 +636,55 @@ body.dark .institution-logos img {
     margin-left: 12px;
   }
 }
+
+/* ===== DARK MODE — PUBLICATIONS FIX ===== */
+
+body.dark .publication-year-block,
+body.dark .publication-entry,
+body.dark .publication-entry > *,
+body.dark .publication-entry .row,
+body.dark .publication-entry .col,
+body.dark .publication-entry .media,
+body.dark .publication-entry .card,
+body.dark .publication-entry .bg-white,
+body.dark .publication-entry .bg-light {
+  background: #1e293b !important;
+  color: #f8fafc !important;
+}
+
+body.dark .publication-year-block {
+  border: 1px solid #334155 !important;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.35) !important;
+}
+
+body.dark .publication-entry {
+  border-bottom: 1px solid #334155 !important;
+}
+
+body.dark .publication-entry p,
+body.dark .publication-entry div,
+body.dark .publication-entry span,
+body.dark .publication-entry small,
+body.dark .publication-entry strong,
+body.dark .publication-entry em,
+body.dark .publication-entry h1,
+body.dark .publication-entry h2,
+body.dark .publication-entry h3,
+body.dark .publication-entry h4 {
+  color: #f8fafc !important;
+}
+
+body.dark .publication-entry .text-muted,
+body.dark .publication-entry .small {
+  color: #cbd5e1 !important;
+}
+
+body.dark #navbar-year .nav-link {
+  color: #cbd5e1 !important;
+}
+
+body.dark #navbar-year .nav-link:hover,
+body.dark #navbar-year .nav-link.active {
+  background: #334155 !important;
+  color: #ffffff !important;
+}
