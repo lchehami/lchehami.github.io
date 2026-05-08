@@ -688,3 +688,37 @@ body.dark #navbar-year .nav-link.active {
   background: #334155 !important;
   color: #ffffff !important;
 }
+/* ===== DARK MODE — SELECTED PUBLICATIONS CARD ===== */
+
+body.dark .publication-card,
+body.dark .publication-card .bg-white,
+body.dark .publication-card .bg-light {
+  background: #1e293b !important;
+  color: #f8fafc !important;
+  border: 1px solid #334155 !important;
+}
+
+body.dark .publication-card *,
+body.dark .publication-card h6,
+body.dark .publication-card p,
+body.dark .publication-card div,
+body.dark .publication-card span,
+body.dark .publication-card small,
+body.dark .publication-card strong,
+body.dark .publication-card em {
+  background-color: transparent !important;
+  color: #f8fafc !important;
+}
+
+body.dark .publication-card .text-muted,
+body.dark .publication-card .small {
+  color: #cbd5e1 !important;
+}
+
+body.dark .publication-card a {
+  color: #93c5fd !important;
+}
+
+body.dark .publication-card .border-bottom {
+  border-color: #334155 !important;
+}
