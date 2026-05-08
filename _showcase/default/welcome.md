@@ -11,7 +11,7 @@ images:
 
   - src: https://ultrananotec.com/wp-content/uploads/2022/10/SKU-108-a-9.jpg
     title: Silicon Wafer
-    desc: Thin-film and wafer characterization using guided ultrasonic waves.
+    desc: Thin-film and silicon wafer characterization using guided ultrasonic waves.
 
   - src: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBxzoZ2c4UbBU03oEyxvKp_0hymLDJJV7lbw&s
     title: DACLOS
@@ -33,7 +33,6 @@ images:
             Diffuse Acoustic Wave Correlation for Layer-On-Substrate Structures
         </h5>
 
-        <!-- ANR LOGO -->
         <div class="text-center my-4">
             <img src="https://www.logotheque-vectorielle.fr/wp-content/uploads/2022/10/logo-vectoriel-anr.jpg"
                  alt="ANR Logo"
@@ -117,20 +116,6 @@ images:
             the core of passive imaging approaches developed in DACLOS.
         </p>
 
-        <div class="p-4 text-center">
-            $$
-            \frac{\partial}{\partial t} C_{AB}(t)
-            \propto
-            G_{AB}(t) - G_{AB}(-t)
-            $$
-        </div>
-
-        <p>
-            DACLOS investigates the reconstruction of Green’s functions from
-            diffuse and reverberant ultrasonic wavefields using passive
-            cross-correlation methodologies.
-        </p>
-
         <hr />
 
         <p class="small">
@@ -147,56 +132,56 @@ images:
 
         <div class="sticky-top pt-3" style="top: 90px;">
 
-            <!-- DIFFUSE WAVE CORRELATION CARD -->
-       <div class="scientific-hero position-relative mb-4 rounded-xl overflow-hidden shadow-sm"
-     style="
-        min-height: 520px;
-        background-image:
-          linear-gradient(
-            rgba(255,255,255,0.78),
-            rgba(255,255,255,0.78)
-          ),
-          url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB0XfW-a7Qieuu-SFgf22lSmwtvO1JhadqANUMSw-2wA&s');
+            <!-- SCIENTIFIC HERO -->
+            <div class="scientific-hero position-relative mb-4 rounded-xl overflow-hidden shadow-sm"
+                 style="
+                    min-height: 520px;
+                    background-image:
+                      linear-gradient(
+                        rgba(255,255,255,0.78),
+                        rgba(255,255,255,0.78)
+                      ),
+                      url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB0XfW-a7Qieuu-SFgf22lSmwtvO1JhadqANUMSw-2wA&s');
 
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    padding: 40px;
+                    color: #111;
+                 ">
 
-        padding: 40px;
-        color: #111;
-     ">
+                <div style="
+                    position: relative;
+                    z-index: 2;
+                    color: #111;
+                ">
 
-              <img
-                data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB0XfW-a7Qieuu-SFgf22lSmwtvO1JhadqANUMSw-2wA&s"
-                class="lazy w-100 rounded-xl"
-                src="{{ '/assets/images/empty_300x200.png' | relative_url }}"
-                alt="Diffuse wave correlation">
+                    <h5 style="color:#111; font-weight:700;">
+                        Diffuse Wave Correlation
+                    </h5>
 
-              <div class="card-img-overlay"
-                   style="
-                      overflow:auto;
-                      background:rgba(255,255,255,0.82);
-                      border-radius:14px;
-                   ">
+                    <p style="color:#111; line-height:1.7;">
+                        Passive imaging approach based on the cross-correlation of reverberated
+                        wavefields recorded at different receiver positions. In diffuse media,
+                        the correlation function converges toward the Green's function of the
+                        structure, enabling passive characterization and imaging.
+                    </p>
 
-                <h5 class="card-title">
-                  Diffuse Wave Correlation
-                </h5>
+                    <div class="text-center small mt-3" style="color:#111;">
+                        $$
+                        C_{AB}(\tau)=\int_{0}^{T}u_A(t)\,u_B(t+\tau)\,dt
+                        $$
+                    </div>
 
-                <p class="card-text">
-                  Passive imaging approach based on the cross-correlation of reverberated
-                  wavefields recorded at different receiver positions. In diffuse media,
-                  the correlation function converges toward the Green's function of the
-                  structure, enabling passive characterization and imaging.
-                </p>
+                    <div class="p-4 text-center" style="color:#111;">
+                        $$
+                        \frac{\partial}{\partial t} C_{AB}(t)
+                        \propto
+                        G_{AB}(t) - G_{AB}(-t)
+                        $$
+                    </div>
 
-                <div class="text-center small mt-3">
-                  $$
-                  C_{AB}(\tau)=\int_{0}^{T}u_A(t)\,u_B(t+\tau)\,dt
-                  $$
                 </div>
-
-              </div>
 
             </div>
 
