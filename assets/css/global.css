@@ -776,3 +776,26 @@ body.dark .showcase-card {
 body.dark .showcase-card * {
   color: #f8fafc !important;
 }
+
+/* ===== SCIENTIFIC HERO — ALWAYS LIGHT ===== */
+
+.scientific-hero,
+.scientific-hero * {
+  color: #111 !important;
+}
+
+body.dark .scientific-hero,
+body.dark .scientific-hero * {
+  color: #111 !important;
+}
+
+body.dark .scientific-hero h1,
+body.dark .scientific-hero h2,
+body.dark .scientific-hero h3,
+body.dark .scientific-hero h4,
+body.dark .scientific-hero h5,
+body.dark .scientific-hero p,
+body.dark .scientific-hero span,
+body.dark .scientific-hero div {
+  color: #111 !important;
+}
