@@ -148,7 +148,23 @@ images:
         <div class="sticky-top pt-3" style="top: 90px;">
 
             <!-- DIFFUSE WAVE CORRELATION CARD -->
-            <div class="position-relative mb-4">
+       <div class="scientific-hero position-relative mb-4 rounded-xl overflow-hidden shadow-sm"
+     style="
+        min-height: 520px;
+        background-image:
+          linear-gradient(
+            rgba(255,255,255,0.78),
+            rgba(255,255,255,0.78)
+          ),
+          url('https://www.researchgate.net/profile/Francois-Sarrazin-4/publication/354162493/figure/fig1/AS:1061342303748096@1630055132408/Schema-illustrant-la-reconstruction-de-la-fonction-de-transfert-par-inter-correlation-de_Q320.jpg');
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        padding: 40px;
+        color: #111;
+     ">
 
               <img
                 data-src="https://www.researchgate.net/profile/Francois-Sarrazin-4/publication/354162493/figure/fig1/AS:1061342303748096@1630055132408/Schema-illustrant-la-reconstruction-de-la-fonction-de-transfert-par-inter-correlation-de_Q320.jpg"
