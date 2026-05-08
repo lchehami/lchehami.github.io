@@ -156,7 +156,7 @@ images:
             rgba(255,255,255,0.78),
             rgba(255,255,255,0.78)
           ),
-          url('https://www.researchgate.net/profile/Francois-Sarrazin-4/publication/354162493/figure/fig1/AS:1061342303748096@1630055132408/Schema-illustrant-la-reconstruction-de-la-fonction-de-transfert-par-inter-correlation-de_Q320.jpg');
+          url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB0XfW-a7Qieuu-SFgf22lSmwtvO1JhadqANUMSw-2wA&s');
 
         background-size: cover;
         background-position: center;
@@ -167,7 +167,7 @@ images:
      ">
 
               <img
-                data-src="https://www.researchgate.net/profile/Francois-Sarrazin-4/publication/354162493/figure/fig1/AS:1061342303748096@1630055132408/Schema-illustrant-la-reconstruction-de-la-fonction-de-transfert-par-inter-correlation-de_Q320.jpg"
+                data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB0XfW-a7Qieuu-SFgf22lSmwtvO1JhadqANUMSw-2wA&s"
                 class="lazy w-100 rounded-xl"
                 src="{{ '/assets/images/empty_300x200.png' | relative_url }}"
                 alt="Diffuse wave correlation">
