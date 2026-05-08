@@ -16,6 +16,7 @@ images:
   - src: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBxzoZ2c4UbBU03oEyxvKp_0hymLDJJV7lbw&s
     title: DACLOS
     desc: Diffuse wave generation and passive imaging in reverberant media.
+    link: https://anr.fr/Projet-ANR-21-CE42-0002
 
 ---
 
@@ -27,6 +28,7 @@ images:
         Diffuse Acoustic Wave Correlation for Layer-On-Substrate Structures
     </h5>
 
+    <!-- ANR LOGO -->
     <div class="text-center my-4">
         <img src="https://www.logotheque-vectorielle.fr/wp-content/uploads/2022/10/logo-vectoriel-anr.jpg"
              alt="ANR Logo"
@@ -101,19 +103,30 @@ images:
 
     <hr />
 
+    <h5>Wave Correlation Principle</h5>
+
+    <div class="p-4 text-center">
+        $$
+        \frac{\partial}{\partial t} C_{AB}(t)
+        \propto
+        G_{AB}(t) - G_{AB}(-t)
+        $$
+    </div>
+
+    <p>
+        DACLOS investigates the reconstruction of Green’s functions from
+        diffuse and reverberant ultrasonic wavefields using passive
+        cross-correlation methodologies.
+    </p>
+
+    <hr />
+
     <p class="small">
         Official ANR project:
         <a href="https://anr.fr/Projet-ANR-21-CE42-0002" target="_blank">
             ANR-21-CE42-0002 – DACLOS
         </a>
     </p>
----
-
-<div class="p-4 text-center">
-$$
-\frac{\partial}{\partial t} C_{AB}(t) \propto G_{AB}(t) - G_{AB}(-t)
-$$
-</div>
 
     <hr />
 
