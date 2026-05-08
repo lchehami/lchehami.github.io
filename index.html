@@ -4,10 +4,8 @@ title: Homepage
 navbar_title: Home
 ---
 
-<!-- ICONES -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- HERO -->
 <div class="hero-card">
 
   <div class="hero-content">
@@ -16,38 +14,38 @@ navbar_title: Home
 
       <h1>Lynda Chehami - Associate Professor</h1>
 
-     <a href="https://www.uphf.fr/" target="_blank" class="affiliation">
-  <img src="{{ site.baseurl }}/assets/images/badges/uphf.png" class="aff-logo">
-  Université Polytechnique Hauts-de-France
-</a>
+      <a href="https://www.uphf.fr/" target="_blank" class="affiliation">
+        <img src="{{ site.baseurl }}/assets/images/badges/uphf.png" class="aff-logo" alt="UPHF">
+        <span>Université Polytechnique Hauts-de-France</span>
+      </a>
 
-    <a href="https://www.insa-hdf.fr/" target="_blank" class="affiliation">
-  <img src="{{ site.baseurl }}/assets/images/badges/INSA.png" class="aff-logo">
-  INSA Hauts-de-France
-</a>
+      <a href="https://www.insa-hdf.fr/" target="_blank" class="affiliation">
+        <img src="{{ site.baseurl }}/assets/images/badges/INSA.png" class="aff-logo" alt="INSA">
+        <span>INSA Hauts-de-France</span>
+      </a>
 
-     <a href="https://www.iemn.fr/" target="_blank" class="affiliation">
-  <img src="{{ site.baseurl }}/assets/images/badges/iemn.png" class="aff-logo">
-  IEMN – site de Valenciennes, CNRS UMR 8520
-</a>
+      <a href="https://www.iemn.fr/" target="_blank" class="affiliation">
+        <img src="{{ site.baseurl }}/assets/images/badges/iemn.png" class="aff-logo" alt="IEMN">
+        <span>IEMN – site de Valenciennes, CNRS UMR 8520</span>
+      </a>
 
-     <a href="https://www.cnrs.fr/" target="_blank" class="affiliation">
-  <img src="{{ site.baseurl }}/assets/images/badges/cnrs.png" class="aff-logo">
-  CNRS
-</a>
+      <a href="https://www.cnrs.fr/" target="_blank" class="affiliation">
+        <img src="{{ site.baseurl }}/assets/images/badges/cnrs.png" class="aff-logo" alt="CNRS">
+        <span>CNRS</span>
+      </a>
 
-<div class="bio-title">
-  <strong>Welcome to my website to learn more about my research and teaching activities!</strong>
-</div>
+      <div class="bio-title">
+        <strong>Welcome to my website to learn more about my research and teaching activities!</strong>
+      </div>
 
-<p class="bio">
-  I am an Associate Professor (HDR) in Physical Acoustics at Université Polytechnique Hauts-de-France and INSA Hauts-de-France.
-  My research focuses on ultrasonic wave propagation, passive imaging, and wave correlation in complex and reverberant media,
-  with applications to the characterization of thin films, multilayer systems, and advanced materials.
+      <p class="bio">
+        I am an Associate Professor (HDR) in Physical Acoustics at Université Polytechnique Hauts-de-France and INSA Hauts-de-France.
+        My research focuses on ultrasonic wave propagation, passive imaging, and wave correlation in complex and reverberant media,
+        with applications to the characterization of thin films, multilayer systems, and advanced materials.
+        Since 2022, I have been serving as Chair of the Ultrasounds Technical Committee of the
+        <a href="https://euracoustics.org/" target="_blank">European Acoustics Association (EAA)</a>.
+      </p>
 
-  Since 2022, I have been serving as Chair of the Ultrasounds Technical Committee of the
-  <a href="https://euracoustics.org/" target="_blank">European Acoustics Association (EAA)</a>.
-</p>
       <a class="cv-link" href="https://cv.hal.science/lynda-chehami" target="_blank">
         <i class="fa-solid fa-file-lines"></i> Curriculum Vitae
       </a>
@@ -55,34 +53,30 @@ navbar_title: Home
     </div>
 
     <div class="hero-photo">
-      <img src="{{ site.baseurl }}/assets/images/photos/profile.png">
+      <img src="{{ site.baseurl }}/assets/images/photos/profile.png" alt="Lynda Chehami">
     </div>
 
   </div>
 
-
-
   <div class="institution-logos">
-  
 
-  <a href="https://www.uphf.fr/" target="_blank">
-    <img src="{{ site.baseurl }}/assets/images/badges/uphf.png" alt="UPHF">
-  </a>
+    <a href="https://www.uphf.fr/" target="_blank">
+      <img src="{{ site.baseurl }}/assets/images/badges/uphf.png" alt="UPHF">
+    </a>
 
-  <a href="https://www.insa-hdf.fr/" target="_blank">
-    <img src="{{ site.baseurl }}/assets/images/badges/INSA.png" alt="INSA">
-  </a>
+    <a href="https://www.insa-hdf.fr/" target="_blank">
+      <img src="{{ site.baseurl }}/assets/images/badges/INSA.png" alt="INSA">
+    </a>
 
-  <a href="https://www.iemn.fr/" target="_blank">
-    <img src="{{ site.baseurl }}/assets/images/badges/iemn.png" alt="IEMN">
-  </a>
+    <a href="https://www.iemn.fr/" target="_blank">
+      <img src="{{ site.baseurl }}/assets/images/badges/iemn.png" alt="IEMN">
+    </a>
 
-  <a href="https://www.cnrs.fr/" target="_blank">
-    <img src="{{ site.baseurl }}/assets/images/badges/cnrs.png" alt="CNRS">
-  </a>
+    <a href="https://www.cnrs.fr/" target="_blank">
+      <img src="{{ site.baseurl }}/assets/images/badges/cnrs.png" alt="CNRS">
+    </a>
 
-</div>
-
+  </div>
 
   <div class="links">
     <a href="mailto:lynda.chehami@uphf.fr"><i class="fa-solid fa-envelope"></i> Email</a>
@@ -96,9 +90,6 @@ navbar_title: Home
 
 </div>
 
-
-
-<!-- AUTRES CARTES -->
 {% if site.data.display.homepage.show_experience %}
   {% include widgets/experience_card.html %}
 {% endif %}
@@ -108,14 +99,10 @@ navbar_title: Home
 {% endif %}
 
 {% if site.data.display.homepage.show_selected_publications %}
-
   {% assign selected_publications = site.publications | where: "selected", true %}
 
   {% include widgets/publication_card.html
       publications=selected_publications
       title="Selected Recent Publications"
       limit=5 %}
-
 {% endif %}
-
-
