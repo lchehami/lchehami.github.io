@@ -106,6 +106,40 @@ images:
             <li>Nondestructive evaluation (NDT/NDE)</li>
         </ul>
 
+        <hr />
+
+        <h5>Wave Correlation Principle</h5>
+
+        <p>
+            In a diffuse or reverberant elastic wavefield, the cross-correlation
+            between signals recorded at two receivers can be used to retrieve
+            the Green’s function between these two points. This principle is at
+            the core of passive imaging approaches developed in DACLOS.
+        </p>
+
+        <div class="p-4 text-center">
+            $$
+            \frac{\partial}{\partial t} C_{AB}(t)
+            \propto
+            G_{AB}(t) - G_{AB}(-t)
+            $$
+        </div>
+
+        <p>
+            DACLOS investigates the reconstruction of Green’s functions from
+            diffuse and reverberant ultrasonic wavefields using passive
+            cross-correlation methodologies.
+        </p>
+
+        <hr />
+
+        <p class="small">
+            Official ANR project:
+            <a href="https://anr.fr/Projet-ANR-21-CE42-0002" target="_blank">
+                ANR-21-CE42-0002 – DACLOS
+            </a>
+        </p>
+
     </div>
 
     <!-- RIGHT COLUMN -->
@@ -113,6 +147,44 @@ images:
 
         <div class="sticky-top pt-3" style="top: 90px;">
 
+            <!-- DIFFUSE WAVE CORRELATION CARD -->
+            <div class="position-relative mb-4">
+
+              <img
+                data-src="https://www.researchgate.net/profile/Francois-Sarrazin-4/publication/354162493/figure/fig1/AS:1061342303748096@1630055132408/Schema-illustrant-la-reconstruction-de-la-fonction-de-transfert-par-inter-correlation-de_Q320.jpg"
+                class="lazy w-100 rounded-xl"
+                src="{{ '/assets/images/empty_300x200.png' | relative_url }}"
+                alt="Diffuse wave correlation">
+
+              <div class="card-img-overlay"
+                   style="
+                      overflow:auto;
+                      background:rgba(255,255,255,0.82);
+                      border-radius:14px;
+                   ">
+
+                <h5 class="card-title">
+                  Diffuse Wave Correlation
+                </h5>
+
+                <p class="card-text">
+                  Passive imaging approach based on the cross-correlation of reverberated
+                  wavefields recorded at different receiver positions. In diffuse media,
+                  the correlation function converges toward the Green's function of the
+                  structure, enabling passive characterization and imaging.
+                </p>
+
+                <div class="text-center small mt-3">
+                  $$
+                  C_{AB}(\tau)=\int_{0}^{T}u_A(t)\,u_B(t+\tau)\,dt
+                  $$
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- PROJECT GALLERY -->
             {% include widgets/carousel.html
                id="daclos-gallery"
                images=page.images
@@ -123,32 +195,5 @@ images:
     </div>
 
 </div>
-
-<hr />
-
-<h5>Wave Correlation Principle</h5>
-
-<div class="p-4 text-center">
-$$
-\frac{\partial}{\partial t} C_{AB}(t)
-\propto
-G_{AB}(t) - G_{AB}(-t)
-$$
-</div>
-
-<p>
-    DACLOS investigates the reconstruction of Green’s functions from
-    diffuse and reverberant ultrasonic wavefields using passive
-    cross-correlation methodologies.
-</p>
-
-<hr />
-
-<p class="small">
-    Official ANR project:
-    <a href="https://anr.fr/Projet-ANR-21-CE42-0002" target="_blank">
-        ANR-21-CE42-0002 – DACLOS
-    </a>
-</p>
 
 </div>
