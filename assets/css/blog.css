@@ -264,3 +264,47 @@ h1, h2, h3, h4, h5, h6,
 .blog-toc-nav {
     scrollbar-width: none;
 }
+/* ===== DARK MODE — BLOG / EVENTS FIX ===== */
+
+body.dark .blog-content,
+body.dark .blog-content *,
+body.dark .blog-main,
+body.dark .blog-layout-wrapper,
+body.dark .blog-toc-sidebar {
+  background-color: transparent !important;
+  color: #f8fafc !important;
+}
+
+body.dark .blog-content blockquote {
+  border-left-color: #334155 !important;
+  color: #cbd5e1 !important;
+}
+
+body.dark .blog-content h1,
+body.dark .blog-content h2 {
+  border-bottom-color: #334155 !important;
+}
+
+body.dark .blog-content table th {
+  background-color: #1e293b !important;
+  color: #f8fafc !important;
+}
+
+body.dark .blog-content table td,
+body.dark .blog-content table th {
+  border-color: #334155 !important;
+}
+
+body.dark .blog-toc-nav {
+  border-left-color: #334155 !important;
+}
+
+body.dark .blog-toc-title,
+body.dark .blog-toc-list a {
+  color: #cbd5e1 !important;
+}
+
+body.dark .blog-toc-list a:hover,
+body.dark .blog-toc-list a.toc-active {
+  color: #ffffff !important;
+}
