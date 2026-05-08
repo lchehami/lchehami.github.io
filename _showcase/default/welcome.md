@@ -27,6 +27,19 @@ images:
         Diffuse Acoustic Wave Correlation for Layer-On-Substrate Structures
     </h5>
 
+    <div class="text-center my-4">
+        <img src="https://www.logotheque-vectorielle.fr/wp-content/uploads/2022/10/logo-vectoriel-anr.jpg"
+             alt="ANR Logo"
+             class="img-fluid rounded-xl"
+             style="
+                max-width: 320px;
+                height: auto;
+                background: white;
+                padding: 18px;
+                border-radius: 14px;
+             ">
+    </div>
+
     <hr />
 
     <p>
@@ -99,9 +112,11 @@ images:
 
     <h5>Project Gallery</h5>
 
-    {% include widgets/carousel.html
-       id="daclos-gallery"
-       images=page.images
-       height="420px" %}
+    <div class="my-4">
+        {% include widgets/carousel.html
+           id="daclos-gallery"
+           images=page.images
+           height="420px" %}
+    </div>
 
 </div>
