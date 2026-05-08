@@ -1,9 +1,10 @@
 <div class="card my-4 news-card">
-  <div class="card-header">
+
+  <div class="card-header news-card-header">
     <h2><i class="fa-solid fa-rss"></i> News</h2>
   </div>
 
-  <div class="card-body news-timeline">
+  <div class="card-body news-timeline news-card-body">
 
     {% assign news_by_year = site.news | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
 
@@ -13,6 +14,7 @@
 
         <div class="news-year">
           {{ year.name }}
+
           <button class="news-toggle" onclick="toggleNewsYear('{{ year.name }}')">
             Show details
           </button>
@@ -23,21 +25,25 @@
           {% for news in year.items %}
 
             <div class="news-entry">
+
               <div class="news-dot"></div>
 
               <div class="news-text">
+
                 <div class="news-date">
                   {{ news.date | date: "%d %B %Y" }}
                 </div>
 
-                <h3>
+                <h3 class="news-title">
                   {{ news.title }}
                 </h3>
 
                 <div class="news-content">
                   {{ news.content }}
                 </div>
+
               </div>
+
             </div>
 
           {% endfor %}
@@ -49,11 +55,14 @@
     {% endfor %}
 
   </div>
+
 </div>
 
 <script>
 function toggleNewsYear(year) {
+
   const block = document.getElementById("news-" + year);
+
   if (!block) return;
 
   if (block.style.display === "none") {
