@@ -428,63 +428,122 @@ body.dark a:hover {
 }
 
 /* =========================================================
-   PUBLICATIONS FIX
+   PUBLICATION CARDS
 ========================================================= */
 
-.publication-entry .row {
-  align-items: center !important;
+.pub-card {
+  display: flex;
+  align-items: center;
+
+  gap: 34px;
+
+  padding: 26px 0;
+
+  border-color: rgba(0,0,0,0.08) !important;
 }
 
-.pub-left {
-  overflow: hidden;
+.pub-image {
+  flex: 0 0 280px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pub-cover {
-  width: 100% !important;
-  max-width: 260px !important;
+  width: 100%;
+  max-width: 260px;
 
-  height: auto !important;
-  max-height: 180px !important;
+  max-height: 185px;
 
-  object-fit: contain !important;
+  object-fit: contain;
 
-  display: block !important;
+  border-radius: 12px;
 
-  margin: 0 auto !important;
+  display: block;
 }
 
-.pub-right {
+.pub-content {
+  flex: 1;
   min-width: 0;
 }
 
-.pub-right h5 {
-  font-size: 20px;
+.pub-title {
+  font-size: 22px;
   line-height: 1.35;
-  margin-bottom: 8px !important;
+  font-weight: 600;
+
+  margin-bottom: 10px;
 }
 
-.pub-right p {
-  line-height: 1.55;
+.pub-authors {
+  font-size: 15px;
+  color: #555;
+
+  margin-bottom: 6px;
+}
+
+.pub-journal {
+  font-size: 15px;
+  color: #333;
+
+  margin-bottom: 10px;
+}
+
+.pub-journal::before {
+  content: "📘 ";
+}
+
+.pub-abstract {
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: #6b7280;
+
+  margin-bottom: 10px;
+}
+
+.pub-links-inline a {
+  text-decoration: none;
+  margin-right: 10px;
+
+  font-weight: 500;
+}
+
+.pub-links-inline a:hover {
+  text-decoration: underline;
 }
 
 .qrank-badge {
   background: #1565c0;
-  color: white !important;
+  color: white;
 
   padding: 2px 8px;
 
-  border-radius: 12px;
+  border-radius: 999px;
 
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
 
   margin-left: 8px;
 
   white-space: nowrap;
 }
 
-.pub-right p:nth-of-type(2)::before {
-  content: "📘 ";
+body.dark .pub-title {
+  color: #f8fafc;
+}
+
+body.dark .pub-authors {
+  color: #cbd5e1;
+}
+
+body.dark .pub-journal {
+  color: #e2e8f0;
+}
+
+body.dark .pub-abstract {
+  color: #94a3b8;
 }
 
 /* =========================================================
@@ -522,8 +581,24 @@ body.dark a:hover {
     height: 160px;
   }
 
+  .pub-card {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .pub-image {
+    width: 100%;
+    flex: none;
+  }
+
   .pub-cover {
-    max-width: 100% !important;
-    max-height: 220px !important;
+    max-width: 100%;
+    max-height: 240px;
+  }
+
+  .pub-title {
+    font-size: 20px;
   }
 }
