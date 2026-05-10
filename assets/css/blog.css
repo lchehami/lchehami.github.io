@@ -407,3 +407,26 @@ body.dark .blog-toc-list a:hover,
 body.dark .blog-toc-list a.toc-active {
     color: #ffffff !important;
 }
+/* ===== FINAL FIX — TEXTE SUR IMAGE EN NOIR EN DARK MODE ===== */
+
+body.dark .blog-content .card-img-overlay,
+body.dark .blog-content .card-img-overlay *,
+body.dark .card-img-overlay,
+body.dark .card-img-overlay * {
+    color: #000000 !important;
+    text-shadow: none !important;
+}
+
+body.dark .blog-content .card-img-overlay h1,
+body.dark .blog-content .card-img-overlay h2,
+body.dark .blog-content .card-img-overlay h3,
+body.dark .blog-content .card-img-overlay h4,
+body.dark .blog-content .card-img-overlay h5,
+body.dark .blog-content .card-img-overlay h6,
+body.dark .blog-content .card-img-overlay p,
+body.dark .blog-content .card-img-overlay span,
+body.dark .blog-content .card-img-overlay div,
+body.dark .blog-content .card-img-overlay a {
+    color: #000000 !important;
+    text-shadow: none !important;
+}
