@@ -702,7 +702,7 @@ body.dark .pub-abstract {
 }
 
 [data-semantic-scholar-id]::before {
-  content: "☞";
+  content: "📖";
   font-size: 15px !important;
   color: #000 !important;
 }
