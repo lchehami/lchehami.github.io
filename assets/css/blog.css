@@ -125,3 +125,10 @@ body.dark .blog-toc-list a:hover,
 body.dark .blog-toc-list a.toc-active {
   color: #ffffff !important;
 }
+/* ===== TEXT ON IMAGE FIX ===== */
+
+body.dark .card-img-overlay,
+body.dark .card-img-overlay * {
+  color: #000000 !important;
+  text-shadow: none !important;
+}
