@@ -179,11 +179,8 @@ h2 {
 
 .affiliation {
   display: grid !important;
-
   grid-template-columns: 90px minmax(0, 1fr) !important;
-
   align-items: center !important;
-
   column-gap: 14px !important;
 
   margin-top: 10px !important;
@@ -200,7 +197,6 @@ h2 {
 
 .affiliation span {
   display: block !important;
-
   color: inherit !important;
 
   font-size: 16px !important;
@@ -238,10 +234,8 @@ h2 {
 
 .institution-logos {
   display: flex;
-
   justify-content: center;
   align-items: center;
-
   flex-wrap: wrap;
 
   gap: 24px;
@@ -252,7 +246,6 @@ h2 {
 
 .institution-logos a {
   display: inline-flex;
-
   align-items: center;
   justify-content: center;
 }
@@ -339,6 +332,194 @@ h2 {
 }
 
 /* =========================================================
+   SEARCH BAR PUBLICATIONS
+========================================================= */
+
+.publication-search-container {
+  margin-bottom: 40px;
+}
+
+.publication-search-bar {
+  width: 100%;
+  max-width: 720px;
+
+  padding: 14px 22px;
+
+  border-radius: 14px;
+  border: 1px solid #d9dde3;
+
+  background: #ffffff;
+
+  font-size: 16px;
+  line-height: 1.4;
+
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+
+  transition: all 0.2s ease;
+}
+
+.publication-search-bar:focus {
+  outline: none;
+
+  border-color: #1565c0;
+
+  box-shadow: 0 0 0 4px rgba(21,101,192,0.12);
+}
+
+/* =========================================================
+   PUBLICATION CARDS
+========================================================= */
+
+.publication-year-block {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.publication-entry .pub-card {
+  display: grid !important;
+  grid-template-columns: 280px minmax(0, 1fr) !important;
+
+  column-gap: 32px !important;
+  align-items: center !important;
+
+  width: 100% !important;
+
+  padding: 24px !important;
+  margin-bottom: 24px !important;
+
+  box-sizing: border-box !important;
+
+  border-radius: 22px !important;
+}
+
+.publication-entry .pub-image {
+  width: 280px !important;
+  max-width: 280px !important;
+  min-width: 280px !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.publication-entry .pub-cover {
+  width: 100% !important;
+  max-width: 260px !important;
+
+  height: auto !important;
+  max-height: 190px !important;
+
+  object-fit: contain !important;
+
+  display: block !important;
+
+  border-radius: 14px !important;
+}
+
+.publication-entry .pub-content {
+  min-width: 0 !important;
+  width: 100% !important;
+}
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.pub-title {
+  font-size: 22px;
+  line-height: 1.35;
+  font-weight: 600;
+
+  margin-bottom: 8px;
+}
+
+.pub-authors,
+.pub-journal {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.pub-journal::before {
+  content: "📘 ";
+}
+
+.pub-abstract {
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: #6b7280;
+
+  margin-bottom: 8px;
+}
+
+/* =========================================================
+   Q RANK
+========================================================= */
+
+.qrank-badge {
+  background: #1565c0;
+
+  color: white !important;
+
+  padding: 2px 8px;
+
+  border-radius: 999px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  margin-left: 8px;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   SEMANTIC SCHOLAR BADGE
+========================================================= */
+
+.citation-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+
+  gap: 5px !important;
+
+  margin-left: 8px !important;
+
+  padding: 2px 8px !important;
+
+  background: #1e88ff !important;
+
+  color: #000 !important;
+
+  border-radius: 8px !important;
+
+  font-size: 13px !important;
+  font-weight: 500 !important;
+
+  line-height: 1.3 !important;
+
+  white-space: nowrap !important;
+}
+
+.citation-icon {
+  color: #000 !important;
+  font-size: 14px !important;
+}
+
+.citation-badge [data-semantic-scholar-id] {
+  display: inline !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  background: transparent !important;
+
+  color: #000 !important;
+
+  border-radius: 0 !important;
+}
+
+/* =========================================================
    DARK MODE
 ========================================================= */
 
@@ -392,165 +573,45 @@ body.dark a:hover {
   color: #bfdbfe !important;
 }
 
-/* =========================================================
-   SEARCH BAR PUBLICATIONS
-========================================================= */
+body.dark .pub-card {
+  background: #16181d !important;
 
-.publication-search-container {
-  margin-bottom: 40px;
-}
+  border: 1px solid rgba(255,255,255,0.08) !important;
 
-.publication-search-bar {
-  width: 100%;
-  max-width: 720px;
-
-  padding: 14px 22px;
-
-  border-radius: 14px;
-  border: 1px solid #d9dde3;
-
-  background: #ffffff;
-
-  font-size: 16px;
-  line-height: 1.4;
-
-  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
-
-  transition: all 0.2s ease;
-}
-
-.publication-search-bar:focus {
-  outline: none;
-
-  border-color: #1565c0;
-
-  box-shadow: 0 0 0 4px rgba(21,101,192,0.12);
-}
-
-/* =========================================================
-   PUBLICATION CARDS
-========================================================= */
-
-.pub-card {
-  display: flex;
-  align-items: center;
-
-  gap: 34px;
-
-  padding: 26px 0;
-
-  border-color: rgba(0,0,0,0.08) !important;
-}
-
-.pub-image {
-  flex: 0 0 280px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.pub-cover {
-  width: 100%;
-  max-width: 260px;
-
-  max-height: 185px;
-
-  object-fit: contain;
-
-  border-radius: 12px;
-
-  display: block;
-}
-
-.pub-content {
-  flex: 1;
-  min-width: 0;
-}
-
-.pub-title {
-  font-size: 22px;
-  line-height: 1.35;
-  font-weight: 600;
-
-  margin-bottom: 10px;
-}
-
-.pub-authors {
-  font-size: 15px;
-  color: #555;
-
-  margin-bottom: 6px;
-}
-
-.pub-journal {
-  font-size: 15px;
-  color: #333;
-
-  margin-bottom: 10px;
-}
-
-.pub-journal::before {
-  content: "📘 ";
-}
-
-.pub-abstract {
-  font-size: 14px;
-  line-height: 1.7;
-
-  color: #6b7280;
-
-  margin-bottom: 10px;
-}
-
-.pub-links-inline a {
-  text-decoration: none;
-  margin-right: 10px;
-
-  font-weight: 500;
-}
-
-.pub-links-inline a:hover {
-  text-decoration: underline;
-}
-
-.qrank-badge {
-  background: #1565c0;
-  color: white;
-
-  padding: 2px 8px;
-
-  border-radius: 999px;
-
-  font-size: 11px;
-  font-weight: 700;
-
-  margin-left: 8px;
-
-  white-space: nowrap;
+  box-shadow:
+    0 4px 20px rgba(0,0,0,0.25) !important;
 }
 
 body.dark .pub-title {
-  color: #f8fafc;
+  color: #f8fafc !important;
 }
 
 body.dark .pub-authors {
-  color: #cbd5e1;
+  color: #d1d5db !important;
 }
 
 body.dark .pub-journal {
-  color: #e2e8f0;
+  color: #f3f4f6 !important;
 }
 
 body.dark .pub-abstract {
-  color: #94a3b8;
+  color: #cbd5e1 !important;
+}
+
+body.dark .pub-card:hover {
+  transform: translateY(-2px);
+
+  transition: 0.2s ease;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.35) !important;
 }
 
 /* =========================================================
    RESPONSIVE
 ========================================================= */
 
-@media(max-width:800px) {
+@media (max-width: 768px) {
 
   body {
     padding-top: 4rem;
@@ -581,93 +642,6 @@ body.dark .pub-abstract {
     height: 160px;
   }
 
-  .pub-card {
-    flex-direction: column;
-    align-items: flex-start;
-
-    gap: 20px;
-  }
-
-  .pub-image {
-    width: 100%;
-    flex: none;
-  }
-
-  .pub-cover {
-    max-width: 100%;
-    max-height: 240px;
-  }
-
-  .pub-title {
-    font-size: 20px;
-  }
-}
-/* ===== CITATION BADGE ===== */
-
-[data-semantic-scholar-id] {
-  display: inline-flex;
-  align-items: center;
-
-  gap: 6px;
-
-  margin-left: 10px;
-  padding: 3px 10px;
-
-  background: #1e88ff;
-  color: white !important;
-
-  border-radius: 10px;
-
-  font-size: 13px;
-  font-weight: 600;
-
-  white-space: nowrap;
-}
-
-[data-semantic-scholar-id]::before {
-  content: "📖";
-  font-size: 13px;
-}
-/* ===== FORCE PUBLICATIONS : IMAGE LEFT / TEXT RIGHT ===== */
-
-.publication-entry .pub-card {
-  display: grid !important;
-  grid-template-columns: 280px minmax(0, 1fr) !important;
-  column-gap: 32px !important;
-  align-items: center !important;
-
-  width: 100% !important;
-  padding: 26px 28px !important;
-  box-sizing: border-box !important;
-}
-
-.publication-entry .pub-image {
-  width: 280px !important;
-  max-width: 280px !important;
-  min-width: 280px !important;
-
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-}
-
-.publication-entry .pub-cover {
-  width: 100% !important;
-  max-width: 260px !important;
-  height: auto !important;
-  max-height: 190px !important;
-
-  object-fit: contain !important;
-  display: block !important;
-}
-
-.publication-entry .pub-content {
-  min-width: 0 !important;
-  width: 100% !important;
-  display: block !important;
-}
-
-@media (max-width: 768px) {
   .publication-entry .pub-card {
     grid-template-columns: 1fr !important;
     row-gap: 18px !important;
@@ -678,90 +652,13 @@ body.dark .pub-abstract {
     max-width: 100% !important;
     min-width: 0 !important;
   }
-}
-/* ===== SEMANTIC SCHOLAR CITATION BADGE ===== */
 
-[data-semantic-scholar-id] {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 5px !important;
+  .publication-entry .pub-cover {
+    max-width: 100% !important;
+    max-height: 240px !important;
+  }
 
-  margin-left: 8px !important;
-  padding: 2px 8px !important;
-
-  background: #1e88ff !important;
-  color: #000 !important;
-
-  border-radius: 8px !important;
-
-  font-size: 13px !important;
-  font-weight: 500 !important;
-  line-height: 1.3 !important;
-
-  white-space: nowrap !important;
-}
-
-[data-semantic-scholar-id]::before {
-  content: "📖";
-  font-size: 15px !important;
-  color: #000 !important;
-}
-/* =========================================================
-   DARK PUBLICATION CARDS STYLE
-========================================================= */
-
-body.dark .publication-year-block {
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-body.dark .pub-card {
-  background: #16181d !important;
-
-  border: 1px solid rgba(255,255,255,0.08) !important;
-
-  border-radius: 22px !important;
-
-  padding: 24px 24px !important;
-
-  box-shadow:
-    0 4px 20px rgba(0,0,0,0.25) !important;
-
-  margin-bottom: 24px !important;
-}
-
-body.dark .pub-cover {
-  border-radius: 14px !important;
-}
-
-body.dark .pub-title {
-  color: #f8fafc !important;
-}
-
-body.dark .pub-authors {
-  color: #d1d5db !important;
-}
-
-body.dark .pub-journal {
-  color: #f3f4f6 !important;
-}
-
-body.dark .pub-abstract {
-  color: #cbd5e1 !important;
-}
-
-body.dark .pub-links-inline a {
-  color: #3b82f6 !important;
-}
-
-body.dark .pub-links-inline a:hover {
-  color: #60a5fa !important;
-}
-body.dark .pub-card:hover {
-  transform: translateY(-2px);
-
-  transition: 0.2s ease;
-
-  box-shadow:
-    0 10px 30px rgba(0,0,0,0.35) !important;
+  .pub-title {
+    font-size: 20px;
+  }
 }
