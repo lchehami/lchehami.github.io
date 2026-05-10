@@ -706,3 +706,54 @@ body.dark .pub-abstract {
   font-size: 15px !important;
   color: #000 !important;
 }
+/* =========================================================
+   DARK PUBLICATION CARDS STYLE
+========================================================= */
+
+body.dark .publication-year-block {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+body.dark .pub-card {
+  background: #16181d !important;
+
+  border: 1px solid rgba(255,255,255,0.08) !important;
+
+  border-radius: 22px !important;
+
+  padding: 24px 24px !important;
+
+  box-shadow:
+    0 4px 20px rgba(0,0,0,0.25) !important;
+
+  margin-bottom: 24px !important;
+}
+
+body.dark .pub-cover {
+  border-radius: 14px !important;
+}
+
+body.dark .pub-title {
+  color: #f8fafc !important;
+}
+
+body.dark .pub-authors {
+  color: #d1d5db !important;
+}
+
+body.dark .pub-journal {
+  color: #f3f4f6 !important;
+}
+
+body.dark .pub-abstract {
+  color: #cbd5e1 !important;
+}
+
+body.dark .pub-links-inline a {
+  color: #3b82f6 !important;
+}
+
+body.dark .pub-links-inline a:hover {
+  color: #60a5fa !important;
+}
