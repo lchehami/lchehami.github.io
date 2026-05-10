@@ -602,3 +602,29 @@ body.dark .pub-abstract {
     font-size: 20px;
   }
 }
+/* ===== CITATION BADGE ===== */
+
+[data-semantic-scholar-id] {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 6px;
+
+  margin-left: 10px;
+  padding: 3px 10px;
+
+  background: #1e88ff;
+  color: white !important;
+
+  border-radius: 10px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+[data-semantic-scholar-id]::before {
+  content: "📖";
+  font-size: 13px;
+}
