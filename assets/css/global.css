@@ -174,7 +174,7 @@ h2 {
 }
 
 /* =========================================================
-   AFFILIATIONS — FINAL FIX
+   AFFILIATIONS
 ========================================================= */
 
 .affiliation {
@@ -226,7 +226,6 @@ h2 {
     0 2px 8px rgba(0,0,0,0.08) !important;
 }
 
-/* CNRS */
 .aff-logo[src*="cnrs"],
 .aff-logo[alt="CNRS"] {
   width: 52px !important;
@@ -393,53 +392,99 @@ body.dark a:hover {
   color: #bfdbfe !important;
 }
 
-body.dark #themeToggle {
-  background: #111827;
+/* =========================================================
+   SEARCH BAR PUBLICATIONS
+========================================================= */
 
-  color: #f8fafc;
+.publication-search-container {
+  margin-bottom: 40px;
+}
 
-  border: 1px solid rgba(255,255,255,0.15);
+.publication-search-bar {
+  width: 100%;
+  max-width: 720px;
 
-  box-shadow:
-    0 6px 18px rgba(0,0,0,0.35),
-    inset 0 1px 1px rgba(255,255,255,0.04);
+  padding: 14px 22px;
+
+  border-radius: 14px;
+  border: 1px solid #d9dde3;
+
+  background: #ffffff;
+
+  font-size: 16px;
+  line-height: 1.4;
+
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+
+  transition: all 0.2s ease;
+}
+
+.publication-search-bar:focus {
+  outline: none;
+
+  border-color: #1565c0;
+
+  box-shadow: 0 0 0 4px rgba(21,101,192,0.12);
 }
 
 /* =========================================================
-   DARK MODE — AFFILIATIONS
+   PUBLICATIONS FIX
 ========================================================= */
 
-body.dark .affiliation {
-  color: #f8fafc !important;
+.publication-entry .row {
+  align-items: center !important;
 }
 
-body.dark .affiliation span {
-  color: #f8fafc !important;
+.pub-left {
+  overflow: hidden;
 }
 
-body.dark .affiliation:hover {
-  color: #93c5fd !important;
+.pub-cover {
+  width: 100% !important;
+  max-width: 260px !important;
+
+  height: auto !important;
+  max-height: 180px !important;
+
+  object-fit: contain !important;
+
+  display: block !important;
+
+  margin: 0 auto !important;
 }
 
-body.dark .aff-logo {
-  background: #ffffff !important;
-
-  box-shadow:
-    0 2px 10px rgba(0,0,0,0.35) !important;
+.pub-right {
+  min-width: 0;
 }
 
-/* =========================================================
-   SCIENTIFIC HERO ALWAYS LIGHT
-========================================================= */
-
-.scientific-hero,
-.scientific-hero * {
-  color: #111 !important;
+.pub-right h5 {
+  font-size: 20px;
+  line-height: 1.35;
+  margin-bottom: 8px !important;
 }
 
-body.dark .scientific-hero,
-body.dark .scientific-hero * {
-  color: #111 !important;
+.pub-right p {
+  line-height: 1.55;
+}
+
+.qrank-badge {
+  background: #1565c0;
+  color: white !important;
+
+  padding: 2px 8px;
+
+  border-radius: 12px;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  margin-left: 8px;
+
+  white-space: nowrap;
+}
+
+.pub-right p:nth-of-type(2)::before {
+  content: "📘 ";
 }
 
 /* =========================================================
@@ -477,119 +522,8 @@ body.dark .scientific-hero * {
     height: 160px;
   }
 
-  #themeToggle {
-    width: 40px;
-    height: 40px;
-
-    font-size: 20px;
-
-    margin-left: 12px;
-  }
-
-  .affiliation {
-    grid-template-columns: 78px minmax(0, 1fr) !important;
-    column-gap: 10px !important;
-  }
-
-  .aff-logo {
-    width: 72px !important;
-    height: 32px !important;
-  }
-
-  .affiliation span {
-    font-size: 15px !important;
-  }
-}
-/* ===== PUBLICATION CARDS ===== */
-
-.pub-card {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-
-  padding: 28px 30px;
-  margin-bottom: 22px;
-
-  background: #ffffff;
-  border-radius: 16px;
-
-  overflow: hidden;
-}
-
-.pub-image {
-  flex: 0 0 300px;
-  max-width: 300px;
-}
-
-.pub-image img,
-.pub-image svg {
-  width: 100%;
-  height: auto;
-  max-height: 230px;
-
-  object-fit: contain;
-  display: block;
-
-  border-radius: 12px;
-}
-
-.pub-content {
-  flex: 1;
-  min-width: 0;
-}
-
-.pub-title {
-  margin: 0 0 8px 0;
-  font-size: 21px;
-  line-height: 1.35;
-  font-weight: 500;
-}
-
-.pub-authors,
-.pub-journal,
-.pub-abstract,
-.pub-links-inline {
-  margin: 0 0 6px 0;
-  font-size: 14px;
-  line-height: 1.55;
-}
-
-.pub-authors {
-  color: #555;
-}
-
-.pub-journal {
-  color: #333;
-}
-
-.pub-abstract {
-  color: #6c757d;
-}
-
-.qrank-badge {
-  background: #1565c0;
-  color: white;
-  padding: 2px 8px;
-  border-radius: 12px;
-  font-size: 11px;
-  font-weight: 600;
-  margin-left: 8px;
-  white-space: nowrap;
-}
-
-@media (max-width: 768px) {
-  .pub-card {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .pub-image {
-    flex: none;
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .pub-title {
-    font-size: 19px;
+  .pub-cover {
+    max-width: 100% !important;
+    max-height: 220px !important;
   }
 }
