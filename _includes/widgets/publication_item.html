@@ -47,12 +47,7 @@
 <span class="qrank-badge">{{ item.qrank }}</span>
 {% endif %}
 
-{% if item.semantic_scholar_id %}
-<span class="citation-badge">
-  ✎
-  <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span>
-</span>
-{% endif %}
+<span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span>
     </p>
 
     <p class="pub-abstract">{{ item.abstract }}</p>
