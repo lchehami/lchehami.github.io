@@ -598,3 +598,13 @@ body.dark .pub-card:hover {
     font-size: 20px;
   }
 }
+/* =========================================================
+   HIDE ORIGINAL SEMANTIC SCHOLAR BADGE
+========================================================= */
+
+[data-semantic-scholar-id] > span,
+[data-semantic-scholar-id] .fa,
+[data-semantic-scholar-id] .fas,
+[data-semantic-scholar-id] img {
+  display: none !important;
+}
