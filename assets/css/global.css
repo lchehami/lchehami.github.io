@@ -550,3 +550,9 @@ body.dark .d-md-none .w-100 {
     max-height: 230px !important;
   }
 }
+
+/* PhD / HDR Manuscript */
+.thesis-manuscript,
+.thesis-manuscript a {
+  font-weight: 700 !important;
+}
