@@ -435,3 +435,40 @@ body.dark .d-md-none .w-100 {
     max-height: 230px !important;
   }
 }
+
+/* =========================================================
+   NAVBAR — TYPOGRAPHY
+========================================================= */
+
+.navbar {
+  min-height: 72px;
+}
+
+.navbar-brand {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+}
+
+/* Main page headings */
+
+h1 {
+  font-size: 44px;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
