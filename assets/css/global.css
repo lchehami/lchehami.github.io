@@ -102,8 +102,9 @@ h2 {
 }
 
 .hero-text {
-  flex: 1;
-  min-width: 300px;
+  flex: 1 1 0;
+  min-width: 0;
+  width: 100%;
 }
 
 .hero-text h1 {
