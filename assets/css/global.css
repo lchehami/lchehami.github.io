@@ -210,6 +210,25 @@ h2 {
    LINKS
 ========================================================= */
 
+/* =========================================================
+   CV / THESIS LINKS
+========================================================= */
+
+.cv-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 17px;
+  font-weight: 700 !important;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.cv-link:hover {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
 .links {
   margin-top: 20px;
   padding-top: 14px;
