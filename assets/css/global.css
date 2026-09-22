@@ -87,8 +87,9 @@ h2 {
   border-radius: 14px;
   padding: 50px;
   margin: 50px auto;
- max-width: 1400px;
- width: 95%;
+  width: calc(100% - 80px);
+  max-width: 1620px;
+  box-sizing: border-box;
   box-shadow: 0 2px 10px rgba(0,0,0,0.03),
               0 8px 30px rgba(0,0,0,0.04);
 }
