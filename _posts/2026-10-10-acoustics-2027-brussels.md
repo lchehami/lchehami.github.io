@@ -1,4 +1,8 @@
-
+---
+layout: post
+title: "Acoustics 2027 – Brussels"
+date: 2026-10-10
+---
 <article>
   <h2>Acoustics 2027 – Brussels, Belgium</h2>
   <p><em>October 2026</em></p>
