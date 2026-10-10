@@ -1,9 +1,8 @@
 
 ---
-layout: post
+layout: blog_post
 title: "Acoustics 2027 – Brussels"
 date: 2026-10-10
-description: "Serving as Theme Chair for Acoustics 2027, contributing to the scientific programme and international collaboration."
 ---
 
 <article>
