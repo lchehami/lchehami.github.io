@@ -6,10 +6,6 @@ date: 2026-10-10
 
 <article style="max-width:100%; overflow-wrap:break-word;">
 
-  <p style="font-size:1.1em; font-weight:600;">
-    📅 21–25 June 2027 | Brussels, Belgium
-  </p>
-
   <p>
     I am pleased to serve as
     <strong>Theme Chair</strong> for
