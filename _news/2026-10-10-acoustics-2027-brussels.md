@@ -1,4 +1,3 @@
-
 ---
 layout: news
 title: "Acoustics 2027 – Brussels"
