@@ -5,9 +5,6 @@ date: 2026-09-10
 ---
 
 <article>
-  <h2>Forum Acusticum 2026 – Graz, Austria</h2>
-  <p><em>September 2026</em></p>
-
   <p>
     I was pleased to participate in
     <strong>Forum Acusticum 2026</strong>,
