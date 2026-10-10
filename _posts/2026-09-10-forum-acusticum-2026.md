@@ -1,10 +1,11 @@
 
 ---
-layout: post
+layout: blog_post
 title: "Forum Acusticum 2026 – Graz"
 date: 2026-09-10
 description: "Scientific session organisation, oral presentation and EAA Technical Committee activities at Forum Acusticum 2026."
 ---
+
 
 
 <article>
