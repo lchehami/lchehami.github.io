@@ -1,12 +1,12 @@
 ---
 layout: blog_post
 title: "Acoustics 2027 – Brussels"
-date: 2026-10-10
+date: 2027-06-21
 ---
 
 <article>
   <h2>Acoustics 2027 – Brussels, Belgium</h2>
-  <p><em>October 2026</em></p>
+  <p><em>21 June 2027</em></p>
 
   <p>
     I am pleased to serve as
