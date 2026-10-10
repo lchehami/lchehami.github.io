@@ -1,7 +1,7 @@
 ---
 layout: news
 title: "Acoustics 2027 – Brussels"
-date: 2026-10-10
+date: 2027-06-21
 ---
 
 <article style="max-width:100%; overflow-wrap:break-word;">
