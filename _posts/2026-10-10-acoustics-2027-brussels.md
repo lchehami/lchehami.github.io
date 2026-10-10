@@ -1,4 +1,3 @@
-
 ---
 layout: blog_post
 title: "Acoustics 2027 – Brussels"
