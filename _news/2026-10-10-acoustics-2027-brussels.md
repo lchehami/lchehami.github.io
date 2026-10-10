@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: news
 title: "Acoustics 2027 – Brussels"
 date: 2026-10-10
 ---
