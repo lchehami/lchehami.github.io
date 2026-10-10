@@ -1,4 +1,3 @@
-
 ---
 layout: news
 title: "Forum Acusticum 2026 – Graz"
